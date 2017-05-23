@@ -10,8 +10,9 @@ class AMRequests(models.Model):
 
      status = fields.Selection([('new', 'New'), ('visited', 'Visited')], default='new', string='Request Status')
 
-     illustrations = fields.One2many('philsteel.amrimages', 'rfam', string="Illustrations")
-
+     illustrations = fields.Many2one(
+         'philsteel.amrimages', 'Result of Measurement',  ondelete='cascade'
+     )
 
      request_number = fields.Char(string='Request Number', readonly='True', required='True', default=lambda self: _('New'))
      location = fields.Text(string='Address')
@@ -21,7 +22,8 @@ class AMRequests(models.Model):
      )
 
      project_type = fields.Selection([('residential', 'Residential'), ('commercial', 'Commercial'), ('industrial', 'Industrial'), ('government', 'Government'), ('institutional', 'Institutional'), ('mass_housing', 'Mass Housing')], string='Type of Project')
-     project_site_address = fields.Text(string='Complete Project Site Address', required='True')
+     project_site_address = fields.Text(string='Complete Project Site Address')
+     project_site_sketch = fields.Binary(string='Jobsite Sketch')
      general_contractor = fields.Many2one(
          'philsteel.projectmanpower', 'Name of contractor',  ondelete='cascade'
      )
@@ -129,3 +131,5 @@ class AMRImages(models.Model):
 		ondelete='cascade', string="RFAM", required=True)
 
 	new_field = fields.Binary()
+
+    
