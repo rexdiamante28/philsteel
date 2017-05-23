@@ -20,13 +20,9 @@
                         <group>
                         	<field name="image" widget="image" class="oe_avatar"/>
                         	<field name="name" />
-                            <field name="prices" />
                         </group>
                         <group>
-                            <field name="pieces_installed" />
-                        </group>
-                        <group>
-                            <field name="total_price_installed" />
+                            <field name="quantity_installed" />
                         </group>
                     </sheet>
                 </form>
@@ -39,7 +35,7 @@
             <field name="arch" type="xml">
                <tree string="Materials Installed">
                     <field name="name" />
-                    <field name="prices" />
+                    <field name="quantity_installed" />
                </tree>
             </field>
         </record>
