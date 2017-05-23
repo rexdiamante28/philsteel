@@ -18,6 +18,7 @@
                <tree string="Project Accomplishment Report">
                     <field name="name" />
                     <field name="statuss" />
+                    <field name="project_seen_status" />
                </tree>
             </field>
         </record>
@@ -50,23 +51,19 @@
                                 <field name="weight_factor" />
                             </group>
                         </group>
-                        <group string="Accomplishments" >
+                        <group string="" >
                             <notebook>
                                 <page string="Previous">
-                                    <group><field name="qty_prev" /></group>
-                                    <group><field name="percent_prev" /></group>
+                                    <group><field name="accomplisment" /></group>
                                 </page>
-                                <page string="This Period">
-                                    <group><field name="qty_thisperiod" /></group>
-                                    <group><field name="percent_thisperiod" /></group>
-                                </page>
-                                <page string="To Date">
-                                    <group><field name="qty_todate" /></group>
-                                    <group><field name="percent_todate" /></group>
-                                    <group><field name="weight" /></group>
-                                </page>
+                                
                                 <page string="Remarks">
                                     <group><field name="remarks" /></group>
+                                </page>
+                                <page string="Jobsite">
+                                    <group><field name="site_sketch" widget="image"/></group>
+                                    <group><field name="site_address" string='Complete Project Site Address' /></group>
+                                
                                 </page>
                                 <page string="Signatory">
                                     <group><field name="proj_incharge" /></group>

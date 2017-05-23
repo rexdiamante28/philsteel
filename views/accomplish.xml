@@ -1,0 +1,55 @@
+<odoo>
+	<data>
+
+		<record model="ir.actions.act_window" id="accomplish_action">
+            <field name="name">Accomplshments</field>
+            <field name="res_model">philsteel.accomplishment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Accomplishment</p>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="accomplishment_form_view">
+            <field name="name">accomplishment.form</field>
+            <field name="model">philsteel.accomplishment</field>
+            <field name="arch" type="xml">
+                <form string="Center Form">
+                    <sheet>
+                        <group string="Previous">
+                            <field name="qty_prev" />
+                            <field name="percent_prev" />
+                        </group>
+                        <group string="This Period">
+                            <field name="qty_thisperiod" />
+                            <field name="percent_thisperiod" />
+                        </group>
+                        <group string="To Date">
+                            <field name="qty_todate" />
+                            <field name="percent_todate" />
+                            <field name="weight" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="accomplishment_tree_view">
+            <field name="name">accomplishment.tree</field>
+            <field name="model">philsteel.accomplishment</field>
+            <field name="arch" type="xml">
+               <tree string="Accomplishments">
+                    <field name="qty_prev" />
+                    <field name="percent_prev" />
+                    <field name="qty_thisperiod" />
+                    <field name="percent_thisperiod" />
+                    <field name="qty_todate" />
+                    <field name="percent_todate" />
+                    <field name="weight" />
+               </tree>
+            </field>
+        </record>
+
+	</data>
+</odoo>

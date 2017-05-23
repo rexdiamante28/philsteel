@@ -32,7 +32,7 @@
 
                             <field name="general_contractor" />
 
-                            <field name="product_profile" />
+                            
                             
                         </group>
                         <notebook>
@@ -71,8 +71,11 @@
                                         <group><field name="rfm_others"/></group>
                                 </group>
                             </page>
+                            <page string="Product Profile">
+                                <group><field name="product_profile" /></group>
+                            </page>
                             <page string="Scope of Work">
-                                <field name="work_scope" />
+                                <group><field name="work_scope" /></group>
                             </page>
                             <page string="Result of Measurement">
                                 <group><field name="illustrations"/></group>
@@ -150,6 +153,7 @@
                     <field name="project_type" />
                     <field name="assigned_by" />
                     <field name="statuss" />
+                    <field name="request_seen_status" />
                </tree>
             </field>
         </record>

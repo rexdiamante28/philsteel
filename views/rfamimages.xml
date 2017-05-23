@@ -19,6 +19,7 @@
                 <form string="RFAM Illustration Form">
                     <sheet>
                         <group>
+                            
                             <field name="name" widget="image"/>
                             <field name="rfam" />
                             <field name="description" />
@@ -34,6 +35,7 @@
             <field name="model">philsteel.amrimages</field>
             <field name="arch" type="xml">
                <tree string="RFAM Illustrations">
+                    
                     <field name="rfam" />
                     <field name="description" />
                </tree>

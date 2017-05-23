@@ -15,26 +15,18 @@ class PAS(models.Model):
 	sc_no = fields.Char(string="S.C. No:")
 	duration = fields.Char(string="Duration" , required=True)
 	date_start = fields.Date(string='Date of Started')
-	date_complete = fields.Date(string='Date of Completion')
+	date_complete = fields.Date(string='Target Date of Completion')
 	sales_engineer = fields.Many2one(
 		'philsteel.contacts', 'Personnel',  ondelete='cascade'
 	)
 	#---------------------------------------------------#
-	
+	project_seen_status = fields.Date(string='Seen Status')
 	particular = fields.Char(string="Particular")
 	unit = fields.Char(string="Unit")
 	qty = fields.Char(string="Quantity")
 	weight_factor = fields.Char(string="Weight Factor")
 	#--------Previous---------#
-	qty_prev = fields.Char(string="Quantity")
-	percent_prev = fields.Char(string="Percentage")
-	#--------This Period---------#
-	qty_thisperiod = fields.Char(string="Quantity")
-	percent_thisperiod = fields.Char(string="Percentage")
-	#--------To Date---------#
-	qty_todate = fields.Char(string="Quantity")
-	percent_todate = fields.Char(string="%")
-	weight = fields.Char(string="Weight Percent")
+	accomplisment = fields.Many2many('philsteel.accomplishment', string='Accomplishments',  ondelete='cascade')
 	#----------------------------------------------------#
 	remarks = fields.Text(string="Remarks")
 	proj_incharge = fields.Many2one(
@@ -43,6 +35,8 @@ class PAS(models.Model):
 	client_rep = fields.Many2one(
 		'philsteel.contacts', 'Client Representative',  ondelete='cascade'
 	)
+	site_address = fields.Text(string="Jobsite Address")
+	site_sketch = fields.Binary(string='Jobsite Sketch')
 
 
 	statuss = fields.Selection([
@@ -62,7 +56,4 @@ class PAS(models.Model):
 	@api.onchange('name')
 	def get_proj_details(self):
 		for record in self:
-			record.location = record.name.location
-			record.ic_no = record.name.ic_no
-			record.sc_no = record.name.sc_no
-			record.sc_no = record.name.sc_no
+			record.customer_name = record.name.customer_name

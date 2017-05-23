@@ -10,9 +10,7 @@ class AMRequests(models.Model):
 
      status = fields.Selection([('new', 'New'), ('visited', 'Visited')], default='new', string='Request Status')
 
-     illustrations = fields.Many2one(
-         'philsteel.amrimages', 'Result of Measurement',  ondelete='cascade'
-     )
+     illustrations = fields.One2many('philsteel.amrimages', 'rfam', string='Result of Measurement')
 
      request_number = fields.Char(string='Request Number', readonly='True', required='True', default=lambda self: _('New'))
      location = fields.Text(string='Address')
@@ -28,10 +26,9 @@ class AMRequests(models.Model):
          'philsteel.projectmanpower', 'Name of contractor',  ondelete='cascade'
      )
 
-
+     product_profile = fields.Many2many('philsteel.materiales', string='Product Profile',  ondelete='cascade')
      contact_person_at_site = fields.Many2many('philsteel.sitecontacts', string='Site Contact Person',  ondelete='cascade')
-     jobsite_contact_number = fields.Char(string='Job Site Telephone or Mobile Number')
-     product_profile = fields.Char(string='Product Profile')
+     jobsite_contact_number = fields.Char(string='Product Profile',  ondelete='cascade')
 
      sc_number = fields.Char(string='SC NO')
      ic_number = fields.Char(string='IC NO')
@@ -59,7 +56,7 @@ class AMRequests(models.Model):
      )
 
      date_filed = fields.Date(string='Date Filed')
-
+     request_seen_status = fields.Date(string='Seen Status')
      approved_by = fields.Many2one(
          'philsteel.contacts', 'Approve By',  ondelete='cascade'
      )
@@ -79,10 +76,6 @@ class AMRequests(models.Model):
      def get_proj_details(self):
          for record in self:
              record.customer = record.name.customer_name
-             record.ic_number = record.name.ic_no
-             record.sc_number = record.name.sc_no
-             record.location = record.name.location
-             record.project_type = record.name.types_of_project
 
      @api.multi
      def action_approved(self):

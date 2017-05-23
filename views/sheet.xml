@@ -18,6 +18,7 @@
                     <field name="name" />
                     <field name="client" />
                     <field name="statuss" />
+                    <field name="project_seen_status" />
                </tree>
             </field>
         </record>

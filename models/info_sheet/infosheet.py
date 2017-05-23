@@ -218,7 +218,7 @@ class Infosheet(models.Model):
 	jobsite_sketch = fields.Binary(string='Jobsite Sketch')
 
 
-
+	project_seen_status = fields.Date(string='Seen Status')
 
 	#====================================================#
 	portable_water = fields.Boolean(string='Portable Water')
@@ -240,10 +240,6 @@ class Infosheet(models.Model):
 	def get_proj_details(self):
 		for record in self:
 			record.client = record.name.customer_name
-			record.ic_number = record.name.ic_no
-			record.sc_number = record.name.sc_no
-			record.location = record.name.location
-
 
 	@api.multi
 	def action_approved(self):
