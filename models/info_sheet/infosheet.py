@@ -213,6 +213,13 @@ class Infosheet(models.Model):
 	#-----BUNK HOUSE-------------#
 	onsite = fields.Boolean(string='     Onsite')
 	offsite = fields.Boolean(string='     Offsite')
+
+	jobsite_address = fields.Text(string="Jobsite Address")
+	jobsite_sketch = fields.Binary(string='Jobsite Sketch')
+
+
+
+
 	#====================================================#
 	portable_water = fields.Boolean(string='Portable Water')
 	electricity = fields.Boolean(string='Electricity')
