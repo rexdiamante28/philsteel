@@ -213,13 +213,6 @@ class Infosheet(models.Model):
 	#-----BUNK HOUSE-------------#
 	onsite = fields.Boolean(string='     Onsite')
 	offsite = fields.Boolean(string='     Offsite')
-
-	jobsite_address = fields.Text(string="Jobsite Address")
-	jobsite_sketch = fields.Binary(string='Jobsite Sketch')
-
-
-	project_seen_status = fields.Date(string='Seen Status')
-
 	#====================================================#
 	portable_water = fields.Boolean(string='Portable Water')
 	electricity = fields.Boolean(string='Electricity')
@@ -240,6 +233,10 @@ class Infosheet(models.Model):
 	def get_proj_details(self):
 		for record in self:
 			record.client = record.name.customer_name
+			record.ic_number = record.name.ic_no
+			record.sc_number = record.name.sc_no
+			record.location = record.name.location
+
 
 	@api.multi
 	def action_approved(self):

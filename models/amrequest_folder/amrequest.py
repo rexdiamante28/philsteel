@@ -10,7 +10,8 @@ class AMRequests(models.Model):
 
      status = fields.Selection([('new', 'New'), ('visited', 'Visited')], default='new', string='Request Status')
 
-     illustrations = fields.One2many('philsteel.amrimages', 'rfam', string='Result of Measurement')
+     illustrations = fields.One2many('philsteel.amrimages', 'rfam', string="Illustrations")
+
 
      request_number = fields.Char(string='Request Number', readonly='True', required='True', default=lambda self: _('New'))
      location = fields.Text(string='Address')
@@ -21,14 +22,12 @@ class AMRequests(models.Model):
 
      project_type = fields.Selection([('residential', 'Residential'), ('commercial', 'Commercial'), ('industrial', 'Industrial'), ('government', 'Government'), ('institutional', 'Institutional'), ('mass_housing', 'Mass Housing')], string='Type of Project')
      project_site_address = fields.Text(string='Complete Project Site Address')
-     project_site_sketch = fields.Binary(string='Jobsite Sketch')
-     general_contractor = fields.Many2one(
-         'philsteel.projectmanpower', 'Name of contractor',  ondelete='cascade'
-     )
+     general_contractor = fields.Char(string='Name of Contractor')
 
-     product_profile = fields.Many2many('philsteel.materiales', string='Product Profile',  ondelete='cascade')
-     contact_person_at_site = fields.Many2many('philsteel.sitecontacts', string='Site Contact Person',  ondelete='cascade')
-     jobsite_contact_number = fields.Char(string='Product Profile',  ondelete='cascade')
+
+     contact_person_at_site = fields.Many2many('philsteel.contacts', string='Site Contact Person',  ondelete='cascade')
+     jobsite_contact_number = fields.Char(string='Job Site Telephone or Mobile Number')
+     product_profile = fields.Char(string='Product Profile')
 
      sc_number = fields.Char(string='SC NO')
      ic_number = fields.Char(string='IC NO')
@@ -52,16 +51,20 @@ class AMRequests(models.Model):
      ready_for_measurement_date = fields.Date(string='Date when structure ready for measurement')
 
      accomplished_by = fields.Many2one(
-         'philsteel.projectmanpower', 'Accomplished By',  ondelete='cascade'
+         'philsteel.android', 'Accomplished By',  ondelete='cascade'
      )
 
      date_filed = fields.Date(string='Date Filed')
-     request_seen_status = fields.Date(string='Seen Status')
+
      approved_by = fields.Many2one(
-         'philsteel.contacts', 'Approve By',  ondelete='cascade'
+         'philsteel.contacts', 'Approved By',  ondelete='cascade'
      )
      assigned_by = fields.Many2one(
-         'philsteel.android', 'Assigned By',  ondelete='cascade', required='True'
+         'res.users', 'Assigned By',  ondelete='cascade'
+     )
+
+     assignedTo = fields.Many2one(
+         'philsteel.android', 'Assigned To',  ondelete='cascade'
      )
 
      #image = fields.Binary()
@@ -76,6 +79,10 @@ class AMRequests(models.Model):
      def get_proj_details(self):
          for record in self:
              record.customer = record.name.customer_name
+             record.ic_number = record.name.ic_no
+             record.sc_number = record.name.sc_no
+             record.location = record.name.location
+             record.project_type = record.name.types_of_project
 
      @api.multi
      def action_approved(self):
@@ -124,5 +131,3 @@ class AMRImages(models.Model):
 		ondelete='cascade', string="RFAM", required=True)
 
 	new_field = fields.Binary()
-
-    

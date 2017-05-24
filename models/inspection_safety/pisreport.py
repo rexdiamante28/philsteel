@@ -41,18 +41,7 @@ class PISReports(models.Model):
 	approved_by = fields.Many2one(
 		'philsteel.contacts', 'Approved By',  ondelete='cascade'
 	)
-	project_seen_status = fields.Date(string='Seen Status')
-	#---------------------MANPOWER -------------------------#
-	foreman = fields.Integer(string='Foreman')
-	leadman = fields.Integer(string='Leadman')
-	tinsmith = fields.Integer(string='Tinsmith')
-	installer = fields.Integer(string='Installer')
-	welder = fields.Integer(string='Welder')
-	helper = fields.Integer(string='Helper')
-	site_address = fields.Text(string="Jobsite Address")
-	site_sketch = fields.Binary(string='Jobsite Sketch')
-	
-
+	man_power = fields.Many2many('philsteel.contacts', string='Man Power',  ondelete='cascade')
 	tool_equipment = fields.Many2many('philsteel.materials', string='Tools and Equipments',  ondelete='cascade')
 	statuss = fields.Selection([
 		('draft', 'Draft'), 
@@ -64,6 +53,9 @@ class PISReports(models.Model):
 	def get_proj_details(self):
 		for record in self:
 			record.client = record.name.customer_name
+			record.ic_number = record.name.ic_no
+			record.sc_number = record.name.sc_no
+			record.location = record.name.location
 			
 
 	@api.multi

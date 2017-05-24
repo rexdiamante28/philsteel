@@ -28,12 +28,13 @@
                             <group>
                                 <field name="project_type" />
                             </group>
-                            
+                            <field name="project_site_address" string='Complete Project Site Address' />
 
                             <field name="general_contractor" />
 
-                            
-                            
+                            <field name="product_profile" />
+                            <field name="assigned_by" />
+                            <field name="assignedTo" />
                         </group>
                         <notebook>
                             <page string="Contact Details">
@@ -56,6 +57,7 @@
                                  
                                 <field name="floors_available_for_measurement"/>
                                 <field name="frames_trusses_installed"/>
+                                <field name="beam_installed"/>
                                 <field name="purlins_installed"/>
                                 <field name="sogrod_installed"/>
                                  
@@ -71,22 +73,11 @@
                                         <group><field name="rfm_others"/></group>
                                 </group>
                             </page>
-                            <page string="Product Profile">
-                                <group><field name="product_profile" /></group>
-                            </page>
                             <page string="Scope of Work">
-                                <group><field name="work_scope" /></group>
+                                <field name="work_scope" />
                             </page>
-                            <page string="Result of Measurement">
-                                <group><field name="illustrations"/></group>
-                            </page>
-                            <page string="Jobsite">
-                                <group><field name="project_site_sketch" widget="image"/></group>
-                                <group><field name="project_site_address" string='Complete Project Site Address' /></group>
-                                
-                            </page>
-                            <page string="Assign Information">
-                                <group><field name="assigned_by" /></group>
+                            <page string="Illustrations">
+                                <field name="illustrations"/>
                             </page>
 
                             <page string="Signatory">
@@ -153,7 +144,6 @@
                     <field name="project_type" />
                     <field name="assigned_by" />
                     <field name="statuss" />
-                    <field name="request_seen_status" />
                </tree>
             </field>
         </record>

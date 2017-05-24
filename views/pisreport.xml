@@ -19,7 +19,6 @@
                     <field name="name" />
                     <field name="client" />
                     <field name="statuss" />
-                    <field name="project_seen_status" />
                </tree>
             </field>
         </record>
@@ -38,6 +37,12 @@
                         <group string="General">
                             <field name="name" />
                             <field name="client"/>
+                            <group>
+                                <field name="inspection_date" />
+                            </group>
+                            <group>
+                                <field name="wheather" />
+                            </group>
                             <field name="location"/>
                             <group>
                                 <field name="ic_number"/>
@@ -47,28 +52,12 @@
                                 <field name="arrival_time" />
                                 <field name="departure_time" />
                             </group>
-                            <group>
-                                <field name="inspection_date" />
-                            </group>
-                            <group>
-                                <field name="wheather" />
-                            </group>
-                            
                             <field name="accomplishment_date" />
                             <field name="site_representative" />
                         </group>
                         <notebook>
                             <page string="Man Power">
-                                <group>
-                                    <field name="foreman"/>
-                                    <field name="leadman"/>
-                                    <field name="tinsmith"/>
-                                </group>
-                                <group>
-                                    <field name="installer"/>
-                                    <field name="welder" />
-                                    <field name="helper" />
-                                </group>
+                                <field name="man_power" />
                             </page>
                             <page string="Tools and Equipments">
                                 <field name="tool_equipment" />
@@ -87,11 +76,6 @@
                                     <field name="other_concerns" />
                                 </group>
                         
-                            </page>
-                            <page string="Jobsite">
-                                <group><field name="site_sketch" widget="image"/></group>
-                                <group><field name="site_address" string='Complete Project Site Address' /></group>
-                                
                             </page>
                             <page string="Signatory">
                                 <group >

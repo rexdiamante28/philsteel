@@ -18,7 +18,6 @@
                     <field name="name" />
                     <field name="client" />
                     <field name="statuss" />
-                    <field name="project_seen_status" />
                </tree>
             </field>
         </record>
@@ -299,12 +298,6 @@
                                     </page>
                                 </notebook>
                             </page>
-                            <page string="Jobsite">
-                                <group><field name="jobsite_sketch" widget="image"/></group>
-                                <group><field name="jobsite_address" string='Complete Project Site Address' /></group>
-                                
-                            </page>
-
                             <page string="SIGNATORY">
                                 <group><field name="accomplish_by" /></group>
                                 <group><field name="accomplish_date" /></group>

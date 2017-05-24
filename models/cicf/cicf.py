@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api, _
+from odoo import models, fields, api
 
 class CICF(models.Model):
 	_name = 'philsteel.cicf'
 
 	jobsite_image = fields.Binary()
-	cicf_no = fields.Char(string="CICF. No:", readonly='True', required='True', default=lambda self: _('New'))
+	cicf_no = fields.Char(string="CICF. No:")
 	concern_dept = fields.Char(string='Concerned Department')
 	complain_date = fields.Date(string='Date')
 	name = fields.Many2one(
@@ -73,14 +73,3 @@ class CICF(models.Model):
 			recorda.ic_no = recorda.name.ic_no
 			recorda.sc_no = recorda.name.sc_no
 			recorda.location = recorda.name.location
-
-
-	@api.model
-	def create(self, values):
-
-		if values.get('cicf_no', 'New') == 'New':
-			values['cicf_no'] = self.env['ir.sequence'].next_by_code('philsteel.cicf') or 'New'
-
-		result = super(CICF, self).create(values)
-
-		return result
