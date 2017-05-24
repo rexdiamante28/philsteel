@@ -217,6 +217,12 @@ class Infosheet(models.Model):
 	portable_water = fields.Boolean(string='Portable Water')
 	electricity = fields.Boolean(string='Electricity')
 	others_con = fields.Boolean(string='Other Safety Concerns')
+
+	
+	jobsite_address = fields.Text(string="Jobsite Address")
+	jobsite_sketch = fields.Binary(string='Jobsite Sketch')
+
+	
 	#--------SIGNATORY-------------------------#
 	accomplish_by = fields.Many2one(
 		'philsteel.projectmanpower', 'Accomplished By',  ondelete='cascade'

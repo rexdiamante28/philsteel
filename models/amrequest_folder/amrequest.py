@@ -22,12 +22,15 @@ class AMRequests(models.Model):
 
      project_type = fields.Selection([('residential', 'Residential'), ('commercial', 'Commercial'), ('industrial', 'Industrial'), ('government', 'Government'), ('institutional', 'Institutional'), ('mass_housing', 'Mass Housing')], string='Type of Project')
      project_site_address = fields.Text(string='Complete Project Site Address')
-     general_contractor = fields.Char(string='Name of Contractor')
+     project_site_sketch = fields.Binary(string='Jobsite Sketch')
+     general_contractor = fields.Many2one(
+         'philsteel.projectmanpower', 'Name of contractor',  ondelete='cascade'
+     )
 
 
-     contact_person_at_site = fields.Many2many('philsteel.contacts', string='Site Contact Person',  ondelete='cascade')
+     contact_person_at_site = fields.Many2many('philsteel.sitecontacts', string='Site Contact Person',  ondelete='cascade')
      jobsite_contact_number = fields.Char(string='Job Site Telephone or Mobile Number')
-     product_profile = fields.Char(string='Product Profile')
+     product_profile = fields.Many2many('philsteel.materiales', string='Product Profile',  ondelete='cascade')
 
      sc_number = fields.Char(string='SC NO')
      ic_number = fields.Char(string='IC NO')
@@ -49,7 +52,7 @@ class AMRequests(models.Model):
      rfm_others = fields.Text(string='Others')
 
      ready_for_measurement_date = fields.Date(string='Date when structure ready for measurement')
-
+     seen_status = fields.Date(string='Seen Status')
      accomplished_by = fields.Many2one(
          'philsteel.android', 'Accomplished By',  ondelete='cascade'
      )

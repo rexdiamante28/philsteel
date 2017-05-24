@@ -1,7 +1,7 @@
 <odoo>
-	<data>
+    <data>
 
-		<record model="ir.actions.act_window" id="materials_installed_action">
+        <record model="ir.actions.act_window" id="materials_installed_action">
             <field name="name">Materials Installed</field>
             <field name="res_model">philsteel.materiales</field>
             <field name="view_type">form</field>
@@ -18,15 +18,11 @@
                 <form string="Center Form">
                     <sheet>
                         <group>
-                        	<field name="image" widget="image" class="oe_avatar"/>
-                        	<field name="name" />
-                            <field name="prices" />
+                            <field name="image" widget="image" class="oe_avatar"/>
+                            <field name="name" />
                         </group>
                         <group>
-                            <field name="pieces_installed" />
-                        </group>
-                        <group>
-                            <field name="total_price_installed" />
+                            <field name="quantity_installed" />
                         </group>
                     </sheet>
                 </form>
@@ -39,10 +35,10 @@
             <field name="arch" type="xml">
                <tree string="Materials Installed">
                     <field name="name" />
-                    <field name="prices" />
+                    <field name="quantity_installed" />
                </tree>
             </field>
         </record>
 
-	</data>
+    </data>
 </odoo>

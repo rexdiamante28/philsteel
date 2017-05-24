@@ -41,7 +41,15 @@ class PISReports(models.Model):
 	approved_by = fields.Many2one(
 		'philsteel.contacts', 'Approved By',  ondelete='cascade'
 	)
-	man_power = fields.Many2many('philsteel.contacts', string='Man Power',  ondelete='cascade')
+	foreman = fields.Integer(string='Foreman')
+	leadman = fields.Integer(string='Leadman')
+	tinsmith = fields.Integer(string='Tinsmith')
+	installer = fields.Integer(string='Installer')
+	welder = fields.Integer(string='Welder')
+	helper = fields.Integer(string='Helper')
+	site_address = fields.Text(string="Jobsite Address")
+	site_sketch = fields.Binary(string='Jobsite Sketch')
+	
 	tool_equipment = fields.Many2many('philsteel.materials', string='Tools and Equipments',  ondelete='cascade')
 	statuss = fields.Selection([
 		('draft', 'Draft'), 

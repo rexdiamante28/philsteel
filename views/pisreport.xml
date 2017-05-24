@@ -57,7 +57,16 @@
                         </group>
                         <notebook>
                             <page string="Man Power">
-                                <field name="man_power" />
+                                <group>
+                                    <field name="foreman"/>
+                                    <field name="leadman"/>
+                                    <field name="tinsmith"/>
+                                </group>
+                                <group>
+                                    <field name="installer"/>
+                                    <field name="welder" />
+                                    <field name="helper" />
+                                </group>
                             </page>
                             <page string="Tools and Equipments">
                                 <field name="tool_equipment" />
@@ -76,6 +85,11 @@
                                     <field name="other_concerns" />
                                 </group>
                         
+                            </page>
+                            <page string="Jobsite">
+                                <group><field name="site_sketch" widget="image"/></group>
+                                <group><field name="site_address" string='Complete Project Site Address' /></group>
+                                
                             </page>
                             <page string="Signatory">
                                 <group >
