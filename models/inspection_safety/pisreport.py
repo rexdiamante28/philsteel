@@ -50,7 +50,7 @@ class PISReports(models.Model):
 	site_address = fields.Text(string="Jobsite Address")
 	site_sketch = fields.Binary(string='Jobsite Sketch')
 	seen_datetime = fields.Date(string='Seen')
-    read_datetime = fields.Date(string ='Read')
+	read_datetime = fields.Date(string='Read')
 	pisimages = fields.Many2many('philsteel.inspectionimages', string='Inspection and Safety Report Images',  ondelete='cascade')
 	tool_equipment = fields.Many2many('philsteel.materials', string='Tools and Equipments',  ondelete='cascade')
 	statuss = fields.Selection([
