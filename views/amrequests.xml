@@ -17,33 +17,33 @@
                             <field name="image" widget="image"/>
                         </group>-->
                         <group string="General">
-                            <group><field name="name" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/></group>
+                            <group><field name="name" /></group>
                             <group><field name="status" /></group>
-                            <group><field name="customer" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/></group>
+                            <group><field name="customer" /></group>
                             <group>
                                 <field name="request_number" />
                             </group>
-                            <group><field name="location" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/></group>
+                            <group><field name="location"/></group>
                             
                             <group>
-                                <field name="project_type" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
+                                <field name="project_type" />
                             </group>
-                            <field name="project_site_address" string='Complete Project Site Address' attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
+                            <field name="project_site_address" string='Complete Project Site Address' />
 
-                            <field name="general_contractor" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
+                            <field name="general_contractor" />
 
                         </group>
                         <notebook>
                             <page string="Contact Details">
-                                <group> <field name="jobsite_contact_number" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
-                                <group> <field name="contact_person_at_site" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
+                                <group> <field name="jobsite_contact_number" /></group>
+                                <group> <field name="contact_person_at_site" /></group>
                             </page>
                             <page string="References" >
                                 <group>
-                                    <field name="sc_number" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
-                                    <field name="ic_number" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
-                                    <field name="sq_number" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
-                                    <field name="iq_number" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
+                                    <field name="sc_number"/>
+                                    <field name="ic_number"/>
+                                    <field name="sq_number"/>
+                                    <field name="iq_number"/>
                                 </group>
 
                             </page>
@@ -52,53 +52,53 @@
                                 <group>
                                    
                                  
-                                <field name="floors_available_for_measurement" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
-                                <field name="frames_trusses_installed" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
-                                <field name="beam_installed" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
-                                <field name="purlins_installed" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
-                                <field name="sogrod_installed" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
+                                <field name="floors_available_for_measurement"/>
+                                <field name="frames_trusses_installed"/>
+                                <field name="beam_installed"/>
+                                <field name="purlins_installed"/>
+                                <field name="sogrod_installed"/>
                                  
                                 </group>
                             </page>
                             <page string="Request for Measurement">
                                 <group><field name="ready_for_measurement_date"/></group>
                                 <group string="Request for measurement for: ">
-                                        <group><field name="rfm_quotation" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/></group>
-                                        <group><field name="rfm_contract" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/></group>
-                                        <group><field name="rfm_fabrication" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/></group>
-                                        <group><field name="rfm_tech1assistance" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/></group>
-                                        <group><field name="rfm_others" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/></group>
+                                        <group><field name="rfm_quotation"/></group>
+                                        <group><field name="rfm_contract"/></group>
+                                        <group><field name="rfm_fabrication"/></group>
+                                        <group><field name="rfm_tech1assistance"/></group>
+                                        <group><field name="rfm_others"/></group>
                                 </group>
                             </page>
                             <page string="Product Profile">
-                                <group><field name="product_profile" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/></group>
+                                <group><field name="product_profile" /></group>
                             </page>
                             <page string="Scope of Work">
-                                <field name="work_scope" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
+                                <field name="work_scope" />
                             </page>
                             <page string="Result of Measurement">
-                                <group><field name="illustrations" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/></group>
+                                <group><field name="illustrations"/></group>
                             </page>
                             <page string="Jobsite">
-                                <group><field name="project_site_sketch" widget="image" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/></group>
-                                <group><field name="project_site_address" string='Complete Project Site Address' attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
+                                <group><field name="project_site_sketch" widget="image"/></group>
+                                <group><field name="project_site_address" string='Complete Project Site Address' /></group>
                                 
                             </page>
                             <page string="Assign Information">
-                                <group><field name="assignedTo" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
-                                <group><field name="assigned_by" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
+                                <group><field name="assignedTo" /></group>
+                                <group><field name="assigned_by" /></group>
                             </page>
 
                             <page string="Signatory">
                                 <group>
-                                    <field name="ready_for_measurement_date" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
-                                    <field name="date_filed" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
-                                    <field name="accomplished_by" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
+                                    <field name="ready_for_measurement_date" />
+                                    <field name="date_filed" />
+                                    <field name="accomplished_by" />
                                 </group>
                                 <group>
-                                    <field name="approved_by" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
-                                    <field name="seen_datetime" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
-                                    <field name="read_datetime" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
+                                    <field name="approved_by" />
+                                    <field name="seen_datetime" />
+                                    <field name="read_datetime" />
                                 </group>
                             </page>
                         </notebook>
