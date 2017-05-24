@@ -4,6 +4,7 @@ from . import models
 from . import amrequest_folder
 from . import daily_accomplishment
 from . import project_accomplishment
+from . import accomplishments
 from . import customer_inquiry
 from . import nica
 from . import cicf  

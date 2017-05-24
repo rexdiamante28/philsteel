@@ -15,12 +15,12 @@ class PAS(models.Model):
 	sc_no = fields.Char(string="S.C. No:")
 	duration = fields.Char(string="Duration" , required=True)
 	date_start = fields.Date(string='Date of Started')
-	date_complete = fields.Date(string='Date of Completion')
+	date_complete = fields.Date(string='Target Date of Completion')
 	sales_engineer = fields.Many2one(
 		'philsteel.contacts', 'Personnel',  ondelete='cascade'
 	)
 	#---------------------------------------------------#
-	
+	accomplisment = fields.Many2many('philsteel.accomplishment', string='Accomplishments',  ondelete='cascade')
 	particular = fields.Char(string="Particular")
 	unit = fields.Char(string="Unit")
 	qty = fields.Char(string="Quantity")
@@ -43,6 +43,8 @@ class PAS(models.Model):
 	client_rep = fields.Many2one(
 		'philsteel.contacts', 'Client Representative',  ondelete='cascade'
 	)
+	site_address = fields.Text(string="Jobsite Address")
+	site_sketch = fields.Binary(string='Jobsite Sketch')
 
 
 	statuss = fields.Selection([

@@ -38,6 +38,7 @@
         'views/product_view.xml',
         'views/website_materials.xml',
         'views/materials_installed.xml',
+        'views/accomplish.xml',
         'views/nica.xml',
         'views/contact.xml',
         'views/pisreport.xml',

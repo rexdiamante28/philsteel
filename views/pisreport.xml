@@ -19,6 +19,8 @@
                     <field name="name" />
                     <field name="client" />
                     <field name="statuss" />
+                    <field name="seen_datetime" />
+                    <field name="read_datetime" />
                </tree>
             </field>
         </record>
@@ -99,6 +101,8 @@
                                     <group>
                                     <field name="approved_by" />
                                     </group>
+                                    <field name="seen_datetime" />
+                                    <field name="read_datetime" />
                                 </group>
                             </page>
                         </notebook>

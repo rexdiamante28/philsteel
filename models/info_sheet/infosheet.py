@@ -221,7 +221,8 @@ class Infosheet(models.Model):
 	
 	jobsite_address = fields.Text(string="Jobsite Address")
 	jobsite_sketch = fields.Binary(string='Jobsite Sketch')
-
+	seen_datetime = fields.Date(string='Seen')
+    read_datetime = fields.Date(string ='Read')
 	
 	#--------SIGNATORY-------------------------#
 	accomplish_by = fields.Many2one(

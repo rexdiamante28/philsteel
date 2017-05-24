@@ -18,6 +18,8 @@
                     <field name="name" />
                     <field name="client" />
                     <field name="statuss" />
+                    <field name="seen_datetime" />
+                    <field name="read_datetime" />
                </tree>
             </field>
         </record>
@@ -306,6 +308,8 @@
                             <page string="SIGNATORY">
                                 <group><field name="accomplish_by" /></group>
                                 <group><field name="accomplish_date" /></group>
+                                <group><field name="seen_datetime" /></group>
+                                <group><field name="read_datetime" /></group>
                             </page>
                         </notebook>
                         
