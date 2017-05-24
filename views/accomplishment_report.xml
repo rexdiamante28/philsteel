@@ -63,6 +63,9 @@
                                     <group><field name="site_address" string='Complete Project Site Address' /></group>
                                 
                                 </page>
+                                <page string="Accomplishment Images">
+                                    <group><field name="accomplishmentimages"/></group>
+                                </page>
                                 <page string="Signatory">
                                     <group><field name="proj_incharge" /></group>
                                     <group><field name="client_rep" /></group>

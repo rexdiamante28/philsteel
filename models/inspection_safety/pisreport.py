@@ -51,6 +51,7 @@ class PISReports(models.Model):
 	site_sketch = fields.Binary(string='Jobsite Sketch')
 	seen_datetime = fields.Date(string='Seen')
     read_datetime = fields.Date(string ='Read')
+	pisimages = fields.Many2many('philsteel.inspectionimages', string='Inspection and Safety Report Images',  ondelete='cascade')
 	tool_equipment = fields.Many2many('philsteel.materials', string='Tools and Equipments',  ondelete='cascade')
 	statuss = fields.Selection([
 		('draft', 'Draft'), 
@@ -73,3 +74,15 @@ class PISReports(models.Model):
 			visit.statuss = 'approved'
 
 		return True
+
+
+class PISImages(models.Model):
+	_name = 'philsteel.inspectionimages'
+
+	name = fields.Binary(string='Image')
+	description = fields.Text(string='Description')
+
+	inspection = fields.Many2one('philsteel.pisreports',
+		ondelete='cascade', string="Inspection and Safety Report", required=True)
+
+	new_field = fields.Binary()

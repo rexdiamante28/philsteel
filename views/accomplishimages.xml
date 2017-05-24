@@ -1,0 +1,46 @@
+<odoo>
+	<data>
+
+		<record model="ir.actions.act_window" id="accomplishmentimages_action">
+            <field name="name">Accomplishment Illustrations</field>
+            <field name="res_model">philsteel.accomplishmentimages</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create your first illustration</p>
+            </field>
+        </record>
+
+
+     	<record model="ir.ui.view" id="accomplishmentimages_form_view">
+            <field name="name">accomplishmentimages.form</field>
+            <field name="model">philsteel.accomplishmentimages</field>
+            <field name="arch" type="xml">
+                <form string="Inspection and Safety Illustration Form">
+                    <sheet>
+                        <group>
+                            
+                            <field name="name" widget="image"/>
+                            <field name="accomplishment" />
+                            <field name="description" />
+                            <field name="new_field" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="accomplishmentimages_tree_view">
+            <field name="name">accomplishmentimages.tree</field>
+            <field name="model">philsteel.accomplishmentimages</field>
+            <field name="arch" type="xml">
+               <tree string="Accomplishment Illustrations">
+                    
+                    <field name="accomplishment" />
+                    <field name="description" />
+               </tree>
+            </field>
+        </record>
+
+	</data>
+</odoo>

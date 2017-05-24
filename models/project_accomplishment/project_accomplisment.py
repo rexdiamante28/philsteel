@@ -46,6 +46,7 @@ class PAS(models.Model):
 	site_address = fields.Text(string="Jobsite Address")
 	site_sketch = fields.Binary(string='Jobsite Sketch')
 
+	accomplishmentimages = fields.Many2many('philsteel.inspectionimages', string='Inspection and Safety Report Images',  ondelete='cascade')
 
 	statuss = fields.Selection([
 		('draft', 'Draft'), 
@@ -68,3 +69,14 @@ class PAS(models.Model):
 			record.ic_no = record.name.ic_no
 			record.sc_no = record.name.sc_no
 			record.sc_no = record.name.sc_no
+
+class AccomplishmentImages(models.Model):
+	_name = 'philsteel.accomplishmentimages'
+
+	name = fields.Binary(string='Image')
+	description = fields.Text(string='Description')
+
+	accomplishment = fields.Many2one('philsteel.pas',
+		ondelete='cascade', string="Project Accomplsihment", required=True)
+
+	new_field = fields.Binary()

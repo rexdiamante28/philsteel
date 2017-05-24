@@ -305,6 +305,9 @@
                                 <group><field name="jobsite_address" string='Complete Project Site Address' /></group>
                                 
                             </page>
+                            <page string="Project Information Images">
+                                <group><field name="infosheetimages"/></group>
+                            </page>
                             <page string="SIGNATORY">
                                 <group><field name="accomplish_by" /></group>
                                 <group><field name="accomplish_date" /></group>

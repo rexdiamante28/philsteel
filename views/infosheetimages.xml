@@ -1,0 +1,46 @@
+<odoo>
+    <data>
+
+        <record model="ir.actions.act_window" id="infosheetimages_action">
+            <field name="name">Information Illustrations</field>
+            <field name="res_model">philsteel.infosheetimages</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create your first illustration</p>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="infosheetimages_form_view">
+            <field name="name">infosheetimages.form</field>
+            <field name="model">philsteel.infosheetimages</field>
+            <field name="arch" type="xml">
+                <form string="Project Information Illustration Form">
+                    <sheet>
+                        <group>
+                            
+                            <field name="name" widget="image"/>
+                            <field name="infosheet" />
+                            <field name="description" />
+                            <field name="new_field" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="infosheetimages_tree_view">
+            <field name="name">infosheetimages.tree</field>
+            <field name="model">philsteel.infosheetimages</field>
+            <field name="arch" type="xml">
+               <tree string="Information Sheet Illustrations">
+                    
+                    <field name="infosheet" />
+                    <field name="description" />
+               </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

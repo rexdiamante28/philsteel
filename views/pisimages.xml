@@ -1,0 +1,46 @@
+<odoo>
+	<data>
+
+		<record model="ir.actions.act_window" id="pisimages_action">
+            <field name="name">PIS Illustrations</field>
+            <field name="res_model">philsteel.inspectionimages</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">Create your first illustration</p>
+            </field>
+        </record>
+
+
+     	<record model="ir.ui.view" id="inspectionimages_form_view">
+            <field name="name">inspectionimages.form</field>
+            <field name="model">philsteel.inspectionimages</field>
+            <field name="arch" type="xml">
+                <form string="RFAM Illustration Form">
+                    <sheet>
+                        <group>
+                            
+                            <field name="name" widget="image"/>
+                            <field name="inspection" />
+                            <field name="description" />
+                            <field name="new_field" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="rfamimages_tree_view">
+            <field name="name">rfamimages.tree</field>
+            <field name="model">philsteel.inspectionimages</field>
+            <field name="arch" type="xml">
+               <tree string="RFAM Illustrations">
+                    
+                    <field name="inspection" />
+                    <field name="description" />
+               </tree>
+            </field>
+        </record>
+
+	</data>
+</odoo>

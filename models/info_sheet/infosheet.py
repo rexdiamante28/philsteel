@@ -218,7 +218,8 @@ class Infosheet(models.Model):
 	electricity = fields.Boolean(string='Electricity')
 	others_con = fields.Boolean(string='Other Safety Concerns')
 
-	
+	infosheetimages = fields.Many2many('philsteel.infosheetimages', string='Project Information Images',  ondelete='cascade')
+
 	jobsite_address = fields.Text(string="Jobsite Address")
 	jobsite_sketch = fields.Binary(string='Jobsite Sketch')
 	seen_datetime = fields.Date(string='Seen')
@@ -251,3 +252,14 @@ class Infosheet(models.Model):
 			visit.statuss = 'approved'
 
 		return True
+
+class InfosheetImages(models.Model):
+	_name = 'philsteel.infosheetimages'
+
+	name = fields.Binary(string='Image')
+	description = fields.Text(string='Description')
+
+	infosheet = fields.Many2one('philsteel.infosheet',
+		ondelete='cascade', string="Project Information", required=True)
+
+	new_field = fields.Binary()

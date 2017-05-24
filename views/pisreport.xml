@@ -93,6 +93,9 @@
                                 <group><field name="site_address" string='Complete Project Site Address' /></group>
                                 
                             </page>
+                            <page string="Inspection Images">
+                                <group><field name="pisimages"/></group>
+                            </page>
                             <page string="Signatory">
                                 <group >
                                     <group>

@@ -42,28 +42,73 @@
                                   sequence="3"
                                   action="rfamimages_action" />
 
-                  <!--Inspection and Safety report-->
-                  <menuitem id="pisreport"
+                   <!--Measurement Requests Parent-->
+                  <menuitem id="pis_requests_parent"
                             name="Inspection and Safety Report"
                             parent="general"
-                            sequence="3"
-                            action="pisreport_action" />
+                            sequence="3" />
 
 
-                  <!--Project Information Sheet report-->
-                  <menuitem id="pisreport_1"
-                            name="Project Information Sheet"
+                        <!--Inspection and Safety report-->
+                        <menuitem id="pisreport"
+                                  name="Inspection and Safety Report"
+                                  parent="pis_requests_parent"
+                                  sequence="1"
+                                  action="pisreport_action" />
+
+                        <!--Inspection and Safety report-->
+                        <menuitem id="pisimaged"
+                                  name="Inspection and Safety Images"
+                                  parent="pis_requests_parent"
+                                  sequence="2"
+                                  action="pisimages_action" />
+
+
+                  <!--Measurement Requests Parent-->
+                  <menuitem id="infosheet_parent"
+                            name="Project Information Sheet report"
                             parent="general"
-                            sequence="4"
-                            action="sheet_action" />
+                            sequence="4" />
 
 
-                  <!--Project Accomplishment  report-->
-                  <menuitem id="pareport"
-                            name="Project Accomplishment Report"
+                        <!--Project Information Sheet report-->
+                        <menuitem id="pisreport_1"
+                                  name="Project Information Sheet"
+                                  parent="infosheet_parent"
+                                  sequence="1"
+                                  action="sheet_action" />
+
+                        <!--Inspection and Safety report-->
+                        <menuitem id="infoimaged"
+                                  name="Project Information Images"
+                                  parent="infosheet_parent"
+                                  sequence="2"
+                                  action="infosheetimages_action" />
+
+
+                  <!--Measurement Requests Parent-->
+                  <menuitem id="accomplish_parent"
+                            name="Project IAccomplishment Report"
                             parent="general"
-                            sequence="5"
-                            action="accomplishment_report_action" />
+                            sequence="5" />
+
+
+                        <!--Project Accomplishment  report-->
+                        <menuitem id="pareport"
+                                  name="Project Accomplishment Report"
+                                  parent="accomplish_parent"
+                                  sequence="1"
+                                  action="accomplishment_report_action" />
+
+                        <!--Inspection and Safety report-->
+                        <menuitem id="accomimaged"
+                                  name="Project Accomplishment Images"
+                                  parent="accomplish_parent"
+                                  sequence="2"
+                                  action="accomplishmentimages_action" />
+
+
+                  
 
 
                   <menuitem id="reports"
