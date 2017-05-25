@@ -23,7 +23,7 @@
                             <field name="name" widget="image"/>
                             <field name="accomplishment" />
                             <field name="description" />
-                            <field name="new_field" />
+                            <field name="location" widget="url" />
                         </group>
                     </sheet>
                 </form>

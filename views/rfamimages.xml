@@ -22,7 +22,7 @@
                             <field name="name" widget="image"/>
                             <field name="rfam" />
                             <field name="description" />
-                            <field name="new_field" />
+                            <field name="location" widget="url" />
                         </group>
                     </sheet>
                 </form>

@@ -32,6 +32,7 @@
                 <form string="Project Inspection and Safety Report">
                     <header>
                         <button name="action_approved" groups="philsteel.group_supervisor,philsteel.group_manager" string="Approved" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','draft')]}" />
+                        <button name="action_unlock" groups="philsteel.group_supervisor,philsteel.group_manager" string="Change to Draft" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','approved')]}" />
                         <field name="statuss" widget="statusbar" options="{'fold_field': 'fold'}" />
                     </header>
                     

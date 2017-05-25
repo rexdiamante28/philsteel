@@ -35,7 +35,7 @@
         'views/department.xml',
         'views/inquiry.xml',
         'views/customerinquiry.xml',
-        'views/product_view.xml',
+        'views/materials.xml',
         'views/website_materials.xml',
         'views/materials_installed.xml',
         'views/accomplish.xml',

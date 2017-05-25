@@ -193,7 +193,7 @@
                             name="Materials"
                             parent="misc"
                             sequence="2"
-                            action="product_action" />
+                            action="production" />
 
                   <!--Contacts-->
                   <menuitem id="contacts"

@@ -79,6 +79,13 @@ class PISReports(models.Model):
 
 		return True
 
+	@api.multi
+	def action_unlock(self):
+		for visit in self:
+			visit.statuss = 'draft'
+
+		return True
+
 
 class PISImages(models.Model):
 	_name = 'philsteel.inspectionimages'
@@ -89,4 +96,4 @@ class PISImages(models.Model):
 	inspection = fields.Many2one('philsteel.pisreports',
 		ondelete='cascade', string="Inspection and Safety Report", required=True)
 
-	new_field = fields.Binary()
+	location = fields.Char(string="Map Location")

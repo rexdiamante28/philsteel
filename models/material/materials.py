@@ -11,13 +11,7 @@ class Materials(models.Model):
 	name = fields.Char(string="Material Name", required='True')
 	code = fields.Char(string="Code")
 	description = fields.Text(string="Description")
-	prices = fields.Float(string='Material Price', required='True')
-
-	# def create(self, cr, uid, vals, context=None):
- #        sequence = self.pool.get('ir.sequence').get(cr, uid, 'test.base.code')
- #        vals['code'] = sequence
- #        res = super(Materials, self).create(cr, uid, vals, context=context)
- #        return res
+	prices = fields.Float(string='Material Price')
 
 
 class Materiales(models.Model):
