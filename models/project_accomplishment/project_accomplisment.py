@@ -46,7 +46,7 @@ class PAS(models.Model):
 	site_address = fields.Text(string="Jobsite Address")
 	site_sketch = fields.Binary(string='Jobsite Sketch')
 
-	accomplishmentimages = fields.Many2many('philsteel.inspectionimages', string='Inspection and Safety Report Images',  ondelete='cascade')
+	accomplishmentimages = fields.Many2many('philsteel.accomplishmentimages', string='Accomplishment Images',  ondelete='cascade')
 
 	statuss = fields.Selection([
 		('draft', 'Draft'), 

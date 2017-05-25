@@ -31,7 +31,7 @@ class PISReports(models.Model):
 	work_scope = fields.Many2many('philsteel.workscope', string='Scope of Work',  ondelete='cascade')
 	activity = fields.Many2many('philsteel.projectactivities', string='Activities',  ondelete='cascade')
 	material = fields.Many2many('philsteel.materiales', string='Materials Installed',  ondelete='cascade')
-	wheather = fields.Selection([('rainy', 'Rainy'), ('cloudy', 'Cloudy'), ('fair', 'Fair')], string='Wheather')
+	wheather = fields.Selection([('rainy', 'Rainy'), ('cloudy', 'Cloudy'), ('fair', 'Fair')], string='Weather')
 
 	other_concerns = fields.Text(string="Other concerns:")
 
