@@ -222,8 +222,12 @@ class Infosheet(models.Model):
 
 	jobsite_address = fields.Text(string="Jobsite Address")
 	jobsite_sketch = fields.Binary(string='Jobsite Sketch')
-	seen_datetime = fields.Date(string='Seen')
-	read_datetime = fields.Date(string='Read')
+	seen_datetime = fields.Datetime(string='Seen')
+	read_datetime = fields.Datetime(string='Read')
+	assignedTo = fields.Many2one(
+         'philsteel.android', 'Assigned To',  ondelete='cascade'
+     )
+
 	
 	#--------SIGNATORY-------------------------#
 	accomplish_by = fields.Many2one(

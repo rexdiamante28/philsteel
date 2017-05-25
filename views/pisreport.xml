@@ -96,6 +96,9 @@
                             <page string="Inspection Images">
                                 <group><field name="pisimages"/></group>
                             </page>
+                            <page string="Assign Information">
+                                <group><field name="assignedTo" /></group>
+                            </page>
                             <page string="Signatory">
                                 <group >
                                     <group>

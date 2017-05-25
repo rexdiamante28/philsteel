@@ -308,6 +308,9 @@
                             <page string="Project Information Images">
                                 <group><field name="infosheetimages"/></group>
                             </page>
+                            <page string="Assign Information">
+                                <group><field name="assignedTo" /></group>
+                            </page>
                             <page string="SIGNATORY">
                                 <group><field name="accomplish_by" /></group>
                                 <group><field name="accomplish_date" /></group>

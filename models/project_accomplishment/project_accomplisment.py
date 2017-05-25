@@ -35,6 +35,13 @@ class PAS(models.Model):
 	qty_todate = fields.Char(string="Quantity")
 	percent_todate = fields.Char(string="%")
 	weight = fields.Char(string="Weight Percent")
+	assignedTo = fields.Many2one(
+         'philsteel.android', 'Assigned To',  ondelete='cascade'
+     )
+
+
+	seen_datetime = fields.Datetime(string='Seen')
+	read_datetime = fields.Datetime(string='Read')
 	#----------------------------------------------------#
 	remarks = fields.Text(string="Remarks")
 	proj_incharge = fields.Many2one(

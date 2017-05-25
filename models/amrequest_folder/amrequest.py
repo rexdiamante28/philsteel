@@ -50,8 +50,8 @@ class AMRequests(models.Model):
      rfm_others = fields.Text(string='Others')
 
      ready_for_measurement_date = fields.Date(string='Date when structure ready for measurement')
-     seen_datetime = fields.Date(string='Seen')
-     read_datetime = fields.Date(string ='Read')
+     seen_datetime = fields.Datetime(string='Seen')
+     read_datetime = fields.Datetime(string ='Read')
      accomplished_by = fields.Many2one(
          'philsteel.android', 'Accomplished By',  ondelete='cascade'
      )
