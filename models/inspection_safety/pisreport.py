@@ -25,8 +25,8 @@ class PISReports(models.Model):
 	location = fields.Char(string='Location')
 	ic_number = fields.Char(string='I.C Number')
 	sc_number = fields.Char(string='S.C Number')
-	arrival_time = fields.Char(string='Time of Arrival')
-	departure_time = fields.Char(string='Time of Departure')
+	arrival_time = fields.Datetime(string='Time of Arrival')
+	departure_time = fields.Datetime(string='Time of Departure')
 	
 	work_scope = fields.Many2many('philsteel.workscope', string='Scope of Work',  ondelete='cascade')
 	activity = fields.Many2many('philsteel.projectactivities', string='Activities',  ondelete='cascade')
