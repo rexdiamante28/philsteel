@@ -88,7 +88,7 @@
 
                   <!--Measurement Requests Parent-->
                   <menuitem id="accomplish_parent"
-                            name="Project IAccomplishment Report"
+                            name="Project Accomplishment Report"
                             parent="general"
                             sequence="5" />
 
