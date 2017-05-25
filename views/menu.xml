@@ -100,7 +100,7 @@
                                   sequence="1"
                                   action="accomplishment_report_action" />
 
-                        <!--Inspection and Safety report-->
+                        
                         <menuitem id="accomimaged"
                                   name="Project Accomplishment Images"
                                   parent="accomplish_parent"
