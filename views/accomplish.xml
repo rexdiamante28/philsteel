@@ -17,6 +17,14 @@
             <field name="arch" type="xml">
                 <form string="Center Form">
                     <sheet>
+                        <group>
+                            <field name="particular" />
+                            <field name="unit" />
+                        </group>
+                        <group>
+                            <field name="qty" />
+                            <field name="weight_factor" />
+                        </group>
                         <group string="Previous">
                             <field name="qty_prev" />
                             <field name="percent_prev" />
@@ -39,7 +47,7 @@
             <field name="name">accomplishment.tree</field>
             <field name="model">philsteel.accomplishment</field>
             <field name="arch" type="xml">
-               <tree string="Accomplishments">
+               <tree string="Accomplishments" editable="bottom">
                     <field name="qty_prev" />
                     <field name="percent_prev" />
                     <field name="qty_thisperiod" />

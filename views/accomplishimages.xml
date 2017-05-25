@@ -24,6 +24,7 @@
                             <field name="accomplishment" />
                             <field name="description" />
                             <field name="location" widget="url" />
+                            <field name="taken" />
                         </group>
                     </sheet>
                 </form>

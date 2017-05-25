@@ -36,287 +36,287 @@
                     </header>
                     <sheet>
                         <group string="General">
-                            <field name="name" />
-                            <field name="client"/>
-                            <field name="location"/>
+                            <field name="name" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
+                            <field name="client" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
+                            <field name="location" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
                             <group>
-                                <field name="tel_number" />
-                                <field name="ic_number" />
+                                <field name="tel_number" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
+                                <field name="ic_number" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                             </group>
                             <group>
-                                <field name="fax_number" />
-                                <field name="sc_number" />
+                                <field name="fax_number" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
+                                <field name="sc_number" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                             </group>
                             
                         </group>
                         <notebook>
                             <page string="Contacts">
-                                <field name="contact_person" />
+                                <field name="contact_person" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                             </page>
                             <page string="Work Scope">
-                                <field name="work_scopes" />
+                                <field name="work_scopes" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                             </page>
-                            <page string="Specifications">
+                            <page string="Specifications" attrs="{'readonly': ['|','|',('statuss','=','approved')]}">
                                 <notebook>
                                     <page string="Page 1">
                                         <group string="STRUCTURE">
-                                            <group><field name="crazy" /></group>
-                                            <group><field name="semi_crazy" /></group>
-                                            <group><field name="wood" /></group>
-                                            <group><field name="steel" /></group>
-                                            <group><field name="Others" /></group>
-                                            <group><field name="building_height" /></group>
-                                            <group><field name="storeys_no" /></group>
-                                            <group><field name="safe_access" /></group>
+                                            <group><field name="crazy" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="semi_crazy" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="wood" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="steel" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="Others" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="building_height" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="storeys_no" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="safe_access" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="ROOFING PROFILE">
-                                            <group><field name="types_a" /></group>
-                                            <group><field name="total_area_a" /></group>
-                                            <group><field name="color_a" /></group>
-                                            <group><field name="thickness_a" /></group>
-                                            <group><field name="max_length" /></group>
+                                            <group><field name="types_a" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="total_area_a" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="color_a" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="thickness_a" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="max_length" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="SIDING PROFILE"> 
-                                            <group><field name="types_b" /></group>
-                                            <group><field name="total_area_b" /></group>
-                                            <group><field name="color_b" /></group>
-                                            <group><field name="thickness_b" /></group>
+                                            <group><field name="types_b" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="total_area_b" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="color_b" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="thickness_b" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="CEILING PROFILE">
                                             
-                                            <group><field name="types_c" /></group>
-                                            <group><field name="total_area_c" /></group>
-                                            <group><field name="color_c" /></group>
-                                            <group><field name="thickness_c" /></group>
-                                            <group><field name="ceiling_framing" /></group>
-                                            <group><field name="not_included" /></group>
-                                            <group><field name="hat_section" /></group>
-                                            <group><field name="tee_runner" /></group>
-                                            <group><field name="metal_furring" /></group>
-                                            <group><field name="otherss" /></group>
+                                            <group><field name="types_c" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="total_area_c" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="color_c" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="thickness_c" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="ceiling_framing" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="not_included" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="hat_section" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="tee_runner" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="metal_furring" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="otherss" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="PENETRATION FLASHING">
                                             
-                                            <group><field name="with_penetration" /></group>
-                                            <group><field name="without_penetration" /></group>
+                                            <group><field name="with_penetration" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="without_penetration" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="FASTENING">
                                             
-                                            <group><field name="teks_screw" /></group>
-                                            <group><field name="strap_rivet" /></group>
-                                            <group><field name="conceal" /></group>
-                                            <group><field name="anchor_bolts" /></group>
+                                            <group><field name="teks_screw" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="strap_rivet" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="conceal" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="anchor_bolts" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                     </page>
                                     <page string="Page 2">
                                         <group string="BENDED ACCESSORIES"></group>
                                         <group string="Types">
-                                            <group><field name="end_flashing" /></group>
-                                            <group><field name="end_wall_flashing" /></group>
-                                            <group><field name="wall_flashing" /></group>
-                                            <group><field name="ridge_flashing" /></group>
-                                            <group><field name="ridge_wall_flashing" /></group>
-                                            <group><field name="crapping" /></group>
-                                            <group><field name="color_d" /></group>
-                                            <group><field name="thickness_d" /></group>
-                                            <group><field name="standard" /></group>
-                                            <group><field name="per_actual" /></group>
+                                            <group><field name="end_flashing" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="end_wall_flashing" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="wall_flashing" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="ridge_flashing" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="ridge_wall_flashing" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="crapping" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="color_d" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="thickness_d" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="standard" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="per_actual" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                             <group><field name="pmpi" /></group>
-                                            <group><field name="regret_wall_other" /></group>
-                                            <group><field name="regret_wall_pmpi" /></group>
-                                            <group><field name="masonry_work_other" /></group>
-                                            <group><field name="masonry_work_pmpi" /></group>
+                                            <group><field name="regret_wall_other" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="regret_wall_pmpi" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="masonry_work_other" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="masonry_work_pmpi" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group  string="NAILER">
                                             <group string="Roof Purlins">
-                                                <field name="roofpurlins" />
+                                                <field name="roofpurlins" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                                             </group>
                                             <group string="Side Girts">
-                                                <field name="sidegirts" />
+                                                <field name="sidegirts" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                                             </group>
                                         </group>
                                         <group string="ROOF SPAN">
-                                            <group><field name="max_lengths" /></group>
-                                            <group><field name="roof_pitch" /></group>
-                                            <group><field name="curve_roof" /></group>
+                                            <group><field name="max_lengths" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="roof_pitch" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="curve_roof" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="SKYLIGHTS">
-                                            <group><field name="require" /></group>
-                                            <group><field name="not_require" /></group>
-                                            <group><field name="thickness_e" /></group>
-                                            <group><field name="max_lengthsa" /></group>
+                                            <group><field name="require" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="not_require" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="thickness_e" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="max_lengthsa" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="INSULATION">
                                             
-                                            <group><field name="requires" /></group>
-                                            <group><field name="types_d" /></group>
-                                            <group><field name="thickness_f" /></group>
-                                            <group><field name="not_require" /></group>
-                                            <group><field name="with_wiremesh" /></group>
-                                            <group><field name="types_e" /></group>
-                                            <group><field name="without_wiremesh" /></group>
-                                            <group><field name="gi_wire" /></group>
-                                            <group><field name="spacing" /></group>
+                                            <group><field name="requires" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="types_d" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="thickness_f" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="not_require" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="with_wiremesh" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="types_e" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="without_wiremesh" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="gi_wire" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="spacing" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="GUTTER HANGERS">
                                             
-                                            <group><field name="by_pmpi" /></group>
-                                            <group><field name="by_others" /></group>
-                                            <group><field name="color_finish" /></group>
-                                            <group><field name="bolted_structure" /></group>
-                                            <group><field name="welded_structure" /></group>
-                                            <group><field name="size" /></group>
+                                            <group><field name="by_pmpi" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="by_others" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="color_finish" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="bolted_structure" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="welded_structure" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="size" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="DECKING PROFILE">
                                             
-                                            <group><field name="monolithic" /></group>
-                                            <group><field name="steel_beams" /></group>
-                                            <group><field name="shear" /></group>
-                                            <group><field name="closure_requirement" /></group>
-                                            <group><field name="metal" /></group>
+                                            <group><field name="monolithic" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="steel_beams" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="shear" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="closure_requirement" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="metal" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="GUTTER">
                                             
-                                            <group><field name="colored" /></group>
-                                            <group><field name="stainless_steel" /></group>
-                                            <group><field name="concrete" /></group>
-                                            <group><field name="spanish_type" /></group>
-                                            <group><field name="box_type" /></group>
+                                            <group><field name="colored" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="stainless_steel" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="concrete" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="spanish_type" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="box_type" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="Connection">
-                                            <group><field name="revited" /></group>
-                                            <group><field name="welded" /></group>
-                                            <group><field name="gas" /></group>
-                                            <group><field name="tig" /></group>
-                                            <group><field name="seam" /></group>
-                                            <group><field name="glutter_flashing" /></group>
-                                            <group><field name="requireds" /></group>
-                                            <group><field name="not_requireds" /></group>
+                                            <group><field name="revited" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="welded" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="gas" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="tig" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="seam" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="glutter_flashing" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="requireds" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="not_requireds" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                     </page>
                                     <page string="Page 3">
                                         <group string="LOUVERS">
-                                            <group><field name="single_pass" /></group>
-                                            <group><field name="double_pass" /></group>
-                                            <group><field name="triple_pass" /></group>
+                                            <group><field name="single_pass" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="double_pass" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="triple_pass" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="PURLINS (Light Gauge)">
                                             
-                                            <group><field name="lc" /></group>
-                                            <group><field name="lz" /></group>
-                                            <group><field name="hat_sections" /></group>
+                                            <group><field name="lc" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="lz" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="hat_sections" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="FASCIA">
                                             
-                                            <group><field name="fiber_cement" /></group>
-                                            <group><field name="metal_fascia" /></group>
-                                            <group><field name="woodss" /></group>
+                                            <group><field name="fiber_cement" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="metal_fascia" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="woodss" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="STRAINERS">
                                             
-                                            <group><field name="stainless" /></group>
-                                            <group><field name="ordinary" /></group>
+                                            <group><field name="stainless" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="ordinary" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="SLEEVES">
                                             
-                                            <group><field name="stainless_a" /></group>
-                                            <group><field name="ordinary_a" /></group>
+                                            <group><field name="stainless_a" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="ordinary_a" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="OTHERS">
                                             
-                                            <group><field name="sealant" /></group>
-                                            <group><field name="recommended" /></group>
+                                            <group><field name="sealant" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="recommended" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="TYPES OF PROJECT">
                                             
-                                            <group><field name="residential" /></group>
-                                            <group><field name="commercial" /></group>
-                                            <group><field name="industrial" /></group>
-                                            <group><field name="government" /></group>
-                                            <group><field name="institutional" /></group>
-                                            <group><field name="mass_housing" /></group>
+                                            <group><field name="residential" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="commercial" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="industrial" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="government" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="institutional" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="mass_housing" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="LOCATION">
                                             
-                                            <group><field name="industrial_park" /></group>
-                                            <group><field name="populated_areas" /></group>
-                                            <group><field name="exclusive_subdivision" /></group>
+                                            <group><field name="industrial_park" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="populated_areas" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="exclusive_subdivision" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="TYPES OF CONTRACT">
                                             
-                                            <group><field name="lump_sum" /></group>
-                                            <group><field name="itemized" /></group>
+                                            <group><field name="lump_sum" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="itemized" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="BID CONTRACT DOCUMENTS">
                                             
-                                            <group><field name="avail" /></group>
-                                            <group><field name="not_avail" /></group>
+                                            <group><field name="avail" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="not_avail" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="WORKING HOURS">
                                             
-                                            <group><field name="daytime" /></group>
-                                            <group><field name="nighttime" /></group>
+                                            <group><field name="daytime" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="nighttime" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="PRE CONTRACT ARRANGEMENTS">
-                                            <group><field name="implementation_date" /></group>
-                                            <group><field name="materials_delivery_date" /></group>
-                                            <group><field name="structure_turnover_date" /></group>
-                                            <group><field name="length_max" /></group>
-                                            <group><field name="manpower_max" /></group>
+                                            <group><field name="implementation_date" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="materials_delivery_date" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="structure_turnover_date" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="length_max" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="manpower_max" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="LIFTING EQUIPMENT">
                                             
-                                            <group><field name="manual" /></group>
-                                            <group><field name="mechanical" /></group>
+                                            <group><field name="manual" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="mechanical" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="SAFETY/SITE REQUIREMENTS">
-                                            <group><field name="site_id" /></group>
-                                            <group><field name="medical_exam" /></group>
-                                            <group><field name="hard_hat" /></group>
-                                            <group><field name="safety_belt" /></group>
-                                            <group><field name="body_harness" /></group>
-                                            <group><field name="safety_shoes" /></group>
-                                            <group><field name="uniforms" /></group>
-                                            <group><field name="servce_vehicle" /></group>
+                                            <group><field name="site_id" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="medical_exam" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="hard_hat" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="safety_belt" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="body_harness" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="safety_shoes" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="uniforms" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="servce_vehicle" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="Clearances">
-                                            <group><field name="barangay" /></group>
-                                            <group><field name="police" /></group>
-                                            <group><field name="nbi" /></group>
+                                            <group><field name="barangay" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="police" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="nbi" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="TEMPORARY FACILITIES">
                                             
-                                            <group><field name="by_client" /></group>
-                                            <group><field name="by_pmpi" /></group>
-                                            <group><field name="field_office" /></group>
+                                            <group><field name="by_client" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="by_pmpi" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="field_office" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="Bunk House">
-                                            <group><field name="onsite" /></group>
-                                            <group><field name="offsite" /></group>
-                                            <group><field name="servce_vehicle" /></group>
-                                            <group><field name="portable_water" /></group>
-                                            <group><field name="electricity" /></group>
+                                            <group><field name="onsite" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="offsite" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="servce_vehicle" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="portable_water" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="electricity" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
-                                        <group><field name="others_con" /></group>
+                                        <group><field name="others_con" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                     </page>
                                 </notebook>
                             </page>
                             <page string="Jobsite">
-                                <group><field name="jobsite_sketch" widget="image"/></group>
-                                <group><field name="jobsite_address" string='Complete Project Site Address' /></group>
+                                <group><field name="jobsite_sketch" widget="image" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/></group>
+                                <group><field name="jobsite_address" string='Complete Project Site Address' attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                 
                             </page>
                             <page string="Project Information Images">
-                                <group><field name="infosheetimages"/></group>
+                                <group><field name="infosheetimages" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/></group>
                             </page>
                             <page string="Assign Information">
-                                <group><field name="assignedTo" /></group>
+                                <group><field name="assignedTo" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                             </page>
                             <page string="SIGNATORY">
-                                <group><field name="accomplish_by" /></group>
-                                <group><field name="accomplish_date" /></group>
-                                <group><field name="seen_datetime" /></group>
-                                <group><field name="read_datetime" /></group>
+                                <group><field name="accomplish_by" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                <group><field name="accomplish_date" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                <group><field name="seen_datetime" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                <group><field name="read_datetime" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                             </page>
                         </notebook>
                         

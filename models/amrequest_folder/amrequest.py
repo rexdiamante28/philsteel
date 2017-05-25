@@ -140,4 +140,6 @@ class AMRImages(models.Model):
 	rfam = fields.Many2one('philsteel.amrequests',
 		ondelete='cascade', string="RFAM", required=True)
 
-	location = fields.Char(string="Map Location")
+	location = fields.Char(string='Map Location')
+    
+

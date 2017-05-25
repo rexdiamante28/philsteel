@@ -21,20 +21,8 @@ class PAS(models.Model):
 	)
 	#---------------------------------------------------#
 	accomplisment = fields.Many2many('philsteel.accomplishment', string='Accomplishments',  ondelete='cascade')
-	particular = fields.Char(string="Particular")
-	unit = fields.Char(string="Unit")
-	qty = fields.Char(string="Quantity")
-	weight_factor = fields.Char(string="Weight Factor")
-	#--------Previous---------#
-	qty_prev = fields.Char(string="Quantity")
-	percent_prev = fields.Char(string="Percentage")
-	#--------This Period---------#
-	qty_thisperiod = fields.Char(string="Quantity")
-	percent_thisperiod = fields.Char(string="Percentage")
-	#--------To Date---------#
-	qty_todate = fields.Char(string="Quantity")
-	percent_todate = fields.Char(string="%")
-	weight = fields.Char(string="Weight Percent")
+	
+	
 	assignedTo = fields.Many2one(
          'philsteel.android', 'Assigned To',  ondelete='cascade'
      )
@@ -94,3 +82,5 @@ class AccomplishmentImages(models.Model):
 		ondelete='cascade', string="Project Accomplsihment", required=True)
 
 	location = fields.Char(string="Map Location")
+	taken = fields.Datetime(string='Date/Time Taken')
+	# datetime_taken = fields.Datetime(string ='Date/Time Taken')

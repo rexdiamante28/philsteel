@@ -38,78 +38,78 @@
                     
                     <sheet>
                         <group string="General">
-                            <field name="name" />
-                            <field name="client"/>
+                            <field name="name" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
+                            <field name="client" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
                             <group>
-                                <field name="inspection_date" />
+                                <field name="inspection_date" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                             </group>
                             <group>
-                                <field name="wheather" />
+                                <field name="wheather" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                             </group>
-                            <field name="location"/>
+                            <field name="location" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
                             <group>
-                                <field name="ic_number"/>
-                                <field name="sc_number"/>
+                                <field name="ic_number" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
+                                <field name="sc_number" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
                             </group>
                             <group>
-                                <field name="arrival_time" />
-                                <field name="departure_time" />
+                                <field name="arrival_time" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
+                                <field name="departure_time" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                             </group>
-                            <field name="accomplishment_date" />
-                            <field name="site_representative" />
+                            <field name="accomplishment_date" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
+                            <field name="site_representative" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                         </group>
                         <notebook>
                             <page string="Man Power">
                                 <group>
-                                    <field name="foreman"/>
-                                    <field name="leadman"/>
-                                    <field name="tinsmith"/>
+                                    <field name="foreman" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
+                                    <field name="leadman" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
+                                    <field name="tinsmith" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
                                 </group>
                                 <group>
-                                    <field name="installer"/>
-                                    <field name="welder" />
-                                    <field name="helper" />
+                                    <field name="installer" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
+                                    <field name="welder" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
+                                    <field name="helper" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                                 </group>
                             </page>
                             <page string="Tools and Equipments">
-                                <field name="tool_equipment" />
+                                <field name="tool_equipment" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                             </page>
                              <page string="Work Scope">
-                                <field name="work_scope" />
+                                <field name="work_scope" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                             </page>
                             <page string="Concerns">
                                 <group>
-                                    <field name="activity" />
+                                    <field name="activity" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                                 </group>
                                 <group>
-                                    <field name="material" />
+                                    <field name="material" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                                 </group>
                                 <group >
-                                    <field name="other_concerns" />
+                                    <field name="other_concerns" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                                 </group>
                         
                             </page>
                             <page string="Jobsite">
-                                <group><field name="site_sketch" widget="image"/></group>
-                                <group><field name="site_address" string='Complete Project Site Address' /></group>
+                                <group><field name="site_sketch" widget="image" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/></group>
+                                <group><field name="site_address" string='Complete Project Site Address' attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                 
                             </page>
                             <page string="Inspection Images">
-                                <group><field name="pisimages"/></group>
+                                <group><field name="pisimages" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/></group>
                             </page>
                             <page string="Assign Information">
-                                <group><field name="assignedTo" /></group>
+                                <group><field name="assignedTo" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                             </page>
                             <page string="Signatory">
                                 <group >
                                     <group>
-                                        <field name="prepared_by" />
+                                        <field name="prepared_by" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                                     </group>
                                     <group>
-                                    <field name="approved_by" />
+                                    <field name="approved_by" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                                     </group>
-                                    <field name="seen_datetime" />
-                                    <field name="read_datetime" />
+                                    <field name="seen_datetime" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
+                                    <field name="read_datetime" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                                 </group>
                             </page>
                         </notebook>

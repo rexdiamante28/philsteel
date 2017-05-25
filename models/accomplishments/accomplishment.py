@@ -6,7 +6,10 @@ from odoo import models, fields, api
 class Accomplishments(models.Model):
 	_name = 'philsteel.accomplishment'
 
-
+	particular = fields.Char(string="Particular")
+	unit = fields.Char(string="Unit")
+	qty = fields.Char(string="Quantity")
+	weight_factor = fields.Char(string="Weight Factor")
 	#--------Previous---------#
 	qty_prev = fields.Char(string="Previous Quantity")
 	percent_prev = fields.Char(string="Previous Percentage")

@@ -274,3 +274,5 @@ class InfosheetImages(models.Model):
 		ondelete='cascade', string="Project Information", required=True)
 
 	location = fields.Char(string="Map Location")
+	taken = fields.Datetime(string='Date/Time Taken')
+	# datetime_taken = fields.Datetime(string ='Date/Time Taken')
