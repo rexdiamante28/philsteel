@@ -93,6 +93,14 @@ class AMRequests(models.Model):
 
          return True
 
+     @api.multi
+     def action_unlock(self):
+         for visit in self:
+             visit.statuss = 'draft'
+
+         return True
+
+
 
      @api.multi
      def action_ongoing(self):
@@ -132,4 +140,4 @@ class AMRImages(models.Model):
 	rfam = fields.Many2one('philsteel.amrequests',
 		ondelete='cascade', string="RFAM", required=True)
 
-	new_field = fields.Binary()
+	location = fields.Char(string="Map Location")

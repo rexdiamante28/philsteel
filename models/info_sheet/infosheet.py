@@ -257,6 +257,13 @@ class Infosheet(models.Model):
 
 		return True
 
+	@api.multi
+	def action_unlock(self):
+		for visit in self:
+			visit.statuss = 'draft'
+
+		return True
+		
 class InfosheetImages(models.Model):
 	_name = 'philsteel.infosheetimages'
 
@@ -266,4 +273,4 @@ class InfosheetImages(models.Model):
 	infosheet = fields.Many2one('philsteel.infosheet',
 		ondelete='cascade', string="Project Information", required=True)
 
-	new_field = fields.Binary()
+	location = fields.Char(string="Map Location")

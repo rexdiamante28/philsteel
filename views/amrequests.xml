@@ -10,6 +10,7 @@
                         <button name="action_approved" groups="philsteel.group_manager" string="Approved" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','draft')]}" />
                         <button name="action_ongoing" groups="philsteel.group_manager" string="Ongoing" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','approved')]}" />
                         <button name="action_done" groups="philsteel.group_manager" string="Done" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','ongoing')]}" />
+                        <button name="action_unlock" groups="philsteel.group_manager" string="Change to Draft" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','done')]}" />
                         <field name="statuss" widget="statusbar" options="{'fold_field': 'fold'}" />
                     </header>
                     <sheet>

@@ -68,6 +68,13 @@ class PAS(models.Model):
 
 		return True
 
+	@api.multi
+	def action_unlock(self):
+		for visit in self:
+			visit.statuss = 'draft'
+
+		return True
+
 
 	@api.onchange('name')
 	def get_proj_details(self):
@@ -86,4 +93,4 @@ class AccomplishmentImages(models.Model):
 	accomplishment = fields.Many2one('philsteel.pas',
 		ondelete='cascade', string="Project Accomplsihment", required=True)
 
-	new_field = fields.Binary()
+	location = fields.Char(string="Map Location")
