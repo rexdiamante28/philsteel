@@ -18,7 +18,7 @@
                 <form string="Center Form">
                     <sheet>
                         <group>
-                            <field name="particular" />
+                            <field name="name" />
                             <field name="unit" />
                         </group>
                         <group>
@@ -38,6 +38,9 @@
                             <field name="percent_todate" />
                             <field name="weight" />
                         </group>
+                        <group string="Remarks">
+                            <field name="remarks" />
+                        </group>
                     </sheet>
                 </form>
             </field>
@@ -45,9 +48,14 @@
 
         <record model="ir.ui.view" id="accomplishment_tree_view">
             <field name="name">accomplishment.tree</field>
+            
             <field name="model">philsteel.accomplishment</field>
             <field name="arch" type="xml">
-               <tree string="Accomplishments" editable="bottom">
+               <tree string="Accomplishments">
+                    <field name="name" />
+                    <field name="unit" />
+                    <field name="qty" />
+                    <field name="weight_factor" />
                     <field name="qty_prev" />
                     <field name="percent_prev" />
                     <field name="qty_thisperiod" />

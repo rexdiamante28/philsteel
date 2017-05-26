@@ -6,7 +6,7 @@ from odoo import models, fields, api
 class Accomplishments(models.Model):
 	_name = 'philsteel.accomplishment'
 
-	particular = fields.Char(string="Particular")
+	name = fields.Char(string="Particular")
 	unit = fields.Char(string="Unit")
 	qty = fields.Char(string="Quantity")
 	weight_factor = fields.Char(string="Weight Factor")
@@ -21,3 +21,4 @@ class Accomplishments(models.Model):
 	percent_todate = fields.Char(string="This Date Percent")
 	weight = fields.Char(string="Weight Percent")
 	#----------------------------------------------------#
+	remarks = fields.Text(string="Remarks")

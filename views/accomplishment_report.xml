@@ -50,11 +50,25 @@
                         <group string="Accomplishments" >
                             <notebook>
                                 <page string="Accomplishments">
-                                    <group><field name="accomplisment" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                    <group>
+                                        <field name="accomplisment" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" mode="tree">
+                                            <tree string="Accomplishments" editable="bottom">
+                                                <field name="name" />
+                                                <field name="unit" />
+                                                <field name="qty" />
+                                                <field name="weight_factor" />
+                                                <field name="qty_prev" />
+                                                <field name="percent_prev" />
+                                                <field name="qty_thisperiod" />
+                                                <field name="percent_thisperiod" />
+                                                <field name="qty_todate" />
+                                                <field name="percent_todate" />
+                                                <field name="weight" />
+                                            </tree>
+                                        </field>
+                                    </group>
                                 </page>
-                                <page string="Remarks">
-                                    <group><field name="remarks" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
-                                </page>
+                                
                                 <page string="Jobsite">
                                     <group><field name="site_sketch" widget="image" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/></group>
                                     <group><field name="site_address" string='Complete Project Site Address' attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>

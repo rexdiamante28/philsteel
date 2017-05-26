@@ -218,7 +218,7 @@ class Infosheet(models.Model):
 	electricity = fields.Boolean(string='Electricity')
 	others_con = fields.Boolean(string='Other Safety Concerns')
 
-	infosheetimages = fields.Many2many('philsteel.infosheetimages', string='Project Information Images',  ondelete='cascade')
+	infosheetimages = fields.One2many('philsteel.infosheetimages', 'infosheet', string="Project Information Images")
 
 	jobsite_address = fields.Text(string="Jobsite Address")
 	jobsite_sketch = fields.Binary(string='Jobsite Sketch')

@@ -13,7 +13,7 @@ class PAS(models.Model):
 	location = fields.Text(string="Location")
 	ic_no = fields.Char(string="I.C. No:")
 	sc_no = fields.Char(string="S.C. No:")
-	duration = fields.Char(string="Duration" , required=True)
+	duration = fields.Char(string="Duration")
 	date_start = fields.Date(string='Date of Started')
 	date_complete = fields.Date(string='Target Date of Completion')
 	sales_engineer = fields.Many2one(
@@ -31,7 +31,7 @@ class PAS(models.Model):
 	seen_datetime = fields.Datetime(string='Seen')
 	read_datetime = fields.Datetime(string='Read')
 	#----------------------------------------------------#
-	remarks = fields.Text(string="Remarks")
+	
 	proj_incharge = fields.Many2one(
 		'philsteel.contacts', 'Project In Charge',  ondelete='cascade'
 	)
@@ -40,8 +40,7 @@ class PAS(models.Model):
 	)
 	site_address = fields.Text(string="Jobsite Address")
 	site_sketch = fields.Binary(string='Jobsite Sketch')
-
-	accomplishmentimages = fields.Many2many('philsteel.accomplishmentimages', string='Accomplishment Images',  ondelete='cascade')
+	accomplishmentimages = fields.One2many('philsteel.accomplishmentimages', 'accomplishment', string="Accomplishment Images")
 
 	statuss = fields.Selection([
 		('draft', 'Draft'), 
