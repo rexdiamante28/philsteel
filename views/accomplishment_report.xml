@@ -65,6 +65,34 @@
                                                 <field name="percent_todate" />
                                                 <field name="weight" />
                                             </tree>
+                                            <form string="Center Form">
+                                                <sheet>
+                                                    <group>
+                                                        <field name="name" />
+                                                        <field name="unit" />
+                                                    </group>
+                                                    <group>
+                                                        <field name="qty" />
+                                                        <field name="weight_factor" />
+                                                    </group>
+                                                    <group string="Previous">
+                                                        <field name="qty_prev" />
+                                                        <field name="percent_prev" />
+                                                    </group>
+                                                    <group string="This Period">
+                                                        <field name="qty_thisperiod" />
+                                                        <field name="percent_thisperiod" />
+                                                    </group>
+                                                    <group string="To Date">
+                                                        <field name="qty_todate" />
+                                                        <field name="percent_todate" />
+                                                        <field name="weight" />
+                                                    </group>
+                                                    <group string="Remarks">
+                                                        <field name="remarks" />
+                                                    </group>
+                                                </sheet>
+                                            </form>
                                         </field>
                                     </group>
                                 </page>
