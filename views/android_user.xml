@@ -28,6 +28,7 @@
                         <group>
                             <field name="positions" />
                             <field name="code" string="Internal ID"/>
+                            <field name="user_sector"/>
                             <group><field name="username" /></group>
                             <group><field name="password" password="1" /></group>
                         </group>

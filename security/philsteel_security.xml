@@ -35,16 +35,30 @@
             <field name="implied_ids" eval="[(4, ref('group_encoder_user')),(4, ref('base.group_user'))]"/>
         </record>
         
-        <record id="group_supervisor" model="res.groups">
-            <field name="name">Supervisor</field>
+        <record id="group_supervisor_north_1" model="res.groups">
+            <field name="name">North 1 Supervisor</field>
             <field name="category_id" ref="module_category_philsteel"/>
             <field name="implied_ids" eval="[(4, ref('group_field_engineers'))]"/>
+        </record>
+
+        <record id="group_supervisor_north_2" model="res.groups">
+            <field name="name">North 2 Supervisor</field>
+            <field name="category_id" ref="module_category_philsteel"/>
+            <field name="implied_ids" eval="[(4, ref('group_supervisor_north_1'))]"/>
+        </record>
+
+        <record id="group_supervisor_south" model="res.groups">
+            <field name="name">South Supervisor</field>
+            <field name="category_id" ref="module_category_philsteel"/>
+            <field name="implied_ids" eval="[(4, ref('group_supervisor_north_2'))]"/>
         </record>
 
         <record id="group_manager" model="res.groups">
             <field name="name">Manager</field>
             <field name="category_id" ref="module_category_philsteel"/>
-            <field name="implied_ids" eval="[(4, ref('group_supervisor'))]"/>
+            <field name="implied_ids" eval="[(4, ref('group_supervisor_south'))]"/>
         </record>
+
+        
     </data>
 </odoo>

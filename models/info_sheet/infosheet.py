@@ -6,17 +6,17 @@ from odoo import models, fields, api
 class Infosheet(models.Model):
 	_name = 'philsteel.infosheet'
 
-	client = fields.Char(string='Client')
+	client = fields.Char(string='Client', required='True')
 	other = fields.Char(string='Others')
 	name = fields.Many2one(
 		'philsteel.projects', 'Project Name',  ondelete='cascade', required='True'
 	)
 	contact_person = fields.Many2many('philsteel.contacts', string='Work Scope',  ondelete='cascade')
 	designation_contact = fields.Char(string='Designation Contact Person')
-	location = fields.Char(string='Location')
+	location = fields.Char(string='Location', required='True')
 	ic_number = fields.Char(string='I.C Number')
 	sc_number = fields.Char(string='S.C Number')
-	tel_number = fields.Char(string='Telephone Number')
+	tel_number = fields.Char(string='Telephone Number/Mobile Number', required='True')
 	fax_number = fields.Char(string='Fax Number')
 	work_scopes = fields.Many2many('philsteel.workscope', string='Work Scope',  ondelete='cascade')
 	#----------------STRUCTURE -------------#
@@ -134,12 +134,12 @@ class Infosheet(models.Model):
 	spanish_type = fields.Char(string='Bolted to Structure')
 	box_type = fields.Char(string='Welde to Structure')
 	#--------CONNECTION-------------#
-	revited = fields.Char(string='     Revited')
+	revited = fields.Char(string='     Riveted')
 	welded = fields.Char(string='     Welded')
 	gas = fields.Char(string='    Gas')
 	tig = fields.Char(string='    Tig')
 	seam = fields.Char(string='     Seam')
-	glutter_flashing = fields.Char(string='Glutter Flushing')
+	glutter_flashing = fields.Char(string='Gutter Flashing')
 	requireds = fields.Char(string='Required')
 	not_requireds = fields.Char(string='Not Required')
 	#--------LOUVERS-------------#
@@ -156,10 +156,14 @@ class Infosheet(models.Model):
 	woodss = fields.Char(string='Wood')
 	#--------STRAINERS-------------------------#
 	stainless = fields.Boolean(string='Stainless')
+	size_stainless = fields.Char(string='Stainless Size')
 	ordinary = fields.Boolean(string='Ordinary')
+	size_ordinary = fields.Char(string='Ordinary Size')
 	#--------SLEEVES-------------------------#
 	stainless_a = fields.Boolean(string='Stainless')
+	size_stainless_a = fields.Char(string='Stainless Size')
 	ordinary_a = fields.Boolean(string='Ordinary')
+	size_ordinary_a = fields.Char(string='Ordinary Size')
 	#--------OTHERS--------------------------#
 	#--------SPECIFY PREFERED------#
 	sealant = fields.Char(string='Specify Preffered Sealant')
@@ -231,9 +235,9 @@ class Infosheet(models.Model):
 	
 	#--------SIGNATORY-------------------------#
 	accomplish_by = fields.Many2one(
-		'philsteel.projectmanpower', 'Accomplished By',  ondelete='cascade'
+		'philsteel.projectmanpower', 'Accomplished By',  ondelete='cascade', required='True'
 	)
-	accomplish_date = fields.Date(string='Accomplished Date')
+	accomplish_date = fields.Date(string='Accomplished Date', required='True')
 
 	statuss = fields.Selection([
 		('draft', 'Draft'), 

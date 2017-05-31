@@ -9,10 +9,10 @@ class PAS(models.Model):
 	name = fields.Many2one(
 		'philsteel.projects', 'Project Name',  ondelete='cascade', required='True'
 	)
-	customer_name = fields.Text(string="")
-	location = fields.Text(string="Location")
-	ic_no = fields.Char(string="I.C. No:")
-	sc_no = fields.Char(string="S.C. No:")
+	customer_name = fields.Text(string="", required='True')
+	location = fields.Text(string="Location", required='True')
+	ic_no = fields.Char(string="I.C. No:", required='True')
+	sc_no = fields.Char(string="S.C. No:", required='True')
 	duration = fields.Char(string="Duration")
 	date_start = fields.Date(string='Date of Started')
 	date_complete = fields.Date(string='Target Date of Completion')
@@ -33,7 +33,7 @@ class PAS(models.Model):
 	#----------------------------------------------------#
 	
 	proj_incharge = fields.Many2one(
-		'philsteel.contacts', 'Project In Charge',  ondelete='cascade'
+		'philsteel.contacts', 'Project In Charge',  ondelete='cascade', required='True'
 	)
 	client_rep = fields.Many2one(
 		'philsteel.contacts', 'Client Representative',  ondelete='cascade'

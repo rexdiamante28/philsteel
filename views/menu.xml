@@ -29,7 +29,7 @@
 
                         <!--Measurement Requests-->
                         <menuitem id="measurement_requests"
-                                  name="RFAMs"
+                                  name="RFMs"
                                   parent="measurement_requests_parent"
                                   sequence="2"
                                   action="measurement_request_action" />
@@ -37,7 +37,7 @@
 
                         <!--Measurement Illustrations-->
                         <menuitem id="measurement_illustrations"
-                                  name="RFAMs Illustrations"
+                                  name="RFMs Illustrations"
                                   parent="measurement_requests_parent"
                                   sequence="3"
                                   action="rfamimages_action" />

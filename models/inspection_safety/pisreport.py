@@ -8,10 +8,10 @@ class PISReports(models.Model):
 	_name = 'philsteel.pisreports'
 
 
-	client = fields.Char(string='Client')
+	client = fields.Char(string='Client', required='True')
 
-	inspection_date = fields.Date(string='Date of Inspection')
-	accomplishment_date = fields.Date(string='Accomplishment Date')
+	inspection_date = fields.Date(string='Date of Inspection', required='True')
+	accomplishment_date = fields.Date(string='Accomplishment Date', required='True')
 	roofing = fields.Boolean(string='Roofing')
 	deckings = fields.Boolean(string='Decking')
 	cladding = fields.Boolean(string='Cladding')
@@ -20,18 +20,18 @@ class PISReports(models.Model):
 		'philsteel.projects', 'Project Name',  ondelete='cascade', required='True'
 	)
 	contact_person = fields.Char(string='Contact Person')
-	site_representative = fields.Many2one('philsteel.contacts', string='Representative at Site during Inspection',  ondelete='cascade')
+	site_representative = fields.Many2one('philsteel.contacts', string='Representative at Site during Inspection', required='True',  ondelete='cascade')
 	designation_contact = fields.Char(string='Designation Contact ')
-	location = fields.Char(string='Location')
+	location = fields.Char(string='Location', required='True')
 	ic_number = fields.Char(string='I.C Number')
 	sc_number = fields.Char(string='S.C Number')
-	arrival_time = fields.Datetime(string='Time of Arrival')
-	departure_time = fields.Datetime(string='Time of Departure')
+	arrival_time = fields.Datetime(string='Time of Arrival', required='True')
+	departure_time = fields.Datetime(string='Time of Departure', required='True')
 	
 	work_scope = fields.Many2many('philsteel.workscope', string='Scope of Work',  ondelete='cascade')
-	activity = fields.Many2many('philsteel.projectactivities', string='Activities',  ondelete='cascade')
+	activity = fields.Many2many('philsteel.projectactivities', string='Activities',  ondelete='cascade', required='True')
 	material = fields.Many2many('philsteel.materiales', string='Materials Installed',  ondelete='cascade')
-	wheather = fields.Selection([('rainy', 'Rainy'), ('cloudy', 'Cloudy'), ('fair', 'Fair')], string='Weather')
+	wheather = fields.Selection([('rainy', 'Rainy'), ('cloudy', 'Cloudy'), ('fair', 'Fair')], string='Weather', required='True')
 
 	other_concerns = fields.Text(string="Other concerns:")
 

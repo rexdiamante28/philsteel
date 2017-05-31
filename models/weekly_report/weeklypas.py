@@ -11,28 +11,28 @@ class WEEKLYPAS(models.Model):
 	name = fields.Many2one(
 		'philsteel.projects', 'Project Name',  ondelete='cascade', required='True'
 	)
-	types_of_contract = fields.Selection([('lump_sum', 'Lump Sum'), ('itemized', 'Itemized')], string='Type of Contract')
+	types_of_contract = fields.Selection([('lump_sum', 'Lump Sum'), ('itemized', 'Itemized')], required='True', string='Type of Contract')
 	aic_no = fields.Char(string="A.I.C. No:")
-	ic_amount = fields.Float(string='I.C. / A.I.C. Amount')
-	ic_no = fields.Char(string="I.C. No:")
+	# ic_amount = fields.Float(string='I.C. / A.I.C. Amount')
+	ic_no = fields.Char(string="I.C. No:", required='True')
 	#----------SC-------#
-	sc_no = fields.Char(string="S.C. No:")
+	sc_no = fields.Char(string="S.C. No:", required='True')
 	is_group = fields.Char(string="Group")
 	document_support = fields.Char(string="Document to Support this billing")
 	
 	#--------Previous---------#
-	amount_prev = fields.Char(string="Amount")
-	percent_prev = fields.Char(string="Percentage")
+	# amount_prev = fields.Char(string="Amount")
+	percent_prev = fields.Char(string="Percentage", required='True')
 	#--------This Period---------#
-	period_amount = fields.Char(string="Amount")
-	percent_thisperiod = fields.Char(string="Percentage")
+	# period_amount = fields.Char(string="Amount")
+	percent_thisperiod = fields.Char(string="Percentage", required='True')
 	#--------To Date---------#
-	todate_amount = fields.Char(string="Amount")
-	percent_todate = fields.Char(string="Percentage")
+	# todate_amount = fields.Char(string="Amount")
+	percent_todate = fields.Char(string="Percentage", required='True')
 	#----------------------------------------------------#
 	
 	proj_incharge = fields.Many2one(
-		'philsteel.projectmanpower', 'Project In Charge',  ondelete='cascade'
+		'philsteel.projectmanpower', 'Project In Charge',  ondelete='cascade', required='True'
 	)
 	client_rep = fields.Many2one(
 		'philsteel.contacts', 'Client Representative',  ondelete='cascade'

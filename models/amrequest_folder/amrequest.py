@@ -6,7 +6,7 @@ from odoo import models, fields, api, _
 class AMRequests(models.Model):
      _name = 'philsteel.amrequests'
 
-     customer = fields.Char(string='Customer')
+     customer = fields.Char(string='Customer', required='True')
 
      status = fields.Selection([('new', 'New'), ('visited', 'Visited')], default='new', string='Request Status')
 
@@ -14,21 +14,21 @@ class AMRequests(models.Model):
 
 
      request_number = fields.Char(string='Request Number', readonly='True', required='True', default=lambda self: _('New'))
-     location = fields.Text(string='Address')
+     location = fields.Text(string='Address', required='True')
 
      name = fields.Many2one(
          'philsteel.projects', 'Project Name',  ondelete='cascade', required='True'
      )
 
-     project_type = fields.Selection([('residential', 'Residential'), ('commercial', 'Commercial'), ('industrial', 'Industrial'), ('government', 'Government'), ('institutional', 'Institutional'), ('mass_housing', 'Mass Housing')], string='Type of Project')
-     project_site_address = fields.Text(string='Complete Project Site Address')
+     project_type = fields.Selection([('residential', 'Residential'), ('commercial', 'Commercial'), ('industrial', 'Industrial'), ('government', 'Government'), ('institutional', 'Institutional'), ('mass_housing', 'Mass Housing')], string='Type of Project', required='True')
+     project_site_address = fields.Text(string='Complete Project Site Address', required='True')
      project_site_sketch = fields.Binary(string='Jobsite Sketch')
      general_contractor = fields.Char(string='Name of Contractor')
 
 
-     contact_person_at_site = fields.Many2many('philsteel.contacts', string='Site Contact Person',  ondelete='cascade')
-     jobsite_contact_number = fields.Char(string='Job Site Telephone or Mobile Number')
-     product_profile = fields.Many2many('philsteel.materiales', string='Product Profile',  ondelete='cascade')
+     contact_person_at_site = fields.Many2many('philsteel.contacts', string='Site Contact Person', required='True',  ondelete='cascade')
+     jobsite_contact_number = fields.Char(string='Job Site Telephone or Mobile Number', required='True')
+     product_profile = fields.Many2many('philsteel.materiales', string='Product Profile', required='True',  ondelete='cascade')
 
      sc_number = fields.Char(string='SC NO')
      ic_number = fields.Char(string='IC NO')
@@ -49,7 +49,7 @@ class AMRequests(models.Model):
      rfm_tech1assistance = fields.Boolean(string='Tech 1 Assistance')
      rfm_others = fields.Text(string='Others')
 
-     ready_for_measurement_date = fields.Date(string='Date when structure ready for measurement')
+     ready_for_measurement_date = fields.Date(string='Date when structure ready for measurement', required='True')
      seen_datetime = fields.Datetime(string='Seen')
      read_datetime = fields.Datetime(string ='Read')
      accomplished_by = fields.Many2one(
@@ -138,7 +138,7 @@ class AMRImages(models.Model):
 	description = fields.Text(string='Description')
 
 	rfam = fields.Many2one('philsteel.amrequests',
-		ondelete='cascade', string="RFAM", required=True)
+		ondelete='cascade', string="RFM", required=True)
 
 	location = fields.Char(string='Map Location')
     

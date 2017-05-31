@@ -30,8 +30,8 @@
             <field name="arch" type="xml">
                 <form string="Project Information Sheet">
                     <header>
-                        <button name="action_approved"  groups="philsteel.group_supervisor,philsteel.group_manager" string="Approved" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','draft')]}" />
-                        <button name="action_unlock"  groups="philsteel.group_supervisor,philsteel.group_manager" string="Change to Draft" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','approved')]}" />
+                        <button name="action_approved"  groups="philsteel.group_supervisor_north_1,philsteel.group_supervisor_north_2,philsteel.group_supervisor_south,philsteel.group_manager" string="Approved" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','draft')]}" />
+                        <button name="action_unlock"  groups="philsteel.group_supervisor_north_1,philsteel.group_supervisor_north_2,philsteel.group_supervisor_south,philsteel.group_manager" string="Change to Draft" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','approved')]}" />
                         <field name="statuss" widget="statusbar" options="{'fold_field': 'fold'}" />
                     </header>
                     <sheet>
@@ -215,12 +215,16 @@
                                         <group string="STRAINERS">
                                             
                                             <group><field name="stainless" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="size_stainless" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                             <group><field name="ordinary" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="size_ordinary" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="SLEEVES">
                                             
                                             <group><field name="stainless_a" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="size_stainless_a" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                             <group><field name="ordinary_a" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                            <group><field name="size_ordinary_a" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                         </group>
                                         <group string="OTHERS">
                                             

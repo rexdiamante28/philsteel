@@ -2,7 +2,7 @@
 	<data>
 
 		<record model="ir.actions.act_window" id="rfamimages_action">
-            <field name="name">RFAM Illustrations</field>
+            <field name="name">RFM Illustrations</field>
             <field name="res_model">philsteel.amrimages</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
@@ -16,7 +16,7 @@
             <field name="name">rfamimages.form</field>
             <field name="model">philsteel.amrimages</field>
             <field name="arch" type="xml">
-                <form string="RFAM Illustration Form">
+                <form string="RFM Illustration Form">
                     <sheet>
                         <group>
                             <field name="name" widget="image"/>
@@ -33,7 +33,7 @@
             <field name="name">rfamimages.tree</field>
             <field name="model">philsteel.amrimages</field>
             <field name="arch" type="xml">
-               <tree string="RFAM Illustrations">
+               <tree string="RFM Illustrations">
                     <field name="rfam" />
                     <field name="description" />
 

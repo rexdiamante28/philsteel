@@ -18,6 +18,7 @@ class Android(models.Model):
 	username = fields.Char(string="username", required=True)
 	password = fields.Char(string="password", required=True)
 	code = fields.Char(size=256, string='ID')
+	user_sector = fields.Selection([('north_a', 'North Sector A'), ('north_b', 'North Sector B'), ('south', 'South Sector')], string='Sector', required='True')
 
 	info = fields.Text(string='Extra info')
 	active = fields.Boolean(

@@ -28,7 +28,7 @@
             <field name="arch" type="xml">
                 <form string="Certificate of Completion and Acceptance">
                     <header>
-                        <button name="action_approved" groups="philsteel.group_supervisor,philsteel.group_manager" string="Approved" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','draft')]}" />
+                        <button name="action_approved" groups="philsteel.group_supervisor_north_1,philsteel.group_supervisor_north_2,philsteel.group_supervisor_south,philsteel.group_manager" string="Approved" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','draft')]}" />
                         <field name="statuss" widget="statusbar" options="{'fold_field': 'fold'}" />
                     </header>
                     <sheet>

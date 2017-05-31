@@ -31,8 +31,8 @@
             <field name="arch" type="xml">
                 <form string="Project Inspection and Safety Report">
                     <header>
-                        <button name="action_approved" groups="philsteel.group_supervisor,philsteel.group_manager" string="Approved" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','draft')]}" />
-                        <button name="action_unlock" groups="philsteel.group_supervisor,philsteel.group_manager" string="Change to Draft" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','approved')]}" />
+                        <button name="action_approved" groups="philsteel.group_supervisor_north_1,philsteel.group_supervisor_north_2,philsteel.group_supervisor_south,philsteel.group_manager" string="Approved" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','draft')]}" />
+                        <button name="action_unlock" groups="philsteel.group_supervisor_north_1,philsteel.group_supervisor_north_2,philsteel.group_supervisor_south,philsteel.group_manager" string="Change to Draft" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','approved')]}" />
                         <field name="statuss" widget="statusbar" options="{'fold_field': 'fold'}" />
                     </header>
                     
@@ -72,7 +72,21 @@
                                 </group>
                             </page>
                             <page string="Tools and Equipments">
-                                <field name="tool_equipment" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
+                                <field name="tool_equipment" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" mode="tree">
+                                    <tree string="Materials" editable="bottom">
+                                        <field name="name" />
+                                        <field name="description" />
+                                    </tree>
+                                    <form string="Center Form">
+                                        <sheet>
+                                            <group>
+                                                <field name="image" widget="image" class="oe_avatar"/>
+                                                <field name="name" />
+                                                <field name="description" />
+                                            </group>
+                                        </sheet>
+                                    </form>
+                                </field>
                             </page>
                              <page string="Work Scope">
                                 <field name="work_scope" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />

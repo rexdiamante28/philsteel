@@ -2,7 +2,7 @@
 	<data>
 		
 		<record model="ir.ui.view" id="center_form_view">
-            <field name="name">RFAM</field>
+            <field name="name">RFM</field>
             <field name="model">philsteel.amrequests</field>
             <field name="arch" type="xml">
                 <form string="RFAM Form">
@@ -92,7 +92,7 @@
 
                             <page string="Signatory">
                                 <group>
-                                    <field name="ready_for_measurement_date" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
+                                    <!-- <field name="ready_for_measurement_date" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /> -->
                                     <field name="date_filed" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
                                     <field name="accomplished_by" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
                                 </group>
@@ -136,7 +136,7 @@
     -->
 
         <record model="ir.actions.act_window" id="measurement_request_action">
-            <field name="name">RFAMS</field>
+            <field name="name">RFM</field>
             <field name="res_model">philsteel.amrequests</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
