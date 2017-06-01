@@ -247,10 +247,17 @@
 
                   <!--Departments-->
                   <menuitem id="departments"
-                            name="Department"
+                            name="Sectors"
                             parent="misc"
                             sequence="10"
-                            action="departmentx_action" />
+                            action="sector_action" />
+
+                  <!--Sector-->
+                 <!--  <menuitem id="sector"
+                            name="Sectors"
+                            parent="misc"
+                            sequence="11"
+                            action="sector_action" /> -->
                             
   </data>
 </odoo>

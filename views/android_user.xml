@@ -31,6 +31,8 @@
                             <field name="user_sector"/>
                             <group><field name="username" /></group>
                             <group><field name="password" password="1" /></group>
+                            <group><field name="can_view_overall_dashboard" /></group>
+                            <group><field name="area_allowed"/></group>
                         </group>
                         <notebook>
                             <page string="General Information">

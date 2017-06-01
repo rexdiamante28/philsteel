@@ -38,6 +38,7 @@
                                 <field name="ic_no" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
                                 <field name="sc_no" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
                                 <field name="location" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
+                                <field name="project_sector" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
                             <group>
                                 <field name="duration" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                                 <field name="date_start" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />

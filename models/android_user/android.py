@@ -26,6 +26,10 @@ class Android(models.Model):
 		help='If unchecked, it will allow you to hide contact without '
 			 'removing it.'
 	)
+	can_view_overall_dashboard = fields.Boolean(string='View overall dashboard', required=True)
+	area_allowed = fields.Many2one(
+         'philsteel.projectsector', 'Area Allowed',  ondelete='cascade', required='True'
+     )
 
 	@api.model
 	def create(self, vals,):

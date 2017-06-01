@@ -30,6 +30,7 @@
                                 <field name="project_type" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
                             </group>
                             <field name="project_site_address" string='Complete Project Site Address' attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
+                            <field name="project_sector" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
 
                             <field name="general_contractor" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
 

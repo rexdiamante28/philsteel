@@ -57,6 +57,7 @@
                             </group>
                             <field name="accomplishment_date" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                             <field name="site_representative" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
+                            <field name="project_sector" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                         </group>
                         <notebook>
                             <page string="Man Power">

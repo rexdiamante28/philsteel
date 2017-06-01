@@ -47,7 +47,7 @@
         'views/projects.xml',
         'views/session_board.xml',
         'views/accomplishimages.xml',
-        
+        'views/projectsector.xml',
         'views/ccaa.xml',
         'views/work_scope.xml',
         'views/project_manpower.xml',

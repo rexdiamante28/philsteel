@@ -47,6 +47,7 @@
                                 <field name="fax_number" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                                 <field name="sc_number" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                             </group>
+                            <field name="project_sector" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                             
                         </group>
                         <notebook>

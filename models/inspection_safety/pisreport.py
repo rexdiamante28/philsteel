@@ -44,6 +44,9 @@ class PISReports(models.Model):
 	assignedTo = fields.Many2one(
          'philsteel.android', 'Assigned To',  ondelete='cascade'
      )
+	project_sector = fields.Many2one(
+         'philsteel.projectsector', 'Project Sector',  ondelete='cascade', required='True'
+     )
 
 	foreman = fields.Integer(string='Foreman')
 	leadman = fields.Integer(string='Leadman')

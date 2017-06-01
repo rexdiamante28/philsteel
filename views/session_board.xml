@@ -11,87 +11,91 @@
             <field name="view_mode">tree,form,calendar,gantt,graph</field>
         </record>
 
-        <record model="ir.ui.view" id="session_graph_view">
+        
+        <record model="ir.ui.view" id="field_graph_view">
             <field name="name">philsteel.amrequests.graph</field>
             <field name="model">philsteel.amrequests</field>
             <field name="arch" type="xml">
                 <graph string="Status of Request of Measurement by their types" orientation="horizontal" type="bar">
-                    <field name="project_type"/>
+                    <field name="assignedTo"/>
                     <field name="statuss" type="bar"/>
                 </graph>
             </field>
         </record>
 
-        <record model="ir.actions.act_window" id="act_session_graph">
-            <field name="name">Status of Request of Measurement</field>
+        <record model="ir.actions.act_window" id="act_field_graph">
+            <field name="name">Field</field>
             <field name="res_model">philsteel.amrequests</field>
             <field name="view_type">form</field>
             <field name="view_mode">graph</field>
             <field name="view_id"
-                   ref="session_graph_view"/>
+                   ref="field_graph_view"/>
         </record>
-        <record model="ir.ui.view" id="user_graph_view">
-            <field name="name">philsteel.amrequests.graph</field>
-            <field name="model">philsteel.amrequests</field>
+
+
+        <record model="ir.ui.view" id="pis_graph_view">
+            <field name="name">philsteel.pisreports.graph</field>
+            <field name="model">philsteel.pisreports</field>
             <field name="arch" type="xml">
-                <graph string="Request of Measurement Assigned to the Users" orientation="horizontal" type="bar">
-                    <field name="assigned_by"/>
-                    <field name="statuss" type="bar"/>
-                </graph>
-            </field>
-
-        </record>
-
-        <record model="ir.actions.act_window" id="act_user_graph">
-            <field name="name">Request of Measurement Assigned to the Users</field>
-            <field name="res_model">philsteel.amrequests</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">graph</field>
-            <field name="view_id"
-                   ref="user_graph_view"/>
-        </record>
-
-
-        <record model="ir.ui.view" id="complain_graph_view">
-            <field name="name">philsteel.cicf.graph</field>
-            <field name="model">philsteel.cicf</field>
-            <field name="arch" type="xml">
-                <graph string="Request of Measurement Assigned to the Users" type="pie" >
+                <graph string="Request of Measurement Assigned to the Users">
+                    <field name="assignedTo" />
                     <field name="statuss" />
                 </graph>
             </field>
 
         </record>
 
-        <record model="ir.actions.act_window" id="act_complain_graph">
+        <record model="ir.actions.act_window" id="act_pis_graph">
             <field name="name">Request of Measurement Assigned to the Users</field>
-            <field name="res_model">philsteel.cicf</field>
+            <field name="res_model">philsteel.pisreports</field>
             <field name="view_type">form</field>
             <field name="view_mode">graph</field>
             <field name="view_id"
-                   ref="complain_graph_view"/>
+                   ref="pis_graph_view"/>
         </record>
 
-        <record model="ir.ui.view" id="customer_graph_view">
-            <field name="name">philsteel.amrequests.graph</field>
-            <field name="model">philsteel.amrequests</field>
+
+        <record model="ir.ui.view" id="infosheet_graph_view">
+            <field name="name">philsteel.infosheet.graph</field>
+            <field name="model">philsteel.infosheet</field>
             <field name="arch" type="xml">
-                <graph string="Customers" type="pie" >
-                    <field name="customer" />
+                <graph string="Request of Measurement Assigned to the Users">
+                    <field name="assignedTo" />
+                    <field name="statuss" />
                 </graph>
             </field>
 
         </record>
 
-        <record model="ir.actions.act_window" id="act_customer_graph">
+        <record model="ir.actions.act_window" id="act_infosheet_graph">
             <field name="name">Request of Measurement Assigned to the Users</field>
-            <field name="res_model">philsteel.amrequests</field>
+            <field name="res_model">philsteel.infosheet</field>
             <field name="view_type">form</field>
             <field name="view_mode">graph</field>
             <field name="view_id"
-                   ref="customer_graph_view"/>
+                   ref="infosheet_graph_view"/>
         </record>
 
+        <record model="ir.ui.view" id="pas_graph_view">
+            <field name="name">philsteel.pas.graph</field>
+            <field name="model">philsteel.pas</field>
+            <field name="arch" type="xml">
+                <graph string="Request of Measurement Assigned to the Users">
+                    <field name="assignedTo" />
+                    <field name="statuss" />
+                </graph>
+            </field>
+
+        </record>
+
+        <record model="ir.actions.act_window" id="act_pas_graph">
+            <field name="name">Request of Measurement Assigned to the Users</field>
+            <field name="res_model">philsteel.pas</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">graph</field>
+            <field name="view_id"
+                   ref="pas_graph_view"/>
+        </record>
 
 
         <record model="ir.actions.act_window" id="act_request_list">
@@ -111,23 +115,29 @@
                 <form string="Session Dashboard">
                     <board style="3-3">
                         <column>
+                            
                             <action
-                                string="Status of Request of Measurement"
-                                name="%(act_session_graph)d"
+                                string="Status of Request of Measurement assigned to Field Engineers"
+                                name="%(act_field_graph)d"
                                 height="350"
                                 width="510"/>
                             <action
-                                string="Request of Measurement Assigned to the Users"
-                                name="%(act_user_graph)d"/>
-                        </column>
-                        <column>
+                                string="Status of Inspection and Safety Report assigned to Field Engineers"
+                                name="%(act_pis_graph)d"
+                                height="350"
+                                width="510"/>
                             <action
-                                string="Customer Complain Status"
-                                name="%(act_complain_graph)d"/>
+                                string="Status of Project Information assigned to Field Engineers"
+                                name="%(act_infosheet_graph)d"
+                                height="350"
+                                width="510"/>
                             <action
-                                string="Customers have the highest request"
-                                name="%(act_customer_graph)d"/>
+                                string="Status of Project Accomplishment Report assigned to Field Engineers"
+                                name="%(act_pas_graph)d"
+                                height="350"
+                                width="510"/>
                         </column>
+                      
                     </board>
                 </form>
             </field>
