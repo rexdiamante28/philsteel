@@ -32,6 +32,26 @@
                    ref="field_graph_view"/>
         </record>
 
+        <record model="ir.ui.view" id="sector_graph_view">
+            <field name="name">philsteel.amrequests.graph</field>
+            <field name="model">philsteel.amrequests</field>
+            <field name="arch" type="xml">
+                <graph string="Status of Request of Measurement by Sector" orientation="horizontal" type="bar">
+                    <field name="project_sector"/>
+                    <field name="statuss" type="bar"/>
+                </graph>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="act_sector_graph">
+            <field name="name">Field</field>
+            <field name="res_model">philsteel.amrequests</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">graph</field>
+            <field name="view_id"
+                   ref="sector_graph_view"/>
+        </record>
+
 
         <record model="ir.ui.view" id="pis_graph_view">
             <field name="name">philsteel.pisreports.graph</field>
@@ -116,6 +136,11 @@
                     <board style="3-3">
                         <column>
                             
+                            <action
+                                string="Status of Request of Measurement by Sectors"
+                                name="%(act_sector_graph)d"
+                                height="350"
+                                width="510"/>
                             <action
                                 string="Status of Request of Measurement assigned to Field Engineers"
                                 name="%(act_field_graph)d"
