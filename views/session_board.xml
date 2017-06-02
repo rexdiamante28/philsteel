@@ -133,17 +133,12 @@
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <form string="Session Dashboard">
+                    <group string="DASHBOARD">
                     <board style="3-3">
                         <column>
-                            
                             <action
                                 string="Status of Request of Measurement by Sectors"
                                 name="%(act_sector_graph)d"
-                                height="350"
-                                width="510"/>
-                            <action
-                                string="Status of Request of Measurement assigned to Field Engineers"
-                                name="%(act_field_graph)d"
                                 height="350"
                                 width="510"/>
                             <action
@@ -151,9 +146,11 @@
                                 name="%(act_pis_graph)d"
                                 height="350"
                                 width="510"/>
+                        </column>
+                        <column>
                             <action
-                                string="Status of Project Information assigned to Field Engineers"
-                                name="%(act_infosheet_graph)d"
+                                string="Status of Request of Measurement assigned to Field Engineers"
+                                name="%(act_field_graph)d"
                                 height="350"
                                 width="510"/>
                             <action
@@ -162,8 +159,8 @@
                                 height="350"
                                 width="510"/>
                         </column>
-                      
                     </board>
+                </group>
                 </form>
             </field>
         </record>
