@@ -41,6 +41,7 @@
         'views/accomplish.xml',
         'views/nica.xml',
         'views/contact.xml',
+        'views/res_users.xml',
         'views/pisreport.xml',
         'views/pisimages.xml',
         'views/positions.xml',
