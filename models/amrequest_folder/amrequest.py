@@ -135,14 +135,14 @@ class AMRequests(models.Model):
 
 
 class AMRImages(models.Model):
-	_name = 'philsteel.amrimages'
+    _name = 'philsteel.amrimages'
 
-	name = fields.Binary(string='Image')
-	description = fields.Text(string='Description')
+    name = fields.Binary(string='Image')
+    description = fields.Text(string='Description')
+    rfam = fields.Many2one('philsteel.amrequests',
+        ondelete='cascade', string="RFM", required='True')
+    location = fields.Char(string='Map Location')
+    taken = fields.Datetime(string='Date/Time Taken')
 
-	rfam = fields.Many2one('philsteel.amrequests',
-		ondelete='cascade', string="RFM", required=True)
-
-	location = fields.Char(string='Map Location')
     
 

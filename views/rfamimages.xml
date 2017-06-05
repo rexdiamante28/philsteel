@@ -22,6 +22,7 @@
                             <field name="name" widget="image"/>
                             <field name="rfam" />
                             <field name="description" />
+                            <field name="taken" />
                             <field name="location" widget="url" />
                         </group>
                     </sheet>
@@ -37,6 +38,8 @@
                     <field name="rfam" />
                     <field name="description" />
                     <field name="location" />
+                    <field name="taken" />
+
 
                </tree>
             </field>
@@ -50,6 +53,7 @@
                     <field name="rfam" />
                     <field name="description" />
                     <field name="location" />
+                    <field name="taken" />
                 </search>
             </field>
         </record>
