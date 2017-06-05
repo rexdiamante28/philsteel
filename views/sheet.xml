@@ -18,9 +18,25 @@
                     <field name="name" />
                     <field name="client" />
                     <field name="statuss" />
+                    <field name="project_sector" />
+                    <field name="assignedTo" />
                     <field name="seen_datetime" />
                     <field name="read_datetime" />
                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="sheet_search_view">
+            <field name="name">infosheet.search</field>
+            <field name="model">philsteel.infosheet</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                    <field name="client" />
+                    <field name="statuss" />
+                    <field name="project_sector" />
+                    <field name="assignedTo" />
+                </search>
             </field>
         </record>
 

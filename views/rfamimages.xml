@@ -36,8 +36,21 @@
                <tree string="RFM Illustrations">
                     <field name="rfam" />
                     <field name="description" />
+                    <field name="location" />
 
                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="rfamimages_search_view">
+            <field name="name">amrimages.search</field>
+            <field name="model">philsteel.amrimages</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="rfam" />
+                    <field name="description" />
+                    <field name="location" />
+                </search>
             </field>
         </record>
 

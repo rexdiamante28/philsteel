@@ -39,7 +39,22 @@
                     
                     <field name="infosheet" />
                     <field name="description" />
+                    <field name="location"/>
+                    <field name="taken" />
                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="infosheetimages_search_view">
+            <field name="name">infosheetimages.search</field>
+            <field name="model">philsteel.infosheetimages</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="infosheet" />
+                    <field name="description" />
+                    <field name="location"/>
+                    <field name="taken" />
+                </search>
             </field>
         </record>
 

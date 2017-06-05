@@ -17,8 +17,26 @@
             <field name="arch" type="xml">
                <tree string="Project Accomplishment Report">
                     <field name="name" />
+                    <field name="customer_name" />
                     <field name="statuss" />
+                    <field name="project_sector" />
+                    <field name="assignedTo" />
+                    <field name="seen_datetime" />
+                    <field name="read_datetime" />
                </tree>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="accomplishment_search_view">
+            <field name="name">pas.search</field>
+            <field name="model">philsteel.pas</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                    <field name="customer_name" />
+                    <field name="statuss" />
+                    <field name="project_sector" />
+                    <field name="assignedTo" />
+                </search>
             </field>
         </record>
 

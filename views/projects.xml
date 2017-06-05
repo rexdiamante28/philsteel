@@ -42,6 +42,18 @@
                </tree>
             </field>
         </record>
+        
+        <record model="ir.ui.view" id="philsteel_project_search_view">
+            <field name="name">projects.search</field>
+            <field name="model">philsteel.projects</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                    <field name="customer_name" />
+                    <field name="types_of_project" />
+                </search>
+            </field>
+        </record>
 
 	</data>
 </odoo>

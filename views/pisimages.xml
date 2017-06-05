@@ -31,15 +31,30 @@
             </field>
         </record>
 
-        <record model="ir.ui.view" id="rfamimages_tree_view">
-            <field name="name">rfamimages.tree</field>
+        <record model="ir.ui.view" id="pisimages_tree_view">
+            <field name="name">inspectionimages.tree</field>
             <field name="model">philsteel.inspectionimages</field>
             <field name="arch" type="xml">
                <tree string="RFAM Illustrations">
                     
                     <field name="inspection" />
                     <field name="description" />
+                    <field name="location"/>
+                    <field name="taken" />
                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="pisimages_search_view">
+            <field name="name">inspectionimages.search</field>
+            <field name="model">philsteel.inspectionimages</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="inspection" />
+                    <field name="description" />
+                    <field name="location"/>
+                    <field name="taken" />
+                </search>
             </field>
         </record>
 

@@ -39,7 +39,22 @@
                     
                     <field name="accomplishment" />
                     <field name="description" />
+                    <field name="location"/>
+                    <field name="taken" />
                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="accomplishmentimages_search_view">
+            <field name="name">accomplishmentimages.search</field>
+            <field name="model">philsteel.accomplishmentimages</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="accomplishment" />
+                    <field name="description" />
+                    <field name="location"/>
+                    <field name="taken" />
+                </search>
             </field>
         </record>
 

@@ -19,9 +19,27 @@
                     <field name="name" />
                     <field name="client" />
                     <field name="statuss" />
+                    <field name="project_sector" />
+                    <field name="assignedTo" />
                     <field name="seen_datetime" />
                     <field name="read_datetime" />
                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="pisreport_search_view">
+            <field name="name">pisreports.search</field>
+            <field name="model">philsteel.pisreports</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                    <field name="client" />
+                    <field name="statuss" />
+                    <field name="assignedTo" />
+                    <field name="seen_datetime" />
+                    <field name="read_datetime" />
+                    <field name="project_sector" />
+                </search>
             </field>
         </record>
 

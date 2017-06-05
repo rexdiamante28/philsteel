@@ -155,11 +155,28 @@
                     <field name="name" />
                     <field name="customer" />
                     <field name="project_type" />
-                    <field name="assigned_by" />
+                    <field name="project_sector" />
+                    <field name="assignedTo" />
                     <field name="statuss" />
                     <field name="seen_datetime" />
                     <field name="read_datetime" />
                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="measurement_request_search_view">
+            <field name="name">amrequests.search</field>
+            <field name="model">philsteel.amrequests</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                    <field name="customer" />
+                    <field name="project_type" />
+                    <field name="assigned_by" />
+                    <field name="statuss" />
+                    <field name="assignedTo" />
+                    <field name="project_sector" />
+                </search>
             </field>
         </record>
 
