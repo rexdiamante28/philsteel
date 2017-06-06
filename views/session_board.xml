@@ -75,47 +75,27 @@
         </record>
 
 
-        <record model="ir.ui.view" id="infosheet_graph_view">
-            <field name="name">philsteel.infosheet.graph</field>
-            <field name="model">philsteel.infosheet</field>
+        <record model="ir.ui.view" id="pisa_graph_view">
+            <field name="name">philsteel.pisreports.graph</field>
+            <field name="model">philsteel.pisreports</field>
             <field name="arch" type="xml">
                 <graph string="Request of Measurement Assigned to the Users">
-                    <field name="assignedTo" />
+                    <field name="project_sector"/>
                     <field name="statuss" />
                 </graph>
             </field>
 
         </record>
 
-        <record model="ir.actions.act_window" id="act_infosheet_graph">
+        <record model="ir.actions.act_window" id="act_pisa_graph">
             <field name="name">Request of Measurement Assigned to the Users</field>
-            <field name="res_model">philsteel.infosheet</field>
+            <field name="res_model">philsteel.pisreports</field>
             <field name="view_type">form</field>
             <field name="view_mode">graph</field>
             <field name="view_id"
-                   ref="infosheet_graph_view"/>
+                   ref="pisa_graph_view"/>
         </record>
 
-        <record model="ir.ui.view" id="pas_graph_view">
-            <field name="name">philsteel.pas.graph</field>
-            <field name="model">philsteel.pas</field>
-            <field name="arch" type="xml">
-                <graph string="Request of Measurement Assigned to the Users">
-                    <field name="assignedTo" />
-                    <field name="statuss" />
-                </graph>
-            </field>
-
-        </record>
-
-        <record model="ir.actions.act_window" id="act_pas_graph">
-            <field name="name">Request of Measurement Assigned to the Users</field>
-            <field name="res_model">philsteel.pas</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">graph</field>
-            <field name="view_id"
-                   ref="pas_graph_view"/>
-        </record>
 
 
         <record model="ir.actions.act_window" id="act_request_list">
@@ -155,7 +135,7 @@
                                 width="510"/>
                             <action
                                 string="Status of Project Accomplishment Report assigned to Field Engineers"
-                                name="%(act_pas_graph)d"
+                                name="%(act_pisa_graph)d"
                                 height="350"
                                 width="510"/>
                         </column>

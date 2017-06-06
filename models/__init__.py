@@ -24,4 +24,3 @@ from . import project_activities
 from . import weekly_report
 from . import department
 from . import project_sector
-from . import res_user

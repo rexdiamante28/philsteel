@@ -24,7 +24,7 @@ class PAS(models.Model):
 	
 	
 	assignedTo = fields.Many2one(
-         'philsteel.android', 'Assigned To',  ondelete='cascade'
+         'philsteel.android', 'Assigned To',  ondelete='cascade', required='True'
      )
 	project_sector = fields.Many2one(
          'philsteel.projectsector', 'Project Sector',  ondelete='cascade', required='True'
