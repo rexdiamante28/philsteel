@@ -18,9 +18,8 @@ class Android(models.Model):
 	username = fields.Char(string="username", required=True)
 	password = fields.Char(string="password", required=True)
 	code = fields.Char(size=256, string='ID')
-	user_sector = fields.Many2one(
-         'philsteel.projectsector', 'Project Sector',  ondelete='cascade', required='True'
-     )
+
+	user_sectors = fields.Many2many('philsteel.projectsector', string='Sectors Allowed', required='True',  ondelete='cascade')
 
 	info = fields.Text(string='Extra info')
 	active = fields.Boolean(

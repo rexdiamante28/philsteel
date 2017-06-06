@@ -55,12 +55,16 @@
                                 </group>
                             </page>
                             <page string="Extra Information">
-                                
-                                <group>
-                                    <field name="user_sector"/>
-                                </group>
                                 <group>
                                     <field name="info" colspan="4"/>
+                                </group>
+                                
+                            </page>
+
+                            <page string="Sectors">
+                                
+                                <group>
+                                    <field name="user_sectors"/>
                                 </group>
                                 
                             </page>
@@ -78,7 +82,6 @@
                <tree string="Field Engineers">
                    <field name="name"/>
                    <field name="positions"/>
-                   <field name="user_sector"/>
                    <field name="active"/>
                </tree>
             </field>
@@ -91,7 +94,6 @@
                 <search>
                     <field name="name"/>
                    <field name="positions"/>
-                   <field name="user_sector"/>
                    <field name="active"/>
                 </search>
             </field>
