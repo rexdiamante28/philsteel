@@ -36,7 +36,7 @@
                             <page string="General Information">
                                 <group>
                                     <field name="active"/>
-                                    <field name="mobile" placeholder="e.g. +506 5555 5555"/>
+                                    <field name="mobile" placeholder="e.g. +506 5555 5555" required="1"/>
                                     <field name="email" widget="email" />
                                 </group>
                                 <group>
