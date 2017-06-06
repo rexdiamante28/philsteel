@@ -53,6 +53,7 @@
                     <sheet>
                         <group string="General">
                                 <field name="name" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
+                                <field name="customer_name" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
                                 <field name="location" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
                             <group>
                                 <field name="ic_no" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>

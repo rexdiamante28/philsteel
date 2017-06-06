@@ -73,7 +73,7 @@ class PAS(models.Model):
 			record.location = record.name.location
 			record.ic_no = record.name.ic_no
 			record.sc_no = record.name.sc_no
-			record.sc_no = record.name.sc_no
+			record.customer_name = record.name.customer_name
 
 class AccomplishmentImages(models.Model):
 	_name = 'philsteel.accomplishmentimages'
