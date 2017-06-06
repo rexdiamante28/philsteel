@@ -134,7 +134,7 @@
                                 height="350"
                                 width="510"/>
                             <action
-                                string="Status of Project Accomplishment Report assigned to Field Engineers"
+                                string="Status of Inspection Report by Sectors"
                                 name="%(act_pisa_graph)d"
                                 height="350"
                                 width="510"/>
