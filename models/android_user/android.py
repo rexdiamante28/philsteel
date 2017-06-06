@@ -18,7 +18,9 @@ class Android(models.Model):
 	username = fields.Char(string="username", required=True)
 	password = fields.Char(string="password", required=True)
 	code = fields.Char(size=256, string='ID')
-	user_sector = fields.Selection([('north_a', 'North Sector A'), ('north_b', 'North Sector B'), ('south', 'South Sector')], string='Sector', required='True')
+	user_sector = fields.Many2one(
+         'philsteel.projectsector', 'Project Sector',  ondelete='cascade', required='True'
+     )
 
 	info = fields.Text(string='Extra info')
 	active = fields.Boolean(
@@ -27,9 +29,6 @@ class Android(models.Model):
 			 'removing it.'
 	)
 	can_view_overall_dashboard = fields.Boolean(string='View overall dashboard', required=True)
-	area_allowed = fields.Many2one(
-         'philsteel.projectsector', 'Area Allowed',  ondelete='cascade', required='True'
-     )
 
 	@api.model
 	def create(self, vals,):
