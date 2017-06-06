@@ -14,7 +14,9 @@ class Android(models.Model):
 		help='User ID'
 	)
 	image = fields.Binary()
-	positions = fields.Char(string="Position", required=True)
+	positions = fields.Many2one(
+         'philsteel.positions', 'Position',  ondelete='cascade', required='True'
+     )
 	username = fields.Char(string="username", required=True)
 	password = fields.Char(string="password", required=True)
 	code = fields.Char(size=256, string='ID')

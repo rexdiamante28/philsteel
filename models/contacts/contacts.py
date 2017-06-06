@@ -14,7 +14,9 @@ class Contacts(models.Model):
 		help='Partner ID'
 	)
 	code = fields.Char(size=256, string='ID')
-	designation = fields.Char(string='Designation', required='True')
+	designation = fields.Many2one(
+         'philsteel.positions', 'Position',  ondelete='cascade', required='True'
+     )
 
 	info = fields.Text(string='Extra info')
 	active = fields.Boolean(
