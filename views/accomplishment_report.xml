@@ -53,9 +53,13 @@
                     <sheet>
                         <group string="General">
                                 <field name="name" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
-                                <field name="ic_no" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
-                                <field name="sc_no" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
                                 <field name="location" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
+                            <group>
+                                <field name="ic_no" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
+                            </group>
+                            <group>
+                                <field name="sc_no" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
+                            </group>
                                 <field name="project_sector" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/>
                             <group>
                                 <field name="duration" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
@@ -130,8 +134,8 @@
                                 <page string="Signatory">
                                     <group><field name="proj_incharge" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                     <group><field name="client_rep" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
-                                    <field name="seen_datetime" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
-                                    <field name="read_datetime" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
+                                    <group><field name="seen_datetime" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                    <group><field name="read_datetime" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                 </page>
                             </notebook>
                             <!-- <group>

@@ -15,7 +15,7 @@ class Accomplishments(models.Model):
 	percent_prev = fields.Char(string="Previous Percentage")
 	#--------This Period---------#
 	qty_thisperiod = fields.Char(string="This Period Quantity")
-	percent_thisperiod = fields.Char(string="This Period Percentage")
+	percent_thisperiod = fields.Char(string="This Period Percentage", required='True')
 	#--------To Date---------#
 	qty_todate = fields.Char(string="This Date Quantity")
 	percent_todate = fields.Char(string="This Date Percent")
