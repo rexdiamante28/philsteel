@@ -21,7 +21,7 @@ class AMRequests(models.Model):
      )
 
      project_type = fields.Selection([('residential', 'Residential'), ('commercial', 'Commercial'), ('industrial', 'Industrial'), ('government', 'Government'), ('institutional', 'Institutional'), ('mass_housing', 'Mass Housing')], string='Type of Project', required='True')
-     project_site_address = fields.Text(string='Complete Project Site Address', required='True')
+     project_site_address = fields.Text(string='Complete Project Site Address')
      project_site_sketch = fields.Binary(string='Jobsite Sketch')
      general_contractor = fields.Char(string='Name of Contractor')
 
