@@ -82,7 +82,7 @@ class AccomplishmentImages(models.Model):
 	description = fields.Text(string='Description')
 
 	accomplishment = fields.Many2one('philsteel.pas',
-		ondelete='cascade', string="Project Accomplsihment", required=True)
+		ondelete='cascade', string="Project Accomplishment", required=True)
 
 	location = fields.Char(string="Map Location")
 	taken = fields.Datetime(string='Date/Time Taken')

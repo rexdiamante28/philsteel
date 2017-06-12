@@ -11,7 +11,7 @@ class Infosheet(models.Model):
 	name = fields.Many2one(
 		'philsteel.projects', 'Project Name',  ondelete='cascade', required='True'
 	)
-	contact_person = fields.Many2many('philsteel.contacts', string='Work Scope',  ondelete='cascade')
+	contact_person = fields.Many2many('philsteel.contacts', string='Site Contacts',  ondelete='cascade', required='True')
 	designation_contact = fields.Char(string='Designation Contact Person')
 	location = fields.Char(string='Location', required='True')
 	ic_number = fields.Char(string='I.C Number')
@@ -238,7 +238,7 @@ class Infosheet(models.Model):
 	
 	#--------SIGNATORY-------------------------#
 	accomplish_by = fields.Many2one(
-		'philsteel.projectmanpower', 'Accomplished By',  ondelete='cascade', required='True'
+		'philsteel.android', 'Accomplished By',  ondelete='cascade', required='True'
 	)
 	accomplish_date = fields.Date(string='Accomplished Date', required='True')
 

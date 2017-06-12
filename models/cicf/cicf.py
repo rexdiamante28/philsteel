@@ -18,7 +18,7 @@ class CICF(models.Model):
 	ic_no = fields.Char(string="I.C. No:" )
 	sc_no = fields.Char(string="S.C. No:")
 	dept = fields.Many2one(
-		'philsteel.departmentx', 'Concerned Departments',  ondelete='cascade', required='True'
+		'philsteel.departmentx', 'Concerned Departments',  ondelete='cascade'
 	)
 
 	client_code = fields.Char(string='Customer Code')

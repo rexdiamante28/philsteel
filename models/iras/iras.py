@@ -30,7 +30,7 @@ class IRAS(models.Model):
 	)
 	remarkss = fields.Text(string="Remarks")
 	prepare_by = fields.Many2one(
-		'philsteel.contacts', 'Prepered By',  ondelete='cascade'
+		'philsteel.contacts', 'Prepared By',  ondelete='cascade'
 	)
 	noted_by = fields.Many2one(
 		'philsteel.contacts', 'Noted By',  ondelete='cascade'

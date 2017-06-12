@@ -37,7 +37,7 @@
 
                         <!--Measurement Illustrations-->
                         <menuitem id="measurement_illustrations"
-                                  name="RFMs Illustrations"
+                                  name="RFMs Result of Measurement"
                                   parent="measurement_requests_parent"
                                   sequence="3"
                                   action="rfamimages_action" />
