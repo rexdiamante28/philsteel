@@ -238,7 +238,7 @@ class Infosheet(models.Model):
 	
 	#--------SIGNATORY-------------------------#
 	accomplish_by = fields.Many2one(
-		'philsteel.android', 'Accomplished By',  ondelete='cascade', required='True'
+		'philsteel.android', 'Accomplished By',  ondelete='cascade'
 	)
 	accomplish_date = fields.Date(string='Accomplished Date', required='True')
 
