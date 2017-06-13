@@ -59,6 +59,9 @@ class PISReports(models.Model):
 	seen_datetime = fields.Datetime(string='Seen')
 	read_datetime = fields.Datetime(string='Read')
 	pisimages = fields.One2many('philsteel.inspectionimages', 'inspection', string="Inspection and Safety Report Images")
+	accomplished_by = fields.Many2one(
+         'philsteel.android', 'Accomplished By',  ondelete='cascade'
+    )
 	tool_equipment = fields.Many2many('philsteel.materials', string='Tools and Equipments',  ondelete='cascade')
 	statuss = fields.Selection([
 		('draft', 'Draft'), 

@@ -137,6 +137,7 @@
                                 <group >
                                     <group>
                                         <field name="prepared_by" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
+                                        <field name="accomplished_by" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                                     </group>
                                     <group>
                                     <field name="approved_by" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
