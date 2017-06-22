@@ -1,0 +1,5 @@
+<odoo>
+	<data>
+		<report id="report_inspection" string="Inspection Report" model="philsteel.pisreports" report_type="qweb-pdf" file="philsteel.report_inspection_document" name="philsteel.report_inspection_document"/>
+	</data>
+</odoo>

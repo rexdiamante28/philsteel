@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Custom report-->
+<odoo>
+<template id="report_inspection_document">
+        <t t-foreach="docs" t-as="doc">
+            <div class="header" style="height:20px;">
+                <img class="img img-responsive" src="/philsteel/static/src/img/logo-philsteel.png" height="800px" width="100px" align="left" /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                <center><div><h3><b>Philmetal Products, Inc.</b></h3>
+                <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center>
+
+            </div>
+            <div class="page">
+                <center><h4><b><u>PROJECT INSPECTION AND SAFETY REPORT</u></b></h4></center>
+                <table class="table table-borderless">
+                    
+                    <t t-foreach="docs" t-as="doc">
+                    <tr class="table table-borderless">
+                        <td><b> Customer Name : </b><span t-esc="doc.client"/></td>
+                        <td><b> Date of Inspection : </b><span t-esc="doc.inspection_date"/></td>      
+                    </tr> 
+                    <tr class="table table-borderless">
+                        <td><b> Project Name : </b><span t-esc="doc.name.name"/></td>  
+                        <td><b> Location : </b><span t-esc="doc.location"/></td>
+                    </tr>   
+                    <tr class="table table-borderless">
+                        <td><b> IC No : </b><span t-esc="doc.ic_number"/></td>
+                        <td><b> Time of Arrival : </b><span t-esc="doc.arrival_time"/></td>
+                            
+                    </tr> 
+                     <tr class="table table-borderless">
+                        <td><b> SC No : </b><span t-esc="doc.sc_number"/></td>
+                        <td><b> Time of Departure : </b><span t-esc="doc.departure_time"/></td> 
+                            
+                    </tr> 
+                    <tr class="table table-borderless">
+                        <td><b> Weather: </b><span t-esc="doc.wheather"/></td>  
+                        <td><b> I. Overall Accomplishment Date: </b><span t-esc="doc.accomplishment_date"/></td> 
+                    </tr> 
+                    <tr class="table table-borderless">
+                        <td><b> Representative at site during inspection: </b><span t-esc="doc.site_representative.name"/></td> 
+                        <td></td>  
+                    </tr> 
+                    </t>     
+                </table>
+                <h5><b><u>Scope of Work</u></b></h5><br />
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> Work Scope </th>
+                        <th> Description </th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td><t t-esc="doc.work_scope.name"/></td>
+                        <td><t t-esc="doc.work_scope.description"/></td>   
+                               
+                    </tr>  
+                    </t>     
+                </table>
+                <h5><b><u>Man Power</u></b></h5><br />
+                <table  class="table table-bordered" style="font-size:12px">
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td><b> Foreman </b><span t-esc="doc.foreman"/></td>  
+                        <td><b> Leadman </b><span t-esc="doc.leadman"/></td>     
+                    </tr> 
+                    <tr>
+                        <td><b> Tinsmith </b><span t-esc="doc.tinsmith"/></td>  
+                        <td><b> Installer </b><span t-esc="doc.installer"/></td>     
+                    </tr>   
+                    <tr>
+                        <td><b> Welder </b><span t-esc="doc.welder"/></td>  
+                        <td><b> Helper </b><span t-esc="doc.helper"/></td>     
+                    </tr>   
+                    </t>     
+                </table>
+                    
+                    <h5><b><u>Tools And Equipments</u></b></h5>
+                    <table class="table table-bordered"  style="font-size:12px;">
+                            <tr>
+                                <th> Material </th>
+                                <th> Description </th>
+                            </tr>
+                            <t t-foreach="docs" t-as="doc">
+                                <tr>
+                                    <td><t t-esc="doc.tool_equipment.name"/></td>
+                                    <td><t t-esc="doc.tool_equipment.description"/></td>   
+                               </tr>  
+
+                        </t>     
+                    </table>
+                    <h5><b><u>Activities</u></b></h5>
+                    <table class="table table-bordered"  style="font-size:12px;">
+                            <tr>
+                                <th> Activity </th>
+                                <th> Status </th>
+                            </tr>
+                            <t t-foreach="docs" t-as="doc">
+                                <tr>
+                                    <td><t t-esc="doc.activity.name"/></td>
+                                    <td><t t-esc="doc.activity.status"/></td>   
+                               </tr>  
+
+                        </t>     
+                    </table>
+                    <h5><b><u>Materials Installed</u></b></h5>
+                    <table class="table table-bordered"  style="font-size:12px;">
+                            <tr>
+                                <th> Material </th>
+                                <th> Quantity </th>
+                            </tr>
+                            <t t-foreach="docs" t-as="doc">
+                                <tr>
+                                    <td><t t-esc="doc.material.name.name"/></td>
+                                    <td><t t-esc="doc.material.quantity_installed"/></td>   
+                               </tr>  
+
+                        </t>     
+                    </table>
+                    <h5><b><u>Other Concern</u></b></h5>
+                <table style="font-size:12px">
+                  
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td><t t-esc="doc.other_concerns"/></td>
+                               
+                    </tr>  
+                    </t>     
+                </table>
+
+                <b> Prepared By</b><span t-esc="doc.prepared_by.name"/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                <b> Noted By </b><span t-esc="doc.approved_by.name"/>
+
+                    
+                
+                <!-- 
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> Member's Name </th>
+                        <th> Attendance Date and Time </th>
+                        <th> Type of Breakfast</th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td><t t-esc="doc.name.name"/></td>
+                        <td><t t-esc="doc.datetime_breakfast"/></td>
+                        <td><t t-esc="doc.type_breakfast"/></td>    
+                               
+                    </tr>  
+                    </t>     
+                </table> -->
+            </div>
+        </t> 
+</template>
+</odoo>

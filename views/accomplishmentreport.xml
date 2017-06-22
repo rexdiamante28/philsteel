@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Custom report-->
+<odoo>
+<template id="report_accomplishment_document">
+        <t t-foreach="docs" t-as="doc">
+            <div class="header" style="height:20px;">
+                <img class="img img-responsive" src="/philsteel/static/src/img/logo-philsteel.png" height="800px" width="100px" align="left" /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                <center><div><h3><b>Philmetal Products, Inc.</b></h3>
+                <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center>
+
+            </div>
+            <div class="page">
+                <center><h4><b><u>PROJECT ACCOMPLISHMENT REPORT</u></b></h4></center>
+                <table class="table table-borderless">
+                    
+                    <t t-foreach="docs" t-as="doc">
+                    <tr class="table table-borderless">
+                        <td><b> Customer Name : </b><span t-esc="doc.customer_name"/></td>
+                        <td><b> Duration : </b><span t-esc="doc.duration"/> Working Days</td>      
+                    </tr> 
+                    <tr class="table table-borderless">
+                        <td><b> Location : </b><span t-esc="doc.location"/></td>
+
+                        <td><b> Date Started : </b><span t-esc="doc.date_start"/></td>  
+                    </tr>   
+                    <tr class="table table-borderless">
+                        <td><b> IC No : </b><span t-esc="doc.ic_no"/></td>
+                        <td><b> Date of Completion: </b><span t-esc="doc.date_complete"/></td>
+                            
+                    </tr> 
+                     <tr class="table table-borderless">
+                        <td><b> SC No : </b><span t-esc="doc.sc_no"/></td>
+                        <td><b>Sales Engineer: </b><span t-esc="doc.sales_engineer.name"/></td>
+                            
+                    </tr> 
+                </t>
+                     
+                </table>
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> Particulart </th>
+                        <th> Unit </th>
+                        <th> QTY. </th>
+                        <th> Weight Factor </th>
+                        <th> Precious Qty. </th>
+                        <th> Precious % </th>
+                        <th> This Period Qty. </th>
+                        <th> This Period % </th>
+                        <th> To Date Qty. </th>
+                        <th>To Date % </th>
+                        <th>To Date Weight </th>
+                        <th> Remarks </th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td><span t-esc="doc.accomplisment.name"/></td>  
+                        <td><span t-esc="doc.accomplisment.unit"/></td>  
+                        <td><span t-esc="doc.accomplisment.qty"/></td>  
+                        <td><span t-esc="doc.accomplisment.weight_factor"/></td> 
+                        <td><span t-esc="doc.accomplisment.qty_prev"/></td>  
+                        <td><span t-esc="doc.accomplisment.percent_prev"/></td> 
+                        <td><span t-esc="doc.accomplisment.qty_thisperiod"/></td>  
+                        <td><span t-esc="doc.accomplisment.percent_thisperiod"/></td> 
+                        <td><span t-esc="doc.accomplisment.qty_todate"/></td>  
+                        <td><span t-esc="doc.accomplisment.percent_todate"/></td> 
+                        <td><span t-esc="doc.accomplisment.weight"/></td>  
+                        <td><span t-esc="doc.accomplisment.remarks"/></td> 
+                    </tr>   
+                    </t>     
+                    <!-- <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td><t t-esc="doc.work_scope.name"/></td>
+                        <td><t t-esc="doc.work_scope.description"/></td>   
+                               
+                    </tr>  
+                    </t>     --> 
+                </table>
+                
+                <b> Prepared By</b><span t-esc="doc.proj_incharge.name"/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                <b> Approved By </b><span t-esc="doc.client_rep.name"/>
+
+                    
+                
+                <!-- 
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> Member's Name </th>
+                        <th> Attendance Date and Time </th>
+                        <th> Type of Breakfast</th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td><t t-esc="doc.name.name"/></td>
+                        <td><t t-esc="doc.datetime_breakfast"/></td>
+                        <td><t t-esc="doc.type_breakfast"/></td>    
+                               
+                    </tr>  
+                    </t>     
+                </table> -->
+            </div>
+        </t> 
+</template>
+</odoo>

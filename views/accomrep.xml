@@ -1,0 +1,5 @@
+<odoo>
+	<data>
+		<report id="report_accomplishment" string="Accomplishment Report" model="philsteel.pas" report_type="qweb-pdf" file="philsteel.report_accomplishment_document" name="philsteel.report_accomplishment_document"/>
+	</data>
+</odoo>

@@ -1,0 +1,5 @@
+<odoo>
+	<data>
+		<report id="report_information" string="Information Sheet" model="philsteel.infosheet" report_type="qweb-pdf" file="philsteel.report_information_document" name="philsteel.report_information_document"/>
+	</data>
+</odoo>

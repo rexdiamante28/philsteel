@@ -1,0 +1,5 @@
+<odoo>
+	<data>
+		<report id="report_request" string="RFMs" model="philsteel.amrequests" report_type="qweb-pdf" file="philsteel.report_request_document" name="philsteel.report_request_document"/>
+	</data>
+</odoo>

@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Custom report-->
+<odoo>
+<template id="report_information_document">
+        <t t-foreach="docs" t-as="doc">
+            <div class="header" style="height:20px;">
+                <img class="img img-responsive" src="/philsteel/static/src/img/logo-philsteel.png" height="800px" width="100px" align="left" /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                <center><div><h3><b>Philmetal Products, Inc.</b></h3>
+                <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center>
+
+            </div>
+            <div class="page">
+                <center><h4><b><u>PROJECT INFORMATION SHEET</u></b></h4></center>
+                <table class="table table-borderless">
+                    
+                    <t t-foreach="docs" t-as="doc">
+                    <tr class="table table-borderless">
+                        <td><b> Client : </b><span t-esc="doc.client"/></td>
+                        <td><b> Project Name : </b><span t-esc="doc.name.name"/></td>
+                            
+                    </tr>
+                    <tr class="table table-borderless">
+                        <td><b> Contact Person : </b><span t-esc="doc.contact_person.name"/></td>
+                        <td><b> Designation of Contact Person : </b><span t-esc="doc.designation_contact"/></td>
+                            
+                    </tr>
+                    <tr class="table table-borderless">
+                        <td><b> Tel No : </b><span t-esc="doc.tel_number"/></td>
+                        <td><b> Fax No : </b><span t-esc="doc.fax_number"/></td>
+                            
+                    </tr> 
+                    <tr class="table table-borderless">
+                        <td><b> IC No : </b><span t-esc="doc.ic_number"/></td>
+                        <td><b> SC No : </b><span t-esc="doc.sc_number"/></td>
+                            
+                    </tr> 
+                    <tr class="table table-borderless">
+                        <td><b> Location : </b><span t-esc="doc.location"/></td>
+                        <td></td>   
+                    </tr> 
+                    </t>     
+                </table>
+                <h5><b><u>Scope of Work</u></b></h5><br />
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> Work Scope </th>
+                        <th> Description </th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td><t t-esc="doc.work_scopes.name"/></td>
+                        <td><t t-esc="doc.work_scopes.description"/></td>   
+                               
+                    </tr>  
+                    </t>     
+                </table>
+                <h5><b><u>Specifications</u></b></h5><br />
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> STRUCTURE </th>
+                        <th> ROOFING PROFILE </th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td>Crazy<t t-esc="doc.crazy"/></td>
+                        <td>Type<t t-esc="doc.types_a"/></td>   
+                    </tr>  
+                    <tr>
+                        <td>Semi Crazy<t t-esc="doc.semi_crazy"/></td>
+                        <td>Total Area<t t-esc="doc.total_area_a"/></td>   
+                    </tr> 
+                    <tr>
+                        <td>Wood<t t-esc="doc.wood"/></td>
+                        <td>Color<t t-esc="doc.color_a"/></td>   
+                    </tr> 
+                    <tr>
+                        <td>Steel<t t-esc="doc.steel"/></td>
+                        <td>Thickness<t t-esc="doc.thickness_a"/></td>   
+                    </tr> 
+                      
+                    <tr>
+                        <td>Others<t t-esc="doc.Others"/></td>
+                        <td>Max Length site can accomodate<t t-esc="doc.max_length"/></td>   
+                    </tr> 
+                    <tr>
+                        <td>Building Height<t t-esc="doc.building_height"/></td>
+                         <td></td>
+                    </tr> 
+                    <tr>
+                        <td>No of Storeys<t t-esc="doc.storeys_no"/></td>
+                         <td></td>
+                    </tr> 
+                    <tr>
+                        <td>Safe Access<t t-esc="doc.safe_access"/></td>
+                         <td></td>
+                    </tr> 
+                    </t>     
+                </table>
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> CEILING PROFILE </th>
+                        <th> SIDING PROFILE </th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td>Type<t t-esc="doc.types_c"/></td>
+                        <td>Type<t t-esc="doc.types_b"/></td>   
+                    </tr>  
+                    <tr>
+                        <td>Total Area<t t-esc="doc.total_area_c"/></td>
+                        <td>Total Area<t t-esc="doc.total_area_b"/></td>   
+                    </tr> 
+                    <tr>
+                        <td>Color<t t-esc="doc.color_c"/></td>
+                        <td>Color<t t-esc="doc.color_b"/></td>   
+                    </tr> 
+                    <tr>
+                        <td>Thickness<t t-esc="doc.thickness_c"/></td>
+                        <td>Thickness<t t-esc="doc.thickness_b"/></td>   
+                    </tr> 
+                    <tr>
+                        <td>Ceiling Framing Includes<t t-esc="doc.ceiling_framing"/></td>
+                         <td></td>
+                    </tr> 
+                    <tr>
+                        <td>Not includes<t t-esc="doc.not_included"/></td>
+                         <td></td>
+                    </tr> 
+                    <tr>
+                        <td>-Hat Section<t t-esc="doc.hat_section"/></td>
+                         <td></td>
+                    </tr> 
+                    <tr>
+                        <td>-Tee Runner<t t-esc="doc.tee_runner"/></td>
+                         <td></td>
+                    </tr> 
+                    <tr>
+                        <td>-Metal Furring<t t-esc="doc.metal_furring"/></td>
+                         <td></td>
+                    </tr> 
+                    <tr>
+                        <td>-Others<t t-esc="doc.otherss"/></td>
+                         <td></td>
+                    </tr> 
+                    
+                    </t>     
+                </table>
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> PENETRATION FLASHING </th>
+                        <th> FASTENING </th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td>Without penetration<t t-esc="doc.without_penetration"/></td>
+                        <td>Teks Screw<t t-esc="doc.teks_screw"/></td>   
+                    </tr>  
+                    <tr>
+                        <td>With Penetration (Give Details)<t t-esc="doc.with_penetration"/></td>
+                        <td>Straps and Rivets<t t-esc="doc.strap_rivet"/></td>   
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Concealed<t t-esc="doc.conceal"/></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Anchor Bolts<t t-esc="doc.anchor_bolts"/></td>
+                    </tr> 
+                    </t>     
+                </table>
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> BENDED ACCESSORIES </th>
+                        <th> NAILER </th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td>Type:</td>
+                        <td></td>   
+                    </tr> 
+                    <tr>
+                        <td>-End Flashing<t t-esc="doc.end_flashing"/></td>
+                        <td>Roof Purlins<t t-esc="doc.roofpurlins"/></td>   
+                    </tr>  
+                    <tr>
+                        <td>-End Wall Flashing<t t-esc="doc.end_wall_flashing"/></td>
+                        <td>Side Girts<t t-esc="doc.sidegirts"/></td>   
+                    </tr> 
+                    <tr>
+                        <td>-Wall Flashing<t t-esc="doc.wall_flashing"/></td>
+                        <td>Roof Purlins Spacing<t t-esc="doc.roof_purlins"/></td>   
+                    </tr>  
+                    <tr>
+                        <td>-Ridge Flashing<t t-esc="doc.ridge_flashing"/></td>
+                        <td>Side Girts Spacing<t t-esc="doc.side_girts"/></td>    
+                    </tr> 
+                    <tr>
+                        <td>-Ridge Wall Flashing<t t-esc="doc.ridge_wall_flashing"/></td>
+                        <td></td>   
+                    </tr> 
+                    <tr>
+                        <td>-Crapping<t t-esc="doc.crapping"/></td>
+                        <td></td>   
+                    </tr> 
+                    <tr>
+                        <td>Color<t t-esc="doc.color_d"/></td>
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td>Thickness<t t-esc="doc.thickness_d"/></td>
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td>standard<t t-esc="doc.standard"/></td>
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td>Per Actual<t t-esc="doc.per_actual"/></td>
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td>PMPI for clients approval<t t-esc="doc.pmpi"/></td>
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td>Reglets on wall by Others<t t-esc="doc.regret_wall_other"/></td>
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td>Reglets on wall by PMPI<t t-esc="doc.regret_wall_pmpi"/></td>
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td>Masonry works by others<t t-esc="doc.masonry_work_other"/></td>
+                        <td></td>   
+                    </tr>
+                    <tr>
+                        <td>Masonry Work by PMPI<t t-esc="doc.masonry_work_pmpi"/></td>
+                        <td></td>
+                        
+                    </tr> 
+                    </t>     
+                </table>
+                 <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> ROLL FARMRING </th>
+                        <th> ROOF SPAN </th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td>On Site<t t-esc="doc.on_site"/></td>
+                        <td>Maximum Length<t t-esc="doc.max_lengths"/></td>
+                    </tr>  
+                    <tr>
+                        <td>Off Site<t t-esc="doc.off_site"/></td>
+                        <td>Roof Pitch<t t-esc="doc.roof_pitch"/></td>
+                    </tr> 
+                    <tr>
+                        <td>If Jobsite or Offsite(Available or Not Available)</td>
+                        <td>Curve Roof Radius<t t-esc="doc.curve_roof"/></td>  
+                     
+                    </tr> 
+                    <tr>
+                        <td>a) Powers<t t-esc="doc.powers"/></td>
+                        <td></td>    
+                    </tr> 
+                    <tr>
+                        <td>b) Space<t t-esc="doc.space"/></td>
+                        <td></td>   
+                    </tr> 
+                    <tr>
+                        <td>c) Access<t t-esc="doc.access"/></td>
+                        <td></td>   
+                    </tr> 
+                   
+                    </t>     
+                </table>
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> SKYLIGHTS </th>
+                        <th> INSULATION </th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td>Required<t t-esc="doc.require"/></td>
+                        <td><b>REQUIRED</b></td>
+                    </tr>  
+                    <tr>
+                        <td>Not Required<t t-esc="doc.not_require"/></td>
+                        <td>Type<t t-esc="doc.types_d"/></td>
+                    </tr> 
+                    <tr>
+                        <td>Thickness<t t-esc="doc.thickness_e"/></td>
+                        <td>Thickness<t t-esc="doc.thickness_f"/></td>
+                    </tr>
+                    <tr>
+                        <td>Max. Length<t t-esc="doc.max_lengthsa"/></td>
+                        <td>Not Require<t t-esc="doc.not_require"/></td>
+                    </tr>  
+                    <tr>
+                        <td></td>
+                        <td>With Wiremesh</td>
+                    </tr>  
+                    <tr>
+                        <td></td>
+                        <td><t t-esc="doc.types_e"/></td>
+                    </tr> 
+                     <tr>
+                        <td></td>
+                        <td>Without Wiremesh</td>
+                    </tr>  
+                    <tr>
+                        <td></td>
+                        <td>G.I. Wire<t t-esc="doc.gi_wire"/></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Spacing<t t-esc="doc.spacing"/></td>
+                    </tr> 
+                    
+                    </t>     
+                </table>
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> GUTTER </th>
+                        <th> GUTTER HANGER </th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td>Colored<t t-esc="doc.colored"/></td>
+                        <td>By PMPI<t t-esc="doc.by_pmpi"/></td>
+                    </tr>  
+                    <tr>
+                        <td>Stainless Steal<t t-esc="doc.stainless_steel"/></td>
+                        <td>By Others<t t-esc="doc.by_others"/></td>
+                    </tr>  
+                    <tr>
+                        <td>Concrete<t t-esc="doc.concrete"/></td>
+                        <td>Color and Finish<t t-esc="doc.color_finish"/></td>
+
+                    </tr>  
+                    <tr>
+                        <td>Spanish Type<t t-esc="doc.spanish_type"/></td>
+                        <td>Bolted to Structure<t t-esc="doc.bolted_structure"/></td>
+                        
+                    </tr>  
+                    <tr>
+                        <td>Box Type<t t-esc="doc.box_type"/></td>
+                        <td>Welded to Structure<t t-esc="doc.welded_structure"/></td>
+                        
+                    </tr>  
+                    <tr>
+                        <td><b>CONNECTION</b></td>
+                        <td>Size (t x w x l)<t t-esc="doc.size"/></td>
+                        
+                    </tr> 
+                    <tr>
+                        <td>Riveted<t t-esc="doc.revited"/></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Welded<t t-esc="doc.welded"/></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Gas<t t-esc="doc.gas"/></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Tig<t t-esc="doc.tig"/></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Seam<t t-esc="doc.seam"/></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Gutter Flashing</td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Required<t t-esc="doc.requireds"/></td>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Not Required<t t-esc="doc.not_requireds"/></td>
+                        <td></td>
+                        
+                    </tr>
+                    
+                    </t>     
+                </table>
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> DECKING PROFILE </th>
+                        <th> LOUVERS</th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td>Monolithic<t t-esc="doc.monolithic"/></td>
+                        <td>Single Pass<t t-esc="doc.single_pass"/></td>
+                    </tr>  
+                    <tr>
+                        <td>Steel Beams<t t-esc="doc.steel_beams"/></td>
+                        <td>Double Pass<t t-esc="doc.double_pass"/></td>
+                    </tr>  
+                    <tr>
+                        <td>Shear studs req't<t t-esc="doc.shear"/></td>
+                        <td>Triple Pass<t t-esc="doc.triple_pass"/></td>
+                    </tr>  
+                    <tr>
+                        <td>Closure Requirement</td>
+                        <td></td>
+                    </tr>  
+                    <tr>
+                        <td>Metal<t t-esc="doc.metal"/></td>
+                        <td></td>
+                    </tr>
+                    </t>     
+                </table>
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> FASCIA </th>
+                        <th> SLEEVES</th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td>Fiber Cement Board<t t-esc="doc.fiber_cement"/></td>
+                        <td>Stainless<t t-esc="doc.stainless_a"/></td>
+                    </tr>  
+                    <tr>
+                        <td>Metal Fascia<t t-esc="doc.metal_fascia"/></td>
+                        <td>Ordinary<t t-esc="doc.ordinary_a"/></td>
+                    </tr>  
+                    <tr>
+                        <td>Wood<t t-esc="doc.woodss"/></td>
+                        <td></td>
+                    </tr>
+                    </t>     
+                </table>
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> TYPE OF PROJECT </th>
+                        <th> PRE CONTRACT AGREEMENTS</th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td>Residential<t t-esc="doc.residential"/></td>
+                        <td>Implementation Date<t t-esc="doc.implementation_date"/></td>
+                    </tr>  
+                    <tr>
+                        <td>Commercial<t t-esc="doc.commercial"/></td>
+                        <td>Materials Delivery Date<t t-esc="doc.materials_delivery_date"/></td>
+                    </tr>  
+                    <tr>
+                        <td>Industrial<t t-esc="doc.industrial"/></td>
+                        <td>Structure Turn-over date<t t-esc="doc.structure_turnover_date"/></td>
+                    </tr> 
+                    <tr>
+                        <td>Government<t t-esc="doc.government"/></td>
+                        <td>Max. Length<t t-esc="doc.length_max"/></td>
+                    </tr> 
+                    <tr>
+                        <td>Institutional<t t-esc="doc.institutional"/></td>
+                        <td>Max. manpower<t t-esc="doc.manpower_max"/></td>
+                    </tr> 
+                    <tr>
+                        <td>Mass Housing<t t-esc="doc.mass_housing"/></td>
+                        <td></td>
+                    </tr> 
+                    </t>     
+                </table>
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> LIFTING EQUIPMENT </th>
+                        <th> TEMPORARY FACILITIES</th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td>Manual<t t-esc="doc.manual"/></td>
+                        <td>By Client<t t-esc="doc.by_client"/></td>
+                    </tr>  
+                    <tr>
+                        <td>Mechanical or By Crane with Qualified Rigger <t t-esc="doc.mechanical"/></td>
+                        <td>By PMPI<t t-esc="doc.by_pmpi"/></td>
+                    </tr>  
+                    <tr>
+                        <td></td>
+                        <td>Field Office<t t-esc="doc.field_office"/></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Bunk House</td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Onsite<t t-esc="doc.onsite"/></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Off site<t t-esc="doc.offsite"/></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Portable Water<t t-esc="doc.portable_water"/></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Electricity<t t-esc="doc.electricity"/></td>
+                    </tr> 
+                     
+                    </t>     
+                </table>
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> PURLINS (Light Gauge) </th>
+                        <th> STRAINERS</th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td>LC<t t-esc="doc.lc"/></td>
+                        <td>Stainless<t t-esc="doc.stainless"/></td>
+                    </tr>  
+                    <tr>
+                        <td>LZ<t t-esc="doc.lz"/></td>
+                        <td>Ordinary<t t-esc="doc.ordinary"/></td>
+                    </tr>
+                    <tr>
+                        <td>Hat Section<t t-esc="doc.hat_sections"/></td>
+                        <td></td>
+                    </tr>
+                     
+                     
+                    </t>     
+                </table>
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> OTHERS </th>
+                        <th> LOCATION</th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td>Specify Preffere dSealant<t t-esc="doc.sealant"/></td>
+                        <td>Inside Industrial Park<t t-esc="doc.industrial_park"/></td>
+                    </tr>  
+                    <tr>
+                        <td>Recommended<t t-esc="doc.recommended"/></td>
+                        <td>Near Populated Areas<t t-esc="doc.populated_areas"/></td>
+                    </tr>  
+                    <tr>
+                        <td></td>
+                        <td>Exclusive Subdivision<t t-esc="doc.exclusive_subdivision"/></td>
+                    </tr> 
+                    </t>     
+                </table>
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> TYPE OF CONTRACT </th>
+                        <th> BID CONTRACT / DOCUMENTS</th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td>Lump Sum<t t-esc="doc.lump_sum"/></td>
+                        <td>Available<t t-esc="doc.avail"/></td>
+                    </tr>  
+                    <tr>
+                        <td>Itemized<t t-esc="doc.itemized"/></td>
+                        <td>Not Available<t t-esc="doc.not_avail"/></td>
+                    </tr>
+                   
+                    </t>     
+                </table>
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> WORKING HOURS</th>
+                        <th> SAFETY / SITE REQUIREMENTS</th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td>Day time<t t-esc="doc.daytime"/></td>
+                        <td>I.D.<t t-esc="doc.site_id"/></td>
+                    </tr> 
+                    <tr>
+                        <td>Night time<t t-esc="doc.nighttime"/></td>
+                        <td>Medical Exam<t t-esc="doc.medical_exam"/></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Hard Hat<t t-esc="doc.hard_hat"/></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Safety Belt<t t-esc="doc.safety_belt"/></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Body Harness<t t-esc="doc.body_harness"/></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Safety Shoes<t t-esc="doc.safety_shoes"/></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Uniform<t t-esc="doc.uniforms"/></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Full Time Service Vehicle<t t-esc="doc.servce_vehicle"/></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Clearances:</td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Barangay<t t-esc="doc.barangay"/></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>Police<t t-esc="doc.police"/></td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>NBI<t t-esc="doc.nbi"/></td>
+                    </tr> 
+
+                    </t>     
+                </table>
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> OTHER SAFETY CONCERNS</th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td><t t-esc="doc.others_con"/></td>
+                    </tr> 
+                    </t>     
+                </table>
+
+                <b> Accomplishment By</b><span t-esc="doc.accomplish_by.name"/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                <b> Accomplishment Date </b><span t-esc="doc.accomplish_date"/>
+
+                    
+                
+                <!-- 
+                <table  class="table table-bordered" style="font-size:12px">
+                    <tr>
+                        <th> Member's Name </th>
+                        <th> Attendance Date and Time </th>
+                        <th> Type of Breakfast</th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td><t t-esc="doc.name.name"/></td>
+                        <td><t t-esc="doc.datetime_breakfast"/></td>
+                        <td><t t-esc="doc.type_breakfast"/></td>    
+                               
+                    </tr>  
+                    </t>     
+                </table> -->
+            </div>
+        </t> 
+</template>
+</odoo>
