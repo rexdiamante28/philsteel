@@ -20,6 +20,7 @@
                     <field name="statuss" />
                     <field name="project_sector" />
                     <field name="assignedTo" />
+                    <field name="assigned_by" />
                     <field name="seen_datetime" />
                     <field name="read_datetime" />
                </tree>
@@ -36,6 +37,7 @@
                     <field name="statuss" />
                     <field name="project_sector" />
                     <field name="assignedTo" />
+                    <field name="assigned_by" />
                 </search>
             </field>
         </record>
@@ -46,8 +48,8 @@
             <field name="arch" type="xml">
                 <form string="Project Information Sheet">
                     <header>
-                        <button name="action_approved"  groups="philsteel.group_supervisor_north_1,philsteel.group_supervisor_north_2,philsteel.group_supervisor_south,philsteel.group_manager" string="Approved" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','draft')]}" />
-                        <button name="action_unlock"  groups="philsteel.group_supervisor_north_1,philsteel.group_supervisor_north_2,philsteel.group_supervisor_south,philsteel.group_manager" string="Change to Draft" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','approved')]}" />
+                        <button name="action_approved"  groups="philsteel.group_supervisor,philsteel.group_manager" string="Approved" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','draft')]}" />
+                        <button name="action_unlock"  groups="philsteel.group_supervisor,philsteel.group_manager" string="Change to Draft" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','approved')]}" />
                         <field name="statuss" widget="statusbar" options="{'fold_field': 'fold'}" />
                     </header>
                     <sheet>
@@ -331,7 +333,8 @@
                                 <group><field name="infosheetimages" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/></group>
                             </page>
                             <page string="Assign Information">
-                                <group><field name="assignedTo" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                <group><field name="assignedTo" groups="philsteel.group_supervisor" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                <group><field name="assigned_by" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
                             </page>
                             <page string="SIGNATORY">
                                 <group><field name="accomplish_by" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>

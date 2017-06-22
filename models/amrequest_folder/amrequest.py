@@ -44,7 +44,7 @@ class AMRequests(models.Model):
      floors_available_for_measurement = fields.Char(string='% No. of Floors Available for Measurement')
 
      rfm_quotation = fields.Boolean(string='Quotation')
-     rfm_contract = fields.Boolean(string='Contact')
+     rfm_contract = fields.Boolean(string='Contract')
      rfm_fabrication = fields.Boolean(string='Fabrication')
      rfm_tech1assistance = fields.Boolean(string='Tech 1 Assistance')
      rfm_others = fields.Text(string='Others')
@@ -62,11 +62,11 @@ class AMRequests(models.Model):
          'res.users', 'Approved By',  ondelete='cascade'
      )
      assigned_by = fields.Many2one(
-         'res.users', 'Assigned By',  ondelete='cascade'
+         'res.users', 'Assigned By',  ondelete='cascade', required='True'
      )
 
      assignedTo = fields.Many2one(
-         'philsteel.android', 'Assigned To',  ondelete='cascade', required='True'
+         'philsteel.android', 'Assigned To',  ondelete='cascade'
      )
      project_sector = fields.Many2one(
          'philsteel.projectsector', 'Project Sector',  ondelete='cascade', required='True'

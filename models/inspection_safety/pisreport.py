@@ -39,10 +39,13 @@ class PISReports(models.Model):
 		'philsteel.contacts', 'Prepared By',  ondelete='cascade'
 	)
 	approved_by = fields.Many2one(
-		'philsteel.contacts', 'Approved By',  ondelete='cascade'
+		'philsteel.contacts', 'Noted By',  ondelete='cascade'
 	)
 	assignedTo = fields.Many2one(
-         'philsteel.android', 'Assigned To',  ondelete='cascade', required='True'
+         'philsteel.android', 'Assigned To',  ondelete='cascade'
+     )
+	assigned_by = fields.Many2one(
+         'res.users', 'Assigned By',  ondelete='cascade', required='True'
      )
 	project_sector = fields.Many2one(
          'philsteel.projectsector', 'Project Sector',  ondelete='cascade', required='True'
@@ -59,9 +62,6 @@ class PISReports(models.Model):
 	seen_datetime = fields.Datetime(string='Seen')
 	read_datetime = fields.Datetime(string='Read')
 	pisimages = fields.One2many('philsteel.inspectionimages', 'inspection', string="Inspection and Safety Report Images")
-	accomplished_by = fields.Many2one(
-         'philsteel.android', 'Accomplished By',  ondelete='cascade'
-    )
 	tool_equipment = fields.Many2many('philsteel.materials', string='Tools and Equipments',  ondelete='cascade')
 	statuss = fields.Selection([
 		('draft', 'Draft'), 

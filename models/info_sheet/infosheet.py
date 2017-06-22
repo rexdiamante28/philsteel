@@ -229,7 +229,10 @@ class Infosheet(models.Model):
 	seen_datetime = fields.Datetime(string='Seen')
 	read_datetime = fields.Datetime(string='Read')
 	assignedTo = fields.Many2one(
-         'philsteel.android', 'Assigned To',  ondelete='cascade', required='True'
+         'philsteel.android', 'Assigned To',  ondelete='cascade'
+     )
+	assigned_by = fields.Many2one(
+         'res.users', 'Assigned By',  ondelete='cascade', required='True'
      )
 	project_sector = fields.Many2one(
          'philsteel.projectsector', 'Project Sector',  ondelete='cascade', required='True'
@@ -240,6 +243,7 @@ class Infosheet(models.Model):
 	accomplish_by = fields.Many2one(
 		'philsteel.android', 'Accomplished By',  ondelete='cascade'
 	)
+	
 	accomplish_date = fields.Date(string='Accomplished Date', required='True')
 
 	statuss = fields.Selection([

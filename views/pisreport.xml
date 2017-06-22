@@ -21,6 +21,7 @@
                     <field name="statuss" />
                     <field name="project_sector" />
                     <field name="assignedTo" />
+                    <field name="assigned_by" />
                     <field name="seen_datetime" />
                     <field name="read_datetime" />
                </tree>
@@ -36,6 +37,7 @@
                     <field name="client" />
                     <field name="statuss" />
                     <field name="assignedTo" />
+                    <field name="assigned_by" />
                     <field name="seen_datetime" />
                     <field name="read_datetime" />
                     <field name="project_sector" />
@@ -49,8 +51,8 @@
             <field name="arch" type="xml">
                 <form string="Project Inspection and Safety Report">
                     <header>
-                        <button name="action_approved" groups="philsteel.group_supervisor_north_1,philsteel.group_supervisor_north_2,philsteel.group_supervisor_south,philsteel.group_manager" string="Approved" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','draft')]}" />
-                        <button name="action_unlock" groups="philsteel.group_supervisor_north_1,philsteel.group_supervisor_north_2,philsteel.group_supervisor_south,philsteel.group_manager" string="Change to Draft" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','approved')]}" />
+                        <button name="action_approved" groups="philsteel.group_supervisor,philsteel.group_manager" string="Approved" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','draft')]}" />
+                        <button name="action_unlock" groups="philsteel.group_supervisor,philsteel.group_manager" string="Change to Draft" type="object" class="btn-primary" attrs="{'invisible': ['|','|',('statuss','!=','approved')]}" />
                         <field name="statuss" widget="statusbar" options="{'fold_field': 'fold'}" />
                     </header>
                     
@@ -131,13 +133,13 @@
                                 <group><field name="pisimages" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/></group>
                             </page>
                             <page string="Assign Information">
-                                <group><field name="assignedTo" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                <group><field name="assignedTo" groups="philsteel.group_supervisor" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                <group><field name="assigned_by" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                             </page>
                             <page string="Signatory">
                                 <group >
                                     <group>
                                         <field name="prepared_by" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
-                                        <field name="accomplished_by" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
                                     </group>
                                     <group>
                                     <field name="approved_by" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" />
