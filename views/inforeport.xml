@@ -2,8 +2,8 @@
 <!--Custom report-->
 <odoo>
 <template id="report_information_document">
-        <t t-foreach="docs" t-as="doc">
-            <div class="header">
+            <div class="header" style="height:20px;">
+                <img class="img img-responsive" src="/philsteel/static/src/img/logo-philsteel.png" height="800px" width="100px" align="left" /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
                 <center><div><h3><b>Philmetal Products, Inc.</b></h3>
                 <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center>
 
@@ -40,7 +40,7 @@
                     </t>     
                 </table>
                 <h5><b><u>Scope of Work</u></b></h5><br />
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> Work Scope </th>
                         <th> Description </th>
@@ -54,7 +54,7 @@
                     </t>     
                 </table>
                 <h5><b><u>Specifications</u></b></h5><br />
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> STRUCTURE </th>
                         <th> ROOFING PROFILE </th>
@@ -95,7 +95,7 @@
                     </tr> 
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> CEILING PROFILE </th>
                         <th> SIDING PROFILE </th>
@@ -144,7 +144,7 @@
                     
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> PENETRATION FLASHING </th>
                         <th> FASTENING </th>
@@ -168,7 +168,7 @@
                     </tr> 
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> BENDED ACCESSORIES </th>
                         <th> NAILER </th>
@@ -241,7 +241,7 @@
                     </tr> 
                     </t>     
                 </table>
-                 <table  class="table table-bordered" style="font-size:12px">
+                 <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> ROLL FARMRING </th>
                         <th> ROOF SPAN </th>
@@ -275,7 +275,7 @@
                    
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> SKYLIGHTS </th>
                         <th> INSULATION </th>
@@ -320,7 +320,7 @@
                     
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> GUTTER </th>
                         <th> GUTTER HANGER </th>
@@ -397,7 +397,7 @@
                     
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> DECKING PROFILE </th>
                         <th> LOUVERS</th>
@@ -425,7 +425,7 @@
                     </tr>
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> FASCIA </th>
                         <th> SLEEVES</th>
@@ -445,7 +445,7 @@
                     </tr>
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> TYPE OF PROJECT </th>
                         <th> PRE CONTRACT AGREEMENTS</th>
@@ -477,7 +477,7 @@
                     </tr> 
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> LIFTING EQUIPMENT </th>
                         <th> TEMPORARY FACILITIES</th>
@@ -518,7 +518,7 @@
                      
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> PURLINS (Light Gauge) </th>
                         <th> STRAINERS</th>
@@ -540,7 +540,7 @@
                      
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> OTHERS </th>
                         <th> LOCATION</th>
@@ -560,7 +560,7 @@
                     </tr> 
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> TYPE OF CONTRACT </th>
                         <th> BID CONTRACT / DOCUMENTS</th>
@@ -577,7 +577,7 @@
                    
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> WORKING HOURS</th>
                         <th> SAFETY / SITE REQUIREMENTS</th>
@@ -634,7 +634,7 @@
 
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> OTHER SAFETY CONCERNS</th>
                     </tr>
@@ -644,29 +644,15 @@
                     </tr> 
                     </t>     
                 </table>
-
-                <b> Accomplishment By</b><span t-esc="doc.accomplish_by.name"/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                <b> Accomplishment Date </b><span t-esc="doc.accomplish_date"/>
-
-                    
-                
-                <!-- 
                 <table  class="table table-bordered" style="font-size:12px">
-                    <tr>
-                        <th> Member's Name </th>
-                        <th> Attendance Date and Time </th>
-                        <th> Type of Breakfast</th>
-                    </tr>
+                    
                     <t t-foreach="docs" t-as="doc">
                     <tr>
-                        <td><t t-esc="doc.name.name"/></td>
-                        <td><t t-esc="doc.datetime_breakfast"/></td>
-                        <td><t t-esc="doc.type_breakfast"/></td>    
-                               
-                    </tr>  
+                        <td><b> Accomplishment By</b><span t-esc="doc.accomplish_by.name"/></td>
+                        <td><b> Accomplishment Date </b><span t-esc="doc.accomplish_date"/></td>
+                    </tr> 
                     </t>     
-                </table> -->
+                </table>
             </div>
-        </t> 
 </template>
 </odoo>

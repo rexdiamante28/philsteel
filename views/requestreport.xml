@@ -2,8 +2,8 @@
 <!--Custom report-->
 <odoo>
 <template id="report_request_document">
-        <t t-foreach="docs" t-as="doc">
-            <div class="header">
+            <div class="header" style="height:20px;">
+                <img class="img img-responsive" src="/philsteel/static/src/img/logo-philsteel.png" height="800px" width="100px" align="left" /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
                 <center><div><h3><b>Philmetal Products, Inc.</b></h3>
                 <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center>
 
@@ -41,7 +41,7 @@
                 </table>
                     
                     <h5><b><u>References</u></b></h5>
-                    <table class="table table-bordered"  style="font-size:12px;">
+                    <table class="table table-condensed"  style="font-size:12px;">
                     
                         <t t-foreach="docs" t-as="doc">
                             <tr>
@@ -58,7 +58,7 @@
 
 
                     <h5><b><u>Frame status as of filing date</u></b></h5><br />
-                    <table class="table table-bordered"  style="font-size:12px">
+                    <table class="table table-condensed" style="font-size:12px">
                     
                         <t t-foreach="docs" t-as="doc">
                             <tr>
@@ -78,7 +78,7 @@
                     </table>
 
                     <h5><b><u>Request for Measurement</u></b></h5><br />
-                    <table class="table table-bordered"  style="font-size:12px">
+                    <table class="table table-condensed" style="font-size:12px">
                     
                         <t t-foreach="docs" t-as="doc">
                             <tr>
@@ -97,7 +97,7 @@
                         </t>     
                     </table>
                     <h5><b><u>Contact Person at Jobsite</u></b></h5><br />
-                    <table  class="table table-bordered" style="font-size:12px">
+                    <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> Name </th>
                         <th> Position </th>
@@ -110,23 +110,9 @@
                     </tr>  
                     </t>     
                 </table>
-                <h5><b><u>Scope of Work</u></b></h5><br />
-                <table  class="table table-bordered" style="font-size:12px">
-                    <tr>
-                        <th> Work Scope </th>
-                        <th> Description </th>
-                    </tr>
-                    <t t-foreach="docs" t-as="doc">
-                    <tr>
-                        <td><t t-esc="doc.work_scope.name"/></td>
-                        <td><t t-esc="doc.work_scope.description"/></td>   
-                               
-                    </tr>  
-                     
-                    </t>     
-                </table>
+                
                 <h5><b><u>Product Profile</u></b></h5><br />
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> Material </th>
                         <th> Quantity </th>
@@ -136,14 +122,22 @@
                         <td><t t-esc="doc.product_profile.name.name"/></td>
                         <td><t t-esc="doc.product_profile.quantity_installed"/></td>   
                                
-                    </tr> 
-
+                    </tr>  
                     </t>     
                 </table>
-
-                <b> Accomplished By</b><span t-esc="doc.accomplished_by.name"/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                <b> Approved By </b><span t-esc="doc.approved_by.name"/><br /><b> Date Filed </b><span t-esc="doc.date_filed"/>
+                <table  class="table table-bordered" style="font-size:12px">
+                    
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td><b> Accomplished By</b><span t-esc="doc.accomplished_by.name"/></td>
+                        <td><b> Approved By </b><span t-esc="doc.approved_by.name"/></td>
+                    </tr> 
+                    <tr>
+                        <td><b> Date Filed </b><span t-esc="doc.date_filed"/></td>
+                        <td></td>
+                    </tr> 
+                    </t>     
+                </table>
             </div>
-        </t> 
 </template>
 </odoo>

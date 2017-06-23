@@ -2,8 +2,8 @@
 <!--Custom report-->
 <odoo>
 <template id="report_accomplishment_document">
-        <t t-foreach="docs" t-as="doc">
-            <div class="header">
+            <div class="header" style="height:20px;">
+                <img class="img img-responsive" src="/philsteel/static/src/img/logo-philsteel.png" height="800px" width="100px" align="left" /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
                 <center><div><h3><b>Philmetal Products, Inc.</b></h3>
                 <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center>
 
@@ -35,7 +35,7 @@
                 </t>
                      
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> Particulart </th>
                         <th> Unit </th>
@@ -65,38 +65,16 @@
                         <td><span t-esc="doc.accomplisment.weight"/></td>  
                         <td><span t-esc="doc.accomplisment.remarks"/></td> 
                     </tr>   
-                    </t>     
-                    <!-- <t t-foreach="docs" t-as="doc">
-                    <tr>
-                        <td><t t-esc="doc.work_scope.name"/></td>
-                        <td><t t-esc="doc.work_scope.description"/></td>   
-                               
-                    </tr>  
-                    </t>     --> 
+                    </t>
                 </table>
-                
-                <b> Prepared By</b><span t-esc="doc.proj_incharge.name"/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                <b> Approved By </b><span t-esc="doc.client_rep.name"/>
-
-                    
-                
-                <!-- 
                 <table  class="table table-bordered" style="font-size:12px">
-                    <tr>
-                        <th> Member's Name </th>
-                        <th> Attendance Date and Time </th>
-                        <th> Type of Breakfast</th>
-                    </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr>
-                        <td><t t-esc="doc.name.name"/></td>
-                        <td><t t-esc="doc.datetime_breakfast"/></td>
-                        <td><t t-esc="doc.type_breakfast"/></td>    
-                               
-                    </tr>  
-                    </t>     
-                </table> -->
+                        <td><b> Prepared By</b><span t-esc="doc.proj_incharge.name"/></td>  
+                        <td><b> Approved By </b><span t-esc="doc.client_rep.name"/></td>
+                    </tr>   
+                    </t>
+                </table>
             </div>
-        </t> 
 </template>
 </odoo>

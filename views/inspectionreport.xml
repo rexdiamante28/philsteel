@@ -3,6 +3,13 @@
 <odoo>
 <template id="report_inspection_document">
         <div class="page">
+            <div class="header" style="height:20px;">
+                <img class="img img-responsive" src="/philsteel/static/src/img/logo-philsteel.png" height="800px" width="100px" align="left" /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                <center><div><h3><b>Philmetal Products, Inc.</b></h3>
+                <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center>
+
+
+            </div>
                 <center><h4><b><u>PROJECT INSPECTION AND SAFETY REPORT</u></b></h4></center>
                 <table class="table table-borderless">
                     
@@ -36,7 +43,7 @@
                     </t>     
                 </table>
                 <h5><b><u>Scope of Work</u></b></h5><br />
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <tr>
                         <th> Work Scope </th>
                         <th> Description </th>
@@ -50,7 +57,7 @@
                     </t>     
                 </table>
                 <h5><b><u>Man Power</u></b></h5><br />
-                <table  class="table table-bordered" style="font-size:12px">
+                <table class="table table-condensed" style="font-size:12px">
                     <t t-foreach="docs" t-as="doc">
                     <tr>
                         <td><b> Foreman </b><span t-esc="doc.foreman"/></td>  
@@ -68,7 +75,7 @@
                 </table>
                     
                     <h5><b><u>Tools And Equipments</u></b></h5>
-                    <table class="table table-bordered"  style="font-size:12px;">
+                    <table class="table table-condensed"  style="font-size:12px;">
                             <tr>
                                 <th> Material </th>
                                 <th> Description </th>
@@ -82,7 +89,7 @@
                         </t>     
                     </table>
                     <h5><b><u>Activities</u></b></h5>
-                    <table class="table table-bordered"  style="font-size:12px;">
+                    <table class="table table-condensed"  style="font-size:12px;">
                             <tr>
                                 <th> Activity </th>
                                 <th> Status </th>
@@ -96,7 +103,7 @@
                         </t>     
                     </table>
                     <h5><b><u>Materials Installed</u></b></h5>
-                    <table class="table table-bordered"  style="font-size:12px;">
+                    <table class="table table-condensed"  style="font-size:12px;">
                             <tr>
                                 <th> Material </th>
                                 <th> Quantity </th>
