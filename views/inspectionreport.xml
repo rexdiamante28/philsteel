@@ -2,8 +2,7 @@
 <!--Custom report-->
 <odoo>
 <template id="report_inspection_document">
-        <t t-foreach="docs" t-as="doc">
-            <div class="page">
+        <div class="page">
                 <center><h4><b><u>PROJECT INSPECTION AND SAFETY REPORT</u></b></h4></center>
                 <table class="table table-borderless">
                     
@@ -143,6 +142,5 @@
                     </t>     
                 </table> -->
             </div>
-        </t> 
 </template>
 </odoo>

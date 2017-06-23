@@ -122,6 +122,7 @@
                         <td><t t-esc="doc.work_scope.description"/></td>   
                                
                     </tr>  
+                     
                     </t>     
                 </table>
                 <h5><b><u>Product Profile</u></b></h5><br />
@@ -135,7 +136,8 @@
                         <td><t t-esc="doc.product_profile.name.name"/></td>
                         <td><t t-esc="doc.product_profile.quantity_installed"/></td>   
                                
-                    </tr>  
+                    </tr> 
+
                     </t>     
                 </table>
 
