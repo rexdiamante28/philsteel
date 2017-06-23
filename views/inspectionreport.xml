@@ -118,11 +118,16 @@
                     <tr style="border:1px solid black">
                         <td style="border:1px solid black"><t t-esc="doc.other_concerns"/></td>
                         <td style="border:1px solid black"></td>
-                    </tr>  
+                    </tr> 
+                    </t>     
+                </table>
+                <table  class="table table-bordered" style="width:100%; font-size:12px;">
+                    
+                    <t t-foreach="docs" t-as="doc">
                     <tr>
                         <td><b> Prepared By</b><span t-esc="doc.prepared_by.name"/></td>
                         <td><b> Noted By </b><span t-esc="doc.approved_by.name"/></td>
-                    </tr> 
+                    </tr>
                     </t>     
                 </table>
                 

@@ -641,7 +641,7 @@
                     </tr> 
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="font-size:12px">
+                <table  class="table table-bordered" style="width:100%; font-size:12px;">
                     
                     <t t-foreach="docs" t-as="doc">
                     <tr>
