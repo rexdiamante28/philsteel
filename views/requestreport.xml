@@ -6,7 +6,7 @@
                 <center><div><h3><b>Philmetal Products, Inc.</b></h3>
                 <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center><br /><br /><br />
                 <center><h4><b><u>REQUEST FOR ACTUAL MEASUREMENT</u></b></h4></center>
-                <table class="table table-borderless" style="width:100%;">
+                <table class="table table-borderless" style="width:100%; font-size:12px;">
                     
                     <t t-foreach="docs" t-as="doc">
                     <tr class="table table-borderless">
@@ -36,8 +36,8 @@
                     </t>     
                 </table>
                     
-                    <h5><b><u>References</u></b></h5>
-                    <table class="table table-condensed" style="width:100%;">
+                    <h4><b><u>References</u></b></h4>
+                    <table class="table table-condensed" style="width:100%; font-size:12px;">
                     
                         <t t-foreach="docs" t-as="doc">
                             <tr>
@@ -53,8 +53,8 @@
                     </table>
 
 
-                    <h5><b><u>Frame status as of filing date</u></b></h5><br />
-                    <table class="table table-condensed" style="width:100%;">
+                    <h4><b><u>Frame status as of filing date</u></b></h4><br />
+                    <table class="table table-condensed" style="width:100%; font-size:12px;">
                     
                         <t t-foreach="docs" t-as="doc">
                             <tr>
@@ -73,8 +73,8 @@
                         </t>     
                     </table>
 
-                    <h5><b><u>Request for Measurement</u></b></h5><br />
-                    <table class="table table-condensed" style="width:100%;">
+                    <h4><b><u>Request for Measurement</u></b></h4><br />
+                    <table class="table table-condensed" style="width:100%; font-size:12px;">
                     
                         <t t-foreach="docs" t-as="doc">
                             <tr>
@@ -92,8 +92,8 @@
                     
                         </t>     
                     </table>
-                    <h5><b><u>Contact Person at Jobsite</u></b></h5><br />
-                    <table class="table table-condensed" style="width:100%;">
+                    <h4><b><u>Contact Person at Jobsite</u></b></h4><br />
+                    <table class="table table-condensed" style="width:100%; font-size:12px;">
                     <tr>
                         <th> Name </th>
                         <th> Position </th>
@@ -107,8 +107,8 @@
                     </t>     
                 </table>
                 
-                <h5><b><u>Product Profile</u></b></h5><br />
-                <table class="table table-condensed" style="width:100%;">
+                <h4><b><u>Product Profile</u></b></h4><br />
+                <table class="table table-condensed" style="width:100%; font-size:12px;">
                     <tr>
                         <th> Material </th>
                         <th> Quantity </th>
@@ -121,7 +121,7 @@
                     </tr>  
                     </t>     
                 </table>
-                <table  class="table table-bordered" style="width:100%;">
+                <table  class="table table-bordered" style="width:100%; font-size:12px;">
                     
                     <t t-foreach="docs" t-as="doc">
                     <tr>
