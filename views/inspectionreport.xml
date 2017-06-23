@@ -3,11 +3,6 @@
 <odoo>
 <template id="report_inspection_document">
         <t t-foreach="docs" t-as="doc">
-            <div class="header">
-                <center><div><h3><b>Philmetal Products, Inc.</b></h3>
-                <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center>
-
-            </div>
             <div class="page">
                 <center><h4><b><u>PROJECT INSPECTION AND SAFETY REPORT</u></b></h4></center>
                 <table class="table table-borderless">
