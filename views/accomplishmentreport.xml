@@ -2,15 +2,12 @@
 <!--Custom report-->
 <odoo>
 <template id="report_accomplishment_document">
-            <div class="header" style="height:20px;">
-                <img class="img img-responsive" src="/philsteel/static/src/img/logo-philsteel.png" height="800px" width="100px" align="left" /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                <center><div><h3><b>Philmetal Products, Inc.</b></h3>
-                <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center>
-
-            </div>
+            
             <div class="page">
+                <center><div><h3><b>Philmetal Products, Inc.</b></h3>
+                <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center><br />
                 <center><h4><b><u>PROJECT ACCOMPLISHMENT REPORT</u></b></h4></center>
-                <table class="table table-borderless">
+                <table class="table table-borderless" style="width:100%; font-size:12px;">
                     
                     <t t-foreach="docs" t-as="doc">
                     <tr class="table table-borderless">
@@ -35,35 +32,35 @@
                 </t>
                      
                 </table>
-                <table class="table table-condensed" style="font-size:12px">
-                    <tr>
-                        <th> Particulart </th>
-                        <th> Unit </th>
-                        <th> QTY. </th>
-                        <th> Weight Factor </th>
-                        <th> Precious Qty. </th>
-                        <th> Precious % </th>
-                        <th> This Period Qty. </th>
-                        <th> This Period % </th>
-                        <th> To Date Qty. </th>
-                        <th>To Date % </th>
-                        <th>To Date Weight </th>
-                        <th> Remarks </th>
+                <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
+                    <tr style="border:1px solid black">
+                        <th style="border:1px solid black"> Particulart </th>
+                        <th style="border:1px solid black"> Unit </th>
+                        <th style="border:1px solid black"> QTY. </th>
+                        <th style="border:1px solid black"> Weight Factor </th>
+                        <th style="border:1px solid black"> Precious Qty. </th>
+                        <th style="border:1px solid black"> Precious % </th>
+                        <th style="border:1px solid black"> This Period Qty. </th>
+                        <th style="border:1px solid black"> This Period % </th>
+                        <th style="border:1px solid black"> To Date Qty. </th>
+                        <th style="border:1px solid black">To Date % </th>
+                        <th style="border:1px solid black">To Date Weight </th>
+                        <th style="border:1px solid black"> Remarks </th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
-                    <tr>
-                        <td><span t-esc="doc.accomplisment.name"/></td>  
-                        <td><span t-esc="doc.accomplisment.unit"/></td>  
-                        <td><span t-esc="doc.accomplisment.qty"/></td>  
-                        <td><span t-esc="doc.accomplisment.weight_factor"/></td> 
-                        <td><span t-esc="doc.accomplisment.qty_prev"/></td>  
-                        <td><span t-esc="doc.accomplisment.percent_prev"/></td> 
-                        <td><span t-esc="doc.accomplisment.qty_thisperiod"/></td>  
-                        <td><span t-esc="doc.accomplisment.percent_thisperiod"/></td> 
-                        <td><span t-esc="doc.accomplisment.qty_todate"/></td>  
-                        <td><span t-esc="doc.accomplisment.percent_todate"/></td> 
-                        <td><span t-esc="doc.accomplisment.weight"/></td>  
-                        <td><span t-esc="doc.accomplisment.remarks"/></td> 
+                    <tr style="border:1px solid black">
+                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.name"/></td>  
+                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.unit"/></td>  
+                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.qty"/></td>  
+                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.weight_factor"/></td> 
+                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.qty_prev"/></td>  
+                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.percent_prev"/></td> 
+                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.qty_thisperiod"/></td>  
+                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.percent_thisperiod"/></td> 
+                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.qty_todate"/></td>  
+                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.percent_todate"/></td> 
+                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.weight"/></td>  
+                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.remarks"/></td> 
                     </tr>   
                     </t>
                 </table>

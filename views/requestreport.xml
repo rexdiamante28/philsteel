@@ -4,7 +4,7 @@
 <template id="report_request_document">
             <div class="page">
                 <center><div><h3><b>Philmetal Products, Inc.</b></h3>
-                <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center><br /><br /><br />
+                <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center><br />
                 <center><h4><b><u>REQUEST FOR ACTUAL MEASUREMENT</u></b></h4></center>
                 <table class="table table-borderless" style="width:100%; font-size:12px;">
                     
