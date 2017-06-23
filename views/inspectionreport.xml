@@ -4,7 +4,7 @@
 <template id="report_inspection_document">
         <t t-foreach="docs" t-as="doc">
             <div class="header" style="height:20px;">
-                <img class="img img-responsive" src="/philsteel/static/src/img/logo-philsteel.png" height="800px" width="100px" align="left" /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                <img class="img img-responsive" src="/philsteel/static/src/img/logo-philsteel.png" height="800px" width="100px" align="left" /> 
                 <center><div><h3><b>Philmetal Products, Inc.</b></h3>
                 <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center>
 

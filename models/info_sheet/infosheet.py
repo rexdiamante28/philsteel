@@ -220,7 +220,7 @@ class Infosheet(models.Model):
 	#====================================================#
 	portable_water = fields.Boolean(string='Portable Water')
 	electricity = fields.Boolean(string='Electricity')
-	others_con = fields.Boolean(string='Other Safety Concerns')
+	others_con = fields.Text(string='Other Safety Concerns')
 
 	infosheetimages = fields.One2many('philsteel.infosheetimages', 'infosheet', string="Project Information Images")
 

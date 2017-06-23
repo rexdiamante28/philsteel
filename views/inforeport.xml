@@ -4,7 +4,7 @@
 <template id="report_information_document">
         <t t-foreach="docs" t-as="doc">
             <div class="header" style="height:20px;">
-                <img class="img img-responsive" src="/philsteel/static/src/img/logo-philsteel.png" height="800px" width="100px" align="left" /> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                <img class="img img-responsive" src="/philsteel/static/src/img/logo-philsteel.png" height="800px" width="100px" align="left" />
                 <center><div><h3><b>Philmetal Products, Inc.</b></h3>
                 <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center>
 
@@ -176,7 +176,7 @@
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr>
-                        <td>Type:</td>
+                        <td><b>Type:</b></td>
                         <td></td>   
                     </tr> 
                     <tr>
@@ -212,7 +212,7 @@
                         <td></td>   
                     </tr>
                     <tr>
-                        <td>standard<t t-esc="doc.standard"/></td>
+                        <td>Standard<t t-esc="doc.standard"/></td>
                         <td></td>   
                     </tr>
                     <tr>
@@ -257,7 +257,7 @@
                         <td>Roof Pitch<t t-esc="doc.roof_pitch"/></td>
                     </tr> 
                     <tr>
-                        <td>If Jobsite or Offsite(Available or Not Available)</td>
+                        <td><b>If Jobsite or Offsite(Available or Not Available)</b></td>
                         <td>Curve Roof Radius<t t-esc="doc.curve_roof"/></td>  
                      
                     </tr> 
@@ -417,7 +417,7 @@
                         <td>Triple Pass<t t-esc="doc.triple_pass"/></td>
                     </tr>  
                     <tr>
-                        <td>Closure Requirement</td>
+                        <td><b>Closure Requirement</b></td>
                         <td></td>
                     </tr>  
                     <tr>
@@ -498,7 +498,7 @@
                     </tr> 
                     <tr>
                         <td></td>
-                        <td>Bunk House</td>
+                        <td><b>Bunk House</b></td>
                     </tr> 
                     <tr>
                         <td></td>
@@ -548,7 +548,7 @@
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr>
-                        <td>Specify Preffere dSealant<t t-esc="doc.sealant"/></td>
+                        <td>Specify Prepared Sealant<t t-esc="doc.sealant"/></td>
                         <td>Inside Industrial Park<t t-esc="doc.industrial_park"/></td>
                     </tr>  
                     <tr>
@@ -618,7 +618,7 @@
                     </tr> 
                     <tr>
                         <td></td>
-                        <td>Clearances:</td>
+                        <td><b>Clearances:</b></td>
                     </tr> 
                     <tr>
                         <td></td>
