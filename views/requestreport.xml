@@ -35,20 +35,7 @@
                     </tr>
                     </t>     
                 </table>
-                <h5><b><u>Scope of Work</u></b></h5><br />
-                <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
-                    <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> Work Scope </th>
-                        <th style="border:1px solid black"> Description </th>
-                    </tr>
-                    <t t-foreach="docs" t-as="doc">
-                    <tr style="border:1px solid black">
-                        <td style="border:1px solid black"><t t-esc="doc.work_scope.name"/></td>
-                        <td style="border:1px solid black"><t t-esc="doc.work_scope.description"/></td>   
-                               
-                    </tr>  
-                    </t>     
-                </table>
+                
                     
                     <h4><b><u>References</u></b></h4>
                     <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
@@ -65,6 +52,20 @@
                     
                         </t>     
                     </table>
+                    <h5><b><u>Scope of Work</u></b></h5><br />
+                <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
+                    <tr style="border:1px solid black">
+                        <th style="border:1px solid black"> Work Scope </th>
+                        <th style="border:1px solid black"> Description </th>
+                    </tr>
+                    <t t-foreach="docs" t-as="doc">
+                    <tr style="border:1px solid black">
+                        <td style="border:1px solid black"><t t-esc="doc.work_scopes.name"/></td>
+                        <td style="border:1px solid black"><t t-esc="doc.work_scopes.description"/></td>   
+                               
+                    </tr>  
+                    </t>     
+                </table>
 
 
                     <h4><b><u>Frame status as of filing date</u></b></h4><br />
