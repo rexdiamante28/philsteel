@@ -31,7 +31,7 @@
                     </tr> 
                 </t>
                      
-                </table>
+                </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> Particulart </th>
@@ -63,7 +63,7 @@
                         <td style="border:1px solid black"><span t-esc="doc.accomplisment.remarks"/></td> 
                     </tr>   
                     </t>
-                </table>
+                </table><br />
                 <table  class="table table-bordered" style="width:100%; font-size:12px;">
                     <t t-foreach="docs" t-as="doc">
                     <tr>

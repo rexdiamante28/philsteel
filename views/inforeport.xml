@@ -36,7 +36,7 @@
                     </tr> 
                     </t>     
                 </table>
-                <h5><b><u>Scope of Work</u></b></h5><br />
+                <h5><b><u>Scope of Work</u></b></h5>
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> Work Scope </th>
@@ -50,7 +50,7 @@
                     </tr>  
                     </t>     
                 </table>
-                <h5><b><u>Specifications</u></b></h5><br />
+                <h5><b><u>Specifications</u></b></h5>
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> STRUCTURE </th>
@@ -91,7 +91,7 @@
                          <td style="border:1px solid black"></td>
                     </tr> 
                     </t>     
-                </table>
+                </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> CEILING PROFILE </th>
@@ -140,7 +140,7 @@
                     </tr> 
                     
                     </t>     
-                </table>
+                </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> PENETRATION FLASHING </th>
@@ -164,7 +164,7 @@
                         <td style="border:1px solid black">Anchor Bolts<t t-esc="doc.anchor_bolts"/></td>
                     </tr> 
                     </t>     
-                </table>
+                </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> BENDED ACCESSORIES </th>
@@ -237,7 +237,7 @@
                         
                     </tr> 
                     </t>     
-                </table>
+                </table><br />
                  <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> ROLL FARMRING </th>
@@ -271,7 +271,7 @@
                     </tr> 
                    
                     </t>     
-                </table>
+                </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> SKYLIGHTS </th>
@@ -316,7 +316,7 @@
                     </tr> 
                     
                     </t>     
-                </table>
+                </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> GUTTER </th>
@@ -393,7 +393,7 @@
                     </tr>
                     
                     </t>     
-                </table>
+                </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> DECKING PROFILE </th>
@@ -421,7 +421,7 @@
                         <td></td>
                     </tr>
                     </t>     
-                </table>
+                </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> FASCIA </th>
@@ -441,7 +441,7 @@
                         <td style="border:1px solid black"></td>
                     </tr>
                     </t>     
-                </table>
+                </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> TYPE OF PROJECT </th>
@@ -473,7 +473,7 @@
                         <td style="border:1px solid black"></td>
                     </tr> 
                     </t>     
-                </table>
+                </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> LIFTING EQUIPMENT </th>
@@ -514,7 +514,7 @@
                     </tr> 
                      
                     </t>     
-                </table>
+                </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> PURLINS (Light Gauge) </th>
@@ -536,7 +536,7 @@
                      
                      
                     </t>     
-                </table>
+                </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> OTHERS </th>
@@ -556,7 +556,7 @@
                         <td style="border:1px solid black">Exclusive Subdivision<t t-esc="doc.exclusive_subdivision"/></td>
                     </tr> 
                     </t>     
-                </table>
+                </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> TYPE OF CONTRACT </th>
@@ -573,7 +573,7 @@
                     </tr>
                    
                     </t>     
-                </table>
+                </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> WORKING HOURS</th>
@@ -630,7 +630,7 @@
                     </tr> 
 
                     </t>     
-                </table>
+                </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> OTHER SAFETY CONCERNS</th>
@@ -640,7 +640,7 @@
                         <td style="border:1px solid black"><t t-esc="doc.others_con"/></td>
                     </tr> 
                     </t>     
-                </table>
+                </table><br />
                 <table  class="table table-bordered" style="width:100%; font-size:12px;">
                     
                     <t t-foreach="docs" t-as="doc">
