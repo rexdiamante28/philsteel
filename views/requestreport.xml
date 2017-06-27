@@ -3,7 +3,6 @@
 <odoo>
 <template id="report_request_document">
             <div class="page">
-                <img src="addons/philsteel/static/src/img/phil.png" height="50px" width="100px" align="left" />
                 <center><div><h3><b>Philmetal Products, Inc.</b></h3>
                 <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center><br />
                 <center><h4><b><u>REQUEST FOR ACTUAL MEASUREMENT</u></b></h4></center>
