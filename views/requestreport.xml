@@ -85,7 +85,7 @@
                                 <td style="width:50%; border:1px solid black;"></td>   
                             </tr> 
                             <tr style="border:1px solid black;">
-                                <td style="width:50%; border:1px solid black;"><b> % No. of Floors Available for Measurement </b><span t-esc="doc.work_scope"/></td>
+                                <td style="width:50%; border:1px solid black;"><b> % No. of Floors Available for Measurement </b><span t-esc="doc.work_scope.description"/></td>
                                 <td style="width:50%; border:1px solid black;"></td>   
                             </tr>
                     
