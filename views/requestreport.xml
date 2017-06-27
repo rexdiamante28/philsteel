@@ -68,14 +68,14 @@
                     </t> 
                     <t t-set="i" t-value="0">
                         <t t-foreach="docs.work_scope" t-as="1">
-                            
-                                <tr style="border:2px solid black">
+                            <t t-if="i &lt;= 0">
+                                <tr style="border:1px solid black">
                         
                         <td style="border:1px solid black"><t t-esc="docs.work_scope[i].name"/></td>
                         <td style="border:1px solid black"><t t-esc="docs.work_scope[i].description"/></td>   
                                
                     </tr>
-                
+                </t>
             </t>
         </t>
 
