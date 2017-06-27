@@ -39,13 +39,13 @@
                 <h5><b><u>Scope of Work</u></b></h5>
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> Work Scope </th>
-                        <th style="border:1px solid black"> Description </th>
+                        <th style="width:50%; border:1px solid black"> Work Scope </th>
+                        <th style="width:50%; border:1px solid black"> Description </th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"><t t-esc="doc.work_scopes.name"/></td>
-                        <td style="border:1px solid black"><t t-esc="doc.work_scopes.description"/></td>   
+                        <td style="width:50%; border:1px solid black"><t t-esc="doc.work_scopes.name"/></td>
+                        <td style="width:50%; border:1px solid black"><t t-esc="doc.work_scopes.description"/></td>   
                                
                     </tr>  
                     </t>     
@@ -53,342 +53,342 @@
                 <h5><b><u>Specifications</u></b></h5>
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> STRUCTURE </th>
-                        <th style="border:1px solid black"> ROOFING PROFILE </th>
+                        <th style="width:50%; border:1px solid black"> STRUCTURE </th>
+                        <th style="width:50%; border:1px solid black"> ROOFING PROFILE </th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Crazy<t t-esc="doc.crazy"/></td>
-                        <td style="border:1px solid black">Type<t t-esc="doc.types_a"/></td>   
+                        <td style="width:50%; border:1px solid black">Crazy<t t-esc="doc.crazy"/></td>
+                        <td style="width:50%; border:1px solid black">Type<t t-esc="doc.types_a"/></td>   
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Semi Crazy<t t-esc="doc.semi_crazy"/></td>
-                        <td style="border:1px solid black">Total Area<t t-esc="doc.total_area_a"/></td>   
+                        <td style="width:50%; border:1px solid black">Semi Crazy<t t-esc="doc.semi_crazy"/></td>
+                        <td style="width:50%; border:1px solid black">Total Area<t t-esc="doc.total_area_a"/></td>   
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Wood<t t-esc="doc.wood"/></td>
-                        <td style="border:1px solid black">Color<t t-esc="doc.color_a"/></td>   
+                        <td style="width:50%; border:1px solid black">Wood<t t-esc="doc.wood"/></td>
+                        <td style="width:50%; border:1px solid black">Color<t t-esc="doc.color_a"/></td>   
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Steel<t t-esc="doc.steel"/></td>
-                        <td style="border:1px solid black">Thickness<t t-esc="doc.thickness_a"/></td>   
+                        <td style="width:50%; border:1px solid black">Steel<t t-esc="doc.steel"/></td>
+                        <td style="width:50%; border:1px solid black">Thickness<t t-esc="doc.thickness_a"/></td>   
                     </tr> 
                       
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Others<t t-esc="doc.Others"/></td>
-                        <td style="border:1px solid black">Max Length site can accomodate<t t-esc="doc.max_length"/></td>   
+                        <td style="width:50%; border:1px solid black">Others<t t-esc="doc.Others"/></td>
+                        <td style="width:50%; border:1px solid black">Max Length site can accomodate<t t-esc="doc.max_length"/></td>   
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Building Height<t t-esc="doc.building_height"/></td>
-                         <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Building Height<t t-esc="doc.building_height"/></td>
+                         <td style="width:50%; border:1px solid black"></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">No of Storeys<t t-esc="doc.storeys_no"/></td>
-                         <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">No of Storeys<t t-esc="doc.storeys_no"/></td>
+                         <td style="width:50%; border:1px solid black"></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Safe Access<t t-esc="doc.safe_access"/></td>
-                         <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Safe Access<t t-esc="doc.safe_access"/></td>
+                         <td style="width:50%; border:1px solid black"></td>
                     </tr> 
                     </t>     
                 </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> CEILING PROFILE </th>
-                        <th style="border:1px solid black"> SIDING PROFILE </th>
+                        <th style="width:50%; border:1px solid black"> CEILING PROFILE </th>
+                        <th style="width:50%; border:1px solid black"> SIDING PROFILE </th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Type<t t-esc="doc.types_c"/></td>
-                        <td style="border:1px solid black">Type<t t-esc="doc.types_b"/></td>   
+                        <td style="width:50%; border:1px solid black">Type<t t-esc="doc.types_c"/></td>
+                        <td style="width:50%; border:1px solid black">Type<t t-esc="doc.types_b"/></td>   
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Total Area<t t-esc="doc.total_area_c"/></td>
-                        <td style="border:1px solid black">Total Area<t t-esc="doc.total_area_b"/></td>   
+                        <td style="width:50%; border:1px solid black">Total Area<t t-esc="doc.total_area_c"/></td>
+                        <td style="width:50%; border:1px solid black">Total Area<t t-esc="doc.total_area_b"/></td>   
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Color<t t-esc="doc.color_c"/></td>
-                        <td style="border:1px solid black">Color<t t-esc="doc.color_b"/></td>   
+                        <td style="width:50%; border:1px solid black">Color<t t-esc="doc.color_c"/></td>
+                        <td style="width:50%; border:1px solid black">Color<t t-esc="doc.color_b"/></td>   
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Thickness<t t-esc="doc.thickness_c"/></td>
-                        <td style="border:1px solid black">Thickness<t t-esc="doc.thickness_b"/></td>   
+                        <td style="width:50%; border:1px solid black">Thickness<t t-esc="doc.thickness_c"/></td>
+                        <td style="width:50%; border:1px solid black">Thickness<t t-esc="doc.thickness_b"/></td>   
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Ceiling Framing Includes<t t-esc="doc.ceiling_framing"/></td>
-                         <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Ceiling Framing Includes<t t-esc="doc.ceiling_framing"/></td>
+                         <td style="width:50%; border:1px solid black"></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Not includes<t t-esc="doc.not_included"/></td>
-                         <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Not includes<t t-esc="doc.not_included"/></td>
+                         <td style="width:50%; border:1px solid black"></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">-Hat Section<t t-esc="doc.hat_section"/></td>
-                         <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">-Hat Section<t t-esc="doc.hat_section"/></td>
+                         <td style="width:50%; border:1px solid black"></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">-Tee Runner<t t-esc="doc.tee_runner"/></td>
-                         <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">-Tee Runner<t t-esc="doc.tee_runner"/></td>
+                         <td style="width:50%; border:1px solid black"></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">-Metal Furring<t t-esc="doc.metal_furring"/></td>
-                         <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">-Metal Furring<t t-esc="doc.metal_furring"/></td>
+                         <td style="width:50%; border:1px solid black"></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">-Others<t t-esc="doc.otherss"/></td>
-                         <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">-Others<t t-esc="doc.otherss"/></td>
+                         <td style="width:50%; border:1px solid black"></td>
                     </tr> 
                     
                     </t>     
                 </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> PENETRATION FLASHING </th>
-                        <th style="border:1px solid black"> FASTENING </th>
+                        <th style="width:50%; border:1px solid black"> PENETRATION FLASHING </th>
+                        <th style="width:50%; border:1px solid black"> FASTENING </th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Without penetration<t t-esc="doc.without_penetration"/></td>
-                        <td style="border:1px solid black">Teks Screw<t t-esc="doc.teks_screw"/></td>   
+                        <td style="width:50%; border:1px solid black">Without penetration<t t-esc="doc.without_penetration"/></td>
+                        <td style="width:50%; border:1px solid black">Teks Screw<t t-esc="doc.teks_screw"/></td>   
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">With Penetration (Give Details)<t t-esc="doc.with_penetration"/></td>
-                        <td style="border:1px solid black">Straps and Rivets<t t-esc="doc.strap_rivet"/></td>   
+                        <td style="width:50%; border:1px solid black">With Penetration (Give Details)<t t-esc="doc.with_penetration"/></td>
+                        <td style="width:50%; border:1px solid black">Straps and Rivets<t t-esc="doc.strap_rivet"/></td>   
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Concealed<t t-esc="doc.conceal"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Concealed<t t-esc="doc.conceal"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Anchor Bolts<t t-esc="doc.anchor_bolts"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Anchor Bolts<t t-esc="doc.anchor_bolts"/></td>
                     </tr> 
                     </t>     
                 </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> BENDED ACCESSORIES </th>
-                        <th style="border:1px solid black"> NAILER </th>
+                        <th style="width:50%; border:1px solid black"> BENDED ACCESSORIES </th>
+                        <th style="width:50%; border:1px solid black"> NAILER </th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"><b>Type:</b></td>
-                        <td style="border:1px solid black"></td>   
+                        <td style="width:50%; border:1px solid black"><b>Type:</b></td>
+                        <td style="width:50%; border:1px solid black"></td>   
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">-End Flashing<t t-esc="doc.end_flashing"/></td>
-                        <td style="border:1px solid black">Roof Purlins<t t-esc="doc.roofpurlins"/></td>   
+                        <td style="width:50%; border:1px solid black">-End Flashing<t t-esc="doc.end_flashing"/></td>
+                        <td style="width:50%; border:1px solid black">Roof Purlins<t t-esc="doc.roofpurlins"/></td>   
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">-End Wall Flashing<t t-esc="doc.end_wall_flashing"/></td>
-                        <td style="border:1px solid black">Side Girts<t t-esc="doc.sidegirts"/></td>   
+                        <td style="width:50%; border:1px solid black">-End Wall Flashing<t t-esc="doc.end_wall_flashing"/></td>
+                        <td style="width:50%; border:1px solid black">Side Girts<t t-esc="doc.sidegirts"/></td>   
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">-Wall Flashing<t t-esc="doc.wall_flashing"/></td>
-                        <td style="border:1px solid black">Roof Purlins Spacing<t t-esc="doc.roof_purlins"/></td>   
+                        <td style="width:50%; border:1px solid black">-Wall Flashing<t t-esc="doc.wall_flashing"/></td>
+                        <td style="width:50%; border:1px solid black">Roof Purlins Spacing<t t-esc="doc.roof_purlins"/></td>   
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">-Ridge Flashing<t t-esc="doc.ridge_flashing"/></td>
-                        <td style="border:1px solid black">Side Girts Spacing<t t-esc="doc.side_girts"/></td>    
+                        <td style="width:50%; border:1px solid black">-Ridge Flashing<t t-esc="doc.ridge_flashing"/></td>
+                        <td style="width:50%; border:1px solid black">Side Girts Spacing<t t-esc="doc.side_girts"/></td>    
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">-Ridge Wall Flashing<t t-esc="doc.ridge_wall_flashing"/></td>
-                        <td style="border:1px solid black"></td>   
+                        <td style="width:50%; border:1px solid black">-Ridge Wall Flashing<t t-esc="doc.ridge_wall_flashing"/></td>
+                        <td style="width:50%; border:1px solid black"></td>   
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">-Crapping<t t-esc="doc.crapping"/></td>
-                        <td style="border:1px solid black"></td>   
+                        <td style="width:50%; border:1px solid black">-Crapping<t t-esc="doc.crapping"/></td>
+                        <td style="width:50%; border:1px solid black"></td>   
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Color<t t-esc="doc.color_d"/></td>
-                        <td style="border:1px solid black"></td>   
+                        <td style="width:50%; border:1px solid black">Color<t t-esc="doc.color_d"/></td>
+                        <td style="width:50%; border:1px solid black"></td>   
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Thickness<t t-esc="doc.thickness_d"/></td>
-                        <td style="border:1px solid black"></td>   
+                        <td style="width:50%; border:1px solid black">Thickness<t t-esc="doc.thickness_d"/></td>
+                        <td style="width:50%; border:1px solid black"></td>   
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Standard<t t-esc="doc.standard"/></td>
-                        <td style="border:1px solid black"></td>   
+                        <td style="width:50%; border:1px solid black">Standard<t t-esc="doc.standard"/></td>
+                        <td style="width:50%; border:1px solid black"></td>   
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Per Actual<t t-esc="doc.per_actual"/></td>
-                        <td style="border:1px solid black"></td>   
+                        <td style="width:50%; border:1px solid black">Per Actual<t t-esc="doc.per_actual"/></td>
+                        <td style="width:50%; border:1px solid black"></td>   
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">PMPI for clients approval<t t-esc="doc.pmpi"/></td>
-                        <td style="border:1px solid black"></td>   
+                        <td style="width:50%; border:1px solid black">PMPI for clients approval<t t-esc="doc.pmpi"/></td>
+                        <td style="width:50%; border:1px solid black"></td>   
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Reglets on wall by Others<t t-esc="doc.regret_wall_other"/></td>
-                        <td style="border:1px solid black"></td>   
+                        <td style="width:50%; border:1px solid black">Reglets on wall by Others<t t-esc="doc.regret_wall_other"/></td>
+                        <td style="width:50%; border:1px solid black"></td>   
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Reglets on wall by PMPI<t t-esc="doc.regret_wall_pmpi"/></td>
-                        <td style="border:1px solid black"></td>   
+                        <td style="width:50%; border:1px solid black">Reglets on wall by PMPI<t t-esc="doc.regret_wall_pmpi"/></td>
+                        <td style="width:50%; border:1px solid black"></td>   
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Masonry works by others<t t-esc="doc.masonry_work_other"/></td>
-                        <td style="border:1px solid black"></td>   
+                        <td style="width:50%; border:1px solid black">Masonry works by others<t t-esc="doc.masonry_work_other"/></td>
+                        <td style="width:50%; border:1px solid black"></td>   
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Masonry Work by PMPI<t t-esc="doc.masonry_work_pmpi"/></td>
-                        <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Masonry Work by PMPI<t t-esc="doc.masonry_work_pmpi"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
                         
                     </tr> 
                     </t>     
                 </table><br />
                  <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> ROLL FARMRING </th>
-                        <th style="border:1px solid black"> ROOF SPAN </th>
+                        <th style="width:50%; border:1px solid black"> ROLL FARMRING </th>
+                        <th style="width:50%; border:1px solid black"> ROOF SPAN </th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">On Site<t t-esc="doc.on_site"/></td>
-                        <td style="border:1px solid black">Maximum Length<t t-esc="doc.max_lengths"/></td>
+                        <td style="width:50%; border:1px solid black">On Site<t t-esc="doc.on_site"/></td>
+                        <td style="width:50%; border:1px solid black">Maximum Length<t t-esc="doc.max_lengths"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Off Site<t t-esc="doc.off_site"/></td>
-                        <td style="border:1px solid black">Roof Pitch<t t-esc="doc.roof_pitch"/></td>
+                        <td style="width:50%; border:1px solid black">Off Site<t t-esc="doc.off_site"/></td>
+                        <td style="width:50%; border:1px solid black">Roof Pitch<t t-esc="doc.roof_pitch"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"><b>If Jobsite or Offsite(Available or Not Available)</b></td>
-                        <td style="border:1px solid black">Curve Roof Radius<t t-esc="doc.curve_roof"/></td>  
+                        <td style="width:50%; border:1px solid black"><b>If Jobsite or Offsite(Available or Not Available)</b></td>
+                        <td style="width:50%; border:1px solid black">Curve Roof Radius<t t-esc="doc.curve_roof"/></td>  
                      
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">a) Powers<t t-esc="doc.powers"/></td>
-                        <td style="border:1px solid black"></td>    
+                        <td style="width:50%; border:1px solid black">a) Powers<t t-esc="doc.powers"/></td>
+                        <td style="width:50%; border:1px solid black"></td>    
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">b) Space<t t-esc="doc.space"/></td>
-                        <td style="border:1px solid black"></td>   
+                        <td style="width:50%; border:1px solid black">b) Space<t t-esc="doc.space"/></td>
+                        <td style="width:50%; border:1px solid black"></td>   
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">c) Access<t t-esc="doc.access"/></td>
-                        <td style="border:1px solid black"></td>   
+                        <td style="width:50%; border:1px solid black">c) Access<t t-esc="doc.access"/></td>
+                        <td style="width:50%; border:1px solid black"></td>   
                     </tr> 
                    
                     </t>     
                 </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> SKYLIGHTS </th>
-                        <th style="border:1px solid black"> INSULATION </th>
+                        <th style="width:50%; border:1px solid black"> SKYLIGHTS </th>
+                        <th style="width:50%; border:1px solid black"> INSULATION </th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Required<t t-esc="doc.require"/></td>
-                        <td style="border:1px solid black"><b>REQUIRED</b></td>
+                        <td style="width:50%; border:1px solid black">Required<t t-esc="doc.require"/></td>
+                        <td style="width:50%; border:1px solid black"><b>REQUIRED</b></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Not Required<t t-esc="doc.not_require"/></td>
-                        <td style="border:1px solid black">Type<t t-esc="doc.types_d"/></td>
+                        <td style="width:50%; border:1px solid black">Not Required<t t-esc="doc.not_require"/></td>
+                        <td style="width:50%; border:1px solid black">Type<t t-esc="doc.types_d"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Thickness<t t-esc="doc.thickness_e"/></td>
-                        <td style="border:1px solid black">Thickness<t t-esc="doc.thickness_f"/></td>
+                        <td style="width:50%; border:1px solid black">Thickness<t t-esc="doc.thickness_e"/></td>
+                        <td style="width:50%; border:1px solid black">Thickness<t t-esc="doc.thickness_f"/></td>
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Max. Length<t t-esc="doc.max_lengthsa"/></td>
-                        <td style="border:1px solid black">Not Require<t t-esc="doc.not_require"/></td>
+                        <td style="width:50%; border:1px solid black">Max. Length<t t-esc="doc.max_lengthsa"/></td>
+                        <td style="width:50%; border:1px solid black">Not Require<t t-esc="doc.not_require"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">With Wiremesh</td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">With Wiremesh</td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black"><t t-esc="doc.types_e"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black"><t t-esc="doc.types_e"/></td>
                     </tr> 
                      <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Without Wiremesh</td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Without Wiremesh</td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">G.I. Wire<t t-esc="doc.gi_wire"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">G.I. Wire<t t-esc="doc.gi_wire"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Spacing<t t-esc="doc.spacing"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Spacing<t t-esc="doc.spacing"/></td>
                     </tr> 
                     
                     </t>     
                 </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> GUTTER </th>
-                        <th style="border:1px solid black"> GUTTER HANGER </th>
+                        <th style="width:50%; border:1px solid black"> GUTTER </th>
+                        <th style="width:50%; border:1px solid black"> GUTTER HANGER </th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Colored<t t-esc="doc.colored"/></td>
-                        <td style="border:1px solid black">By PMPI<t t-esc="doc.by_pmpi"/></td>
+                        <td style="width:50%; border:1px solid black">Colored<t t-esc="doc.colored"/></td>
+                        <td style="width:50%; border:1px solid black">By PMPI<t t-esc="doc.by_pmpi"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Stainless Steal<t t-esc="doc.stainless_steel"/></td>
-                        <td style="border:1px solid black">By Others<t t-esc="doc.by_others"/></td>
+                        <td style="width:50%; border:1px solid black">Stainless Steal<t t-esc="doc.stainless_steel"/></td>
+                        <td style="width:50%; border:1px solid black">By Others<t t-esc="doc.by_others"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Concrete<t t-esc="doc.concrete"/></td>
-                        <td style="border:1px solid black">Color and Finish<t t-esc="doc.color_finish"/></td>
+                        <td style="width:50%; border:1px solid black">Concrete<t t-esc="doc.concrete"/></td>
+                        <td style="width:50%; border:1px solid black">Color and Finish<t t-esc="doc.color_finish"/></td>
 
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Spanish Type<t t-esc="doc.spanish_type"/></td>
-                        <td style="border:1px solid black">Bolted to Structure<t t-esc="doc.bolted_structure"/></td>
+                        <td style="width:50%; border:1px solid black">Spanish Type<t t-esc="doc.spanish_type"/></td>
+                        <td style="width:50%; border:1px solid black">Bolted to Structure<t t-esc="doc.bolted_structure"/></td>
                         
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Box Type<t t-esc="doc.box_type"/></td>
-                        <td style="border:1px solid black">Welded to Structure<t t-esc="doc.welded_structure"/></td>
+                        <td style="width:50%; border:1px solid black">Box Type<t t-esc="doc.box_type"/></td>
+                        <td style="width:50%; border:1px solid black">Welded to Structure<t t-esc="doc.welded_structure"/></td>
                         
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"><b>CONNECTION</b></td>
-                        <td style="border:1px solid black">Size (t x w x l)<t t-esc="doc.size"/></td>
+                        <td style="width:50%; border:1px solid black"><b>CONNECTION</b></td>
+                        <td style="width:50%; border:1px solid black">Size (t x w x l)<t t-esc="doc.size"/></td>
                         
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Riveted<t t-esc="doc.revited"/></td>
-                        <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Riveted<t t-esc="doc.revited"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
                         
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Welded<t t-esc="doc.welded"/></td>
-                        <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Welded<t t-esc="doc.welded"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
                         
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Gas<t t-esc="doc.gas"/></td>
-                        <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Gas<t t-esc="doc.gas"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
                         
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Tig<t t-esc="doc.tig"/></td>
-                        <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Tig<t t-esc="doc.tig"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
                         
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Seam<t t-esc="doc.seam"/></td>
-                        <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Seam<t t-esc="doc.seam"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
                         
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Gutter Flashing</td>
-                        <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Gutter Flashing</td>
+                        <td style="width:50%; border:1px solid black"></td>
                         
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Required<t t-esc="doc.requireds"/></td>
-                        <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Required<t t-esc="doc.requireds"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
                         
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Not Required<t t-esc="doc.not_requireds"/></td>
-                        <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Not Required<t t-esc="doc.not_requireds"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
                         
                     </tr>
                     
@@ -396,142 +396,142 @@
                 </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> DECKING PROFILE </th>
-                        <th style="border:1px solid black"> LOUVERS</th>
+                        <th style="width:50%; border:1px solid black"> DECKING PROFILE </th>
+                        <th style="width:50%; border:1px solid black"> LOUVERS</th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Monolithic<t t-esc="doc.monolithic"/></td>
-                        <td style="border:1px solid black">Single Pass<t t-esc="doc.single_pass"/></td>
+                        <td style="width:50%; border:1px solid black">Monolithic<t t-esc="doc.monolithic"/></td>
+                        <td style="width:50%; border:1px solid black">Single Pass<t t-esc="doc.single_pass"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Steel Beams<t t-esc="doc.steel_beams"/></td>
-                        <td style="border:1px solid black">Double Pass<t t-esc="doc.double_pass"/></td>
+                        <td style="width:50%; border:1px solid black">Steel Beams<t t-esc="doc.steel_beams"/></td>
+                        <td style="width:50%; border:1px solid black">Double Pass<t t-esc="doc.double_pass"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Shear studs req't<t t-esc="doc.shear"/></td>
-                        <td style="border:1px solid black">Triple Pass<t t-esc="doc.triple_pass"/></td>
+                        <td style="width:50%; border:1px solid black">Shear studs req't<t t-esc="doc.shear"/></td>
+                        <td style="width:50%; border:1px solid black">Triple Pass<t t-esc="doc.triple_pass"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"><b>Closure Requirement</b></td>
-                        <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black"><b>Closure Requirement</b></td>
+                        <td style="width:50%; border:1px solid black"></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Metal<t t-esc="doc.metal"/></td>
+                        <td style="width:50%; border:1px solid black">Metal<t t-esc="doc.metal"/></td>
                         <td></td>
                     </tr>
                     </t>     
                 </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> FASCIA </th>
-                        <th style="border:1px solid black"> SLEEVES</th>
+                        <th style="width:50%; border:1px solid black"> FASCIA </th>
+                        <th style="width:50%; border:1px solid black"> SLEEVES</th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Fiber Cement Board<t t-esc="doc.fiber_cement"/></td>
-                        <td style="border:1px solid black">Stainless<t t-esc="doc.stainless_a"/></td>
+                        <td style="width:50%; border:1px solid black">Fiber Cement Board<t t-esc="doc.fiber_cement"/></td>
+                        <td style="width:50%; border:1px solid black">Stainless<t t-esc="doc.stainless_a"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Metal Fascia<t t-esc="doc.metal_fascia"/></td>
-                        <td style="border:1px solid black">Ordinary<t t-esc="doc.ordinary_a"/></td>
+                        <td style="width:50%; border:1px solid black">Metal Fascia<t t-esc="doc.metal_fascia"/></td>
+                        <td style="width:50%; border:1px solid black">Ordinary<t t-esc="doc.ordinary_a"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Wood<t t-esc="doc.woodss"/></td>
-                        <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Wood<t t-esc="doc.woodss"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
                     </tr>
                     </t>     
                 </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> TYPE OF PROJECT </th>
-                        <th style="border:1px solid black"> PRE CONTRACT AGREEMENTS</th>
+                        <th style="width:50%; border:1px solid black"> TYPE OF PROJECT </th>
+                        <th style="width:50%; border:1px solid black"> PRE CONTRACT AGREEMENTS</th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Residential<t t-esc="doc.residential"/></td>
-                        <td style="border:1px solid black">Implementation Date<t t-esc="doc.implementation_date"/></td>
+                        <td style="width:50%; border:1px solid black">Residential<t t-esc="doc.residential"/></td>
+                        <td style="width:50%; border:1px solid black">Implementation Date<t t-esc="doc.implementation_date"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Commercial<t t-esc="doc.commercial"/></td>
-                        <td style="border:1px solid black">Materials Delivery Date<t t-esc="doc.materials_delivery_date"/></td>
+                        <td style="width:50%; border:1px solid black">Commercial<t t-esc="doc.commercial"/></td>
+                        <td style="width:50%; border:1px solid black">Materials Delivery Date<t t-esc="doc.materials_delivery_date"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Industrial<t t-esc="doc.industrial"/></td>
-                        <td style="border:1px solid black">Structure Turn-over date<t t-esc="doc.structure_turnover_date"/></td>
+                        <td style="width:50%; border:1px solid black">Industrial<t t-esc="doc.industrial"/></td>
+                        <td style="width:50%; border:1px solid black">Structure Turn-over date<t t-esc="doc.structure_turnover_date"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Government<t t-esc="doc.government"/></td>
-                        <td style="border:1px solid black">Max. Length<t t-esc="doc.length_max"/></td>
+                        <td style="width:50%; border:1px solid black">Government<t t-esc="doc.government"/></td>
+                        <td style="width:50%; border:1px solid black">Max. Length<t t-esc="doc.length_max"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Institutional<t t-esc="doc.institutional"/></td>
-                        <td style="border:1px solid black">Max. manpower<t t-esc="doc.manpower_max"/></td>
+                        <td style="width:50%; border:1px solid black">Institutional<t t-esc="doc.institutional"/></td>
+                        <td style="width:50%; border:1px solid black">Max. manpower<t t-esc="doc.manpower_max"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Mass Housing<t t-esc="doc.mass_housing"/></td>
-                        <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Mass Housing<t t-esc="doc.mass_housing"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
                     </tr> 
                     </t>     
                 </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> LIFTING EQUIPMENT </th>
-                        <th style="border:1px solid black"> TEMPORARY FACILITIES</th>
+                        <th style="width:50%; border:1px solid black"> LIFTING EQUIPMENT </th>
+                        <th style="width:50%; border:1px solid black"> TEMPORARY FACILITIES</th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Manual<t t-esc="doc.manual"/></td>
-                        <td style="border:1px solid black">By Client<t t-esc="doc.by_client"/></td>
+                        <td style="width:50%; border:1px solid black">Manual<t t-esc="doc.manual"/></td>
+                        <td style="width:50%; border:1px solid black">By Client<t t-esc="doc.by_client"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Mechanical or By Crane with Qualified Rigger <t t-esc="doc.mechanical"/></td>
-                        <td style="border:1px solid black">By PMPI<t t-esc="doc.by_pmpi"/></td>
+                        <td style="width:50%; border:1px solid black">Mechanical or By Crane with Qualified Rigger <t t-esc="doc.mechanical"/></td>
+                        <td style="width:50%; border:1px solid black">By PMPI<t t-esc="doc.by_pmpi"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Field Office<t t-esc="doc.field_office"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Field Office<t t-esc="doc.field_office"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black"><b>Bunk House</b></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black"><b>Bunk House</b></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Onsite<t t-esc="doc.onsite"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Onsite<t t-esc="doc.onsite"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Off site<t t-esc="doc.offsite"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Off site<t t-esc="doc.offsite"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Portable Water<t t-esc="doc.portable_water"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Portable Water<t t-esc="doc.portable_water"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Electricity<t t-esc="doc.electricity"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Electricity<t t-esc="doc.electricity"/></td>
                     </tr> 
                      
                     </t>     
                 </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> PURLINS (Light Gauge) </th>
-                        <th style="border:1px solid black"> STRAINERS</th>
+                        <th style="width:50%; border:1px solid black"> PURLINS (Light Gauge) </th>
+                        <th style="width:50%; border:1px solid black"> STRAINERS</th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">LC<t t-esc="doc.lc"/></td>
-                        <td style="border:1px solid black">Stainless<t t-esc="doc.stainless"/></td>
+                        <td style="width:50%; border:1px solid black">LC<t t-esc="doc.lc"/></td>
+                        <td style="width:50%; border:1px solid black">Stainless<t t-esc="doc.stainless"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">LZ<t t-esc="doc.lz"/></td>
-                        <td style="border:1px solid black">Ordinary<t t-esc="doc.ordinary"/></td>
+                        <td style="width:50%; border:1px solid black">LZ<t t-esc="doc.lz"/></td>
+                        <td style="width:50%; border:1px solid black">Ordinary<t t-esc="doc.ordinary"/></td>
                     </tr>
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Hat Section<t t-esc="doc.hat_sections"/></td>
-                        <td style="border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Hat Section<t t-esc="doc.hat_sections"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
                     </tr>
                      
                      
@@ -539,94 +539,94 @@
                 </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> OTHERS </th>
-                        <th style="border:1px solid black"> LOCATION</th>
+                        <th style="width:50%; border:1px solid black"> OTHERS </th>
+                        <th style="width:50%; border:1px solid black"> LOCATION</th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Specify Prepared Sealant<t t-esc="doc.sealant"/></td>
-                        <td style="border:1px solid black">Inside Industrial Park<t t-esc="doc.industrial_park"/></td>
+                        <td style="width:50%; border:1px solid black">Specify Prepared Sealant<t t-esc="doc.sealant"/></td>
+                        <td style="width:50%; border:1px solid black">Inside Industrial Park<t t-esc="doc.industrial_park"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Recommended<t t-esc="doc.recommended"/></td>
-                        <td style="border:1px solid black">Near Populated Areas<t t-esc="doc.populated_areas"/></td>
+                        <td style="width:50%; border:1px solid black">Recommended<t t-esc="doc.recommended"/></td>
+                        <td style="width:50%; border:1px solid black">Near Populated Areas<t t-esc="doc.populated_areas"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Exclusive Subdivision<t t-esc="doc.exclusive_subdivision"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Exclusive Subdivision<t t-esc="doc.exclusive_subdivision"/></td>
                     </tr> 
                     </t>     
                 </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> TYPE OF CONTRACT </th>
-                        <th style="border:1px solid black"> BID CONTRACT / DOCUMENTS</th>
+                        <th style="width:50%; border:1px solid black"> TYPE OF CONTRACT </th>
+                        <th style="width:50%; border:1px solid black"> BID CONTRACT / DOCUMENTS</th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Lump Sum<t t-esc="doc.lump_sum"/></td>
-                        <td style="border:1px solid black">Available<t t-esc="doc.avail"/></td>
+                        <td style="width:50%; border:1px solid black">Lump Sum<t t-esc="doc.lump_sum"/></td>
+                        <td style="width:50%; border:1px solid black">Available<t t-esc="doc.avail"/></td>
                     </tr>  
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Itemized<t t-esc="doc.itemized"/></td>
-                        <td style="border:1px solid black">Not Available<t t-esc="doc.not_avail"/></td>
+                        <td style="width:50%; border:1px solid black">Itemized<t t-esc="doc.itemized"/></td>
+                        <td style="width:50%; border:1px solid black">Not Available<t t-esc="doc.not_avail"/></td>
                     </tr>
                    
                     </t>     
                 </table><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> WORKING HOURS</th>
-                        <th style="border:1px solid black"> SAFETY / SITE REQUIREMENTS</th>
+                        <th style="width:50%; border:1px solid black"> WORKING HOURS</th>
+                        <th style="width:50%; border:1px solid black"> SAFETY / SITE REQUIREMENTS</th>
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Day time<t t-esc="doc.daytime"/></td>
-                        <td style="border:1px solid black">I.D.<t t-esc="doc.site_id"/></td>
+                        <td style="width:50%; border:1px solid black">Day time<t t-esc="doc.daytime"/></td>
+                        <td style="width:50%; border:1px solid black">I.D.<t t-esc="doc.site_id"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black">Night time<t t-esc="doc.nighttime"/></td>
-                        <td style="border:1px solid black">Medical Exam<t t-esc="doc.medical_exam"/></td>
+                        <td style="width:50%; border:1px solid black">Night time<t t-esc="doc.nighttime"/></td>
+                        <td style="width:50%; border:1px solid black">Medical Exam<t t-esc="doc.medical_exam"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Hard Hat<t t-esc="doc.hard_hat"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Hard Hat<t t-esc="doc.hard_hat"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Safety Belt<t t-esc="doc.safety_belt"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Safety Belt<t t-esc="doc.safety_belt"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Body Harness<t t-esc="doc.body_harness"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Body Harness<t t-esc="doc.body_harness"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Safety Shoes<t t-esc="doc.safety_shoes"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Safety Shoes<t t-esc="doc.safety_shoes"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Uniform<t t-esc="doc.uniforms"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Uniform<t t-esc="doc.uniforms"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Full Time Service Vehicle<t t-esc="doc.servce_vehicle"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Full Time Service Vehicle<t t-esc="doc.servce_vehicle"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black"><b>Clearances:</b></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black"><b>Clearances:</b></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Barangay<t t-esc="doc.barangay"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Barangay<t t-esc="doc.barangay"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">Police<t t-esc="doc.police"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">Police<t t-esc="doc.police"/></td>
                     </tr> 
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"></td>
-                        <td style="border:1px solid black">NBI<t t-esc="doc.nbi"/></td>
+                        <td style="width:50%; border:1px solid black"></td>
+                        <td style="width:50%; border:1px solid black">NBI<t t-esc="doc.nbi"/></td>
                     </tr> 
 
                     </t>     
