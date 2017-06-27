@@ -60,8 +60,8 @@
                     </tr>
                     <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
-                        <td style="border:1px solid black"><t t-esc="doc.work_scope.name"/></td>
-                        <td style="border:1px solid black"><t t-esc="doc.work_scope.description"/></td>   
+                        <td style="border:1px solid black"><t t-field="doc.work_scope.name"/></td>
+                        <td style="border:1px solid black"><t t-field="doc.work_scope.description"/></td>   
                                
                     </tr>  
                     </t>     
