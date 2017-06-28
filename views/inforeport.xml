@@ -16,11 +16,6 @@
                             
                     </tr>
                     <tr class="table table-borderless">
-                        <td><b> Contact Person : </b><span t-esc="doc.contact_person.name"/></td>
-                        <td><b> Designation of Contact Person : </b><span t-esc="doc.designation_contact"/></td>
-                            
-                    </tr>
-                    <tr class="table table-borderless">
                         <td><b> Tel No : </b><span t-esc="doc.tel_number"/></td>
                         <td><b> Fax No : </b><span t-esc="doc.fax_number"/></td>
                             
@@ -35,6 +30,25 @@
                         <td></td>   
                     </tr> 
                     </t>     
+                </table>
+                <h5><b><u>Contact Person at Jobsite</u></b></h5>
+                    <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black;">
+                    <tr style="border:1px solid black;">
+                        <th style="width:50%; border:1px solid black;"> Contact Person </th>
+                        <th style="width:50%; border:1px solid black;"> Designation </th>
+                    </tr>
+                    <t t-set="i" t-value="0"/>
+                        <t t-foreach="docs.contact_person" t-as="l">
+                            <t t-if="i &gt;= 0">
+                                <tr style="border:1px solid black">
+                        
+                                    <td style="border:1px solid black"><span t-esc="docs.contact_person[i].name"/></td>
+                                    <td style="border:1px solid black"><span t-esc="docs.contact_person[i].designation.name"/></td>   
+                                </tr>
+                                <t t-set="i" t-value="i+1"/>
+                            </t>
+                        </t>
+            
                 </table>
                 <h5><b><u>Scope of Work</u></b></h5>
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">

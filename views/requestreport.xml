@@ -128,7 +128,7 @@
                                 <tr style="border:1px solid black">
                         
                                     <td style="border:1px solid black"><span t-esc="docs.contact_person_at_site[i].name"/></td>
-                                    <td style="border:1px solid black"><span t-esc="docs.contact_person_at_site[i].designation"/></td>   
+                                    <td style="border:1px solid black"><span t-esc="docs.contact_person_at_site[i].designation.name"/></td>   
                                 </tr>
                                 <t t-set="i" t-value="i+1"/>
                             </t>
