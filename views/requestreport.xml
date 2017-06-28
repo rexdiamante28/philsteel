@@ -61,9 +61,9 @@
 
                      <t t-set="i" t-value="1"/>
 
-                        <tr t-foreach="o.order_line" t-as="l">
+                        <tr t-foreach="o.work_scope" t-as="l">
                             
-                            <td style="border:1px solid black"> <span t-esc="docs.work_scope[i]"/> </td>
+                            <td style="border:1px solid black"> <span t-esc="o.work_scope[i]"/> </td>
 
                             <t t-set="i" t-value="i+1"/>
                         </tr>
