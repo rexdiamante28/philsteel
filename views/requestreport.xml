@@ -63,7 +63,7 @@
 
                         <tr t-foreach="o.work_scope" t-as="l">
                             
-                            <td style="border:1px solid black"> <span t-esc="o.work_scope[i]"/> </td>
+                            <td style="border:1px solid black"> <span t-esc="o.work_scope[i].name"/> </td>
 
                             <t t-set="i" t-value="i+1"/>
                         </tr>
