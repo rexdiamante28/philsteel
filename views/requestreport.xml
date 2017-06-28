@@ -122,13 +122,18 @@
                         <th style="width:50%; border:1px solid black;"> Name </th>
                         <th style="width:50%; border:1px solid black;"> Position </th>
                     </tr>
-                    <t t-foreach="docs" t-as="doc">
-                    <tr style="border:1px solid black;">
-                        <td style="width:50%; border:1px solid black;"><t t-esc="doc.contact_person_at_site.name"/></td>
-                        <td style="width:50%; border:1px solid black;"><t t-esc="doc.contact_person_at_site.designation.name"/></td>   
-                               
-                    </tr>  
-                    </t>     
+                    <t t-set="i" t-value="0"/>
+                        <t t-foreach="docs.contact_person_at_site" t-as="l">
+                            <t t-if="i &gt;= 0">
+                                <tr style="border:1px solid black">
+                        
+                                    <td style="border:1px solid black"><span t-esc="docs.contact_person_at_site[i].name"/></td>
+                                    <td style="border:1px solid black"><span t-esc="docs.contact_person_at_site[i].designation"/></td>   
+                                </tr>
+                                <t t-set="i" t-value="i+1"/>
+                            </t>
+                        </t>
+            
                 </table>
                 
                 <h5><b><u>Product Profile</u></b></h5>
@@ -137,13 +142,18 @@
                         <th style="width:50%; border:1px solid black;"> Material </th>
                         <th style="width:50%; border:1px solid black;"> Quantity </th>
                     </tr>
-                    <t t-foreach="docs" t-as="doc">
-                    <tr style="border:1px solid black;">
-                        <td style="width:50%; border:1px solid black;"><t t-esc="doc.product_profile.name.name"/></td>
-                        <td style="width:50%; border:1px solid black;"><t t-esc="doc.product_profile.quantity_installed"/></td>   
-                               
-                    </tr>  
-                    </t>     
+                    <t t-set="i" t-value="0"/>
+                        <t t-foreach="docs.product_profile" t-as="l">
+                            <t t-if="i &gt;= 0">
+                                <tr style="border:1px solid black">
+                        
+                                    <td style="border:1px solid black"><span t-esc="docs.product_profile[i].name"/></td>
+                                    <td style="border:1px solid black"><span t-esc="docs.product_profile[i].quantity_installed"/></td>   
+                                </tr>
+                                <t t-set="i" t-value="i+1"/>
+                            </t>
+                        </t>
+
                 </table><br />
                 <table  class="table table-bordered" style="width:100%; font-size:12px;">
                     
