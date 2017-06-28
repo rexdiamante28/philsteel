@@ -64,8 +64,8 @@
                             <t t-if="i &lt;= 0">
                                 <tr style="border:1px solid black">
                         
-                                    <td style="border:1px solid black"><t t-esc="doc.work_scope[i].name"/></td>
-                                    <td style="border:1px solid black"><t t-esc="doc.work_scope[i].description"/></td>   
+                                    <td style="border:1px solid black"><span t-esc="doc.work_scope[i].name"/></td>
+                                    <td style="border:1px solid black"><span t-esc="doc.work_scope[i].description"/></td>   
                                
                                 </tr>
                             </t>
