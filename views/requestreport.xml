@@ -61,7 +61,7 @@
                     
                     <t t-set="i" t-value="0">
                         <t t-foreach="docs" t-as="doc">
-                            <t t-if="i &lt;= 0">
+                            <t t-if="i &gt;= 0">
                                 <tr style="border:1px solid black">
                         
                                     <td style="border:1px solid black"><span t-esc="doc.work_scope[i].name"/></td>
