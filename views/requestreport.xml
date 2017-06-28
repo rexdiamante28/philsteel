@@ -57,7 +57,7 @@
                     <tr style="border:1px solid black">
                         <th style="border:1px solid black"> Work Scope </th>
                         <th style="border:1px solid black"> Description </th>
-                    </tr><t t-set="i" t-value="i+1"/>
+                    </tr>
                     
                     <t t-set="i" t-value="0"/>
                         <t t-foreach="docs.work_scope" t-as="l">
