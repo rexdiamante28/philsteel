@@ -147,13 +147,12 @@
                             <t t-if="i &gt;= 0">
                                 <tr style="border:1px solid black">
                         
-                                    <td style="border:1px solid black"><span t-esc="docs.product_profile[i].name"/></td>
+                                    <td style="border:1px solid black"><span t-esc="docs.product_profile[i].name.name"/></td>
                                     <td style="border:1px solid black"><span t-esc="docs.product_profile[i].quantity_installed"/></td>   
                                 </tr>
                                 <t t-set="i" t-value="i+1"/>
                             </t>
                         </t>
-
                 </table><br />
                 <table  class="table table-bordered" style="width:100%; font-size:12px;">
                     

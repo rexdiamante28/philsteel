@@ -47,22 +47,28 @@
                         <th style="border:1px solid black">To Date Weight </th>
                         <th style="border:1px solid black"> Remarks </th>
                     </tr>
-                    <t t-foreach="docs" t-as="doc">
-                    <tr style="border:1px solid black">
-                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.name"/></td>  
-                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.unit"/></td>  
-                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.qty"/></td>  
-                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.weight_factor"/></td> 
-                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.qty_prev"/></td>  
-                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.percent_prev"/></td> 
-                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.qty_thisperiod"/></td>  
-                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.percent_thisperiod"/></td> 
-                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.qty_todate"/></td>  
-                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.percent_todate"/></td> 
-                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.weight"/></td>  
-                        <td style="border:1px solid black"><span t-esc="doc.accomplisment.remarks"/></td> 
-                    </tr>   
-                    </t>
+
+                    <t t-set="i" t-value="0"/>
+                        <t t-foreach="docs.accomplisment" t-as="l">
+                            <t t-if="i &gt;= 0">
+                                <tr style="border:1px solid black">
+                        
+                                    <td style="border:1px solid black"><span t-esc="docs.accomplisment[i].name"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.accomplisment[i].unit"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.accomplisment[i].qty"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.accomplisment[i].weight_factor"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.accomplisment[i].qty_prev"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.accomplisment[i].percent_prev"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.accomplisment[i].qty_thisperiod"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.accomplisment[i].percent_thisperiod"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.accomplisment[i].qty_todate"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.accomplisment[i].percent_todate"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.accomplisment[i].weight"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.accomplisment[i].remarks"/></td> 
+                                </tr>
+                                <t t-set="i" t-value="i+1"/>
+                            </t>
+                        </t>
                 </table><br />
                 <table  class="table table-bordered" style="width:100%; font-size:12px;">
                     <t t-foreach="docs" t-as="doc">

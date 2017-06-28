@@ -42,13 +42,18 @@
                         <th style="width:50%; border:1px solid black"> Work Scope </th>
                         <th style="width:50%; border:1px solid black"> Description </th>
                     </tr>
-                    <t t-foreach="docs" t-as="doc">
-                    <tr style="border:1px solid black">
-                        <td style="width:50%; border:1px solid black"><t t-esc="doc.work_scopes.name"/></td>
-                        <td style="width:50%; border:1px solid black"><t t-esc="doc.work_scopes.description"/></td>   
-                               
-                    </tr>  
-                    </t>     
+
+                     <t t-set="i" t-value="0"/>
+                        <t t-foreach="docs.work_scopes" t-as="l">
+                            <t t-if="i &gt;= 0">
+                                <tr style="border:1px solid black">
+                        
+                                    <td style="border:1px solid black"><span t-esc="docs.work_scopes[i].name"/></td>
+                                    <td style="border:1px solid black"><span t-esc="docs.work_scopes[i].name"/></td>   
+                                </tr>
+                                <t t-set="i" t-value="i+1"/>
+                            </t>
+                        </t>  
                 </table>
                 <h5><b><u>Specifications</u></b></h5>
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">

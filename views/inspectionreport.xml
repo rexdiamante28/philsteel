@@ -43,13 +43,18 @@
                         <th style="width:50%; border:1px solid black"> Work Scope </th>
                         <th style="width:50%; border:1px solid black"> Description </th>
                     </tr>
-                    <t t-foreach="docs" t-as="doc">
-                    <tr style="border:1px solid black">
-                        <td style="width:50%; border:1px solid black"><t t-esc="doc.work_scope.name"/></td>
-                        <td style="width:50%; border:1px solid black"><t t-esc="doc.work_scope.description"/></td>   
-                               
-                    </tr>  
-                    </t>     
+                    <t t-set="i" t-value="0"/>
+                        <t t-foreach="docs.work_scope" t-as="l">
+                            <t t-if="i &gt;= 0">
+                                <tr style="border:1px solid black">
+                        
+                                    <td style="border:1px solid black"><span t-esc="docs.work_scope[i].name"/></td>
+                                    <td style="border:1px solid black"><span t-esc="docs.work_scope[i].description"/></td>   
+                                </tr>
+                                <t t-set="i" t-value="i+1"/>
+                            </t>
+                        </t>
+                   
                 </table>
                 <h5><b><u>Man Power</u></b></h5><br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
@@ -75,13 +80,19 @@
                                 <th style="width:50%; border:1px solid black"> Material </th>
                                 <th style="width:50%; border:1px solid black"> Description </th>
                             </tr>
-                            <t t-foreach="docs" t-as="doc">
-                                <tr style="border:1px solid black">
-                                    <td style="width:50%; border:1px solid black"><t t-esc="doc.tool_equipment.name"/></td>
-                                    <td style="width:50%; border:1px solid black"><t t-esc="doc.tool_equipment.description"/></td>   
-                               </tr>  
 
-                        </t>     
+                            <t t-set="i" t-value="0"/>
+                        <t t-foreach="docs.tool_equipment" t-as="l">
+                            <t t-if="i &gt;= 0">
+                                <tr style="border:1px solid black">
+                        
+                                    <td style="border:1px solid black"><span t-esc="docs.tool_equipment[i].name"/></td>
+                                    <td style="border:1px solid black"><span t-esc="docs.tool_equipment[i].description"/></td>   
+                                </tr>
+                                <t t-set="i" t-value="i+1"/>
+                            </t>
+                        </t>
+
                     </table>
                     <h5><b><u>Activities</u></b></h5>
                     <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
@@ -89,13 +100,18 @@
                                 <th style="width:50%; border:1px solid black"> Activity </th>
                                 <th style="width:50%; border:1px solid black"> Status </th>
                             </tr>
-                            <t t-foreach="docs" t-as="doc">
-                                <tr style="border:1px solid black">
-                                    <td style="width:50%; border:1px solid black"><t t-esc="doc.activity.name"/></td>
-                                    <td style="width:50%; border:1px solid black"><t t-esc="doc.activity.status"/></td>   
-                               </tr>  
 
-                        </t>     
+                             <t t-set="i" t-value="0"/>
+                        <t t-foreach="docs.activity" t-as="l">
+                            <t t-if="i &gt;= 0">
+                                <tr style="border:1px solid black">
+                        
+                                    <td style="border:1px solid black"><span t-esc="docs.activity[i].name"/></td>
+                                    <td style="border:1px solid black"><span t-esc="docs.activity[i].status"/></td>   
+                                </tr>
+                                <t t-set="i" t-value="i+1"/>
+                            </t>
+                        </t>
                     </table>
                     <h5><b><u>Materials Installed</u></b></h5>
                     <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
@@ -103,13 +119,19 @@
                                 <th style="width:50%; border:1px solid black"> Material </th>
                                 <th style="width:50%; border:1px solid black"> Quantity </th>
                             </tr>
-                            <t t-foreach="docs" t-as="doc">
-                                <tr style="border:1px solid black">
-                                    <td style="width:50%; border:1px solid black"><t t-esc="doc.material.name.name"/></td>
-                                    <td style="width:50%; border:1px solid black"><t t-esc="doc.material.quantity_installed"/></td>   
-                               </tr>  
 
-                        </t>     
+                            <t t-set="i" t-value="0"/>
+                        <t t-foreach="docs.material" t-as="l">
+                            <t t-if="i &gt;= 0">
+                                <tr style="border:1px solid black">
+                        
+                                    <td style="border:1px solid black"><span t-esc="docs.material[i].name.name"/></td>
+                                    <td style="border:1px solid black"><span t-esc="docs.material[i].quantity_installed"/></td>   
+                                </tr>
+                                <t t-set="i" t-value="i+1"/>
+                            </t>
+                        </t>
+                        
                     </table>
                     <h5><b><u>Other Concern</u></b></h5>
                 <table style="width:100%; font-size:12px; border:1px solid black">
