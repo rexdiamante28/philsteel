@@ -13,7 +13,7 @@ class AMRequests(models.Model):
      illustrations = fields.One2many('philsteel.amrimages', 'rfam', string="Illustrations")
 
 
-     request_number = fields.Char(string='Request Number', readonly='True', required='True', default=lambda self: _('New'))
+     request_number = fields.Char(string='Request Number', required='True')
      location = fields.Text(string='Address', required='True')
 
      name = fields.Many2one(
@@ -120,15 +120,15 @@ class AMRequests(models.Model):
 
          return True
 
-     @api.model
-     def create(self, values):
+     # @api.model
+     # def create(self, values):
          
-         if values.get('request_number', 'New') == 'New':
-             values['request_number'] = self.env['ir.sequence'].next_by_code('philsteel.amrequests') or 'New'
+     #     if values.get('request_number', 'New') == 'New':
+     #         values['request_number'] = self.env['ir.sequence'].next_by_code('philsteel.amrequests') or 'New'
 
-         result = super(AMRequests, self).create(values)
+     #     result = super(AMRequests, self).create(values)
 
-         return result
+     #     return result
 
 
 
