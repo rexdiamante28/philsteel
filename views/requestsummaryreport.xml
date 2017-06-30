@@ -54,14 +54,12 @@
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.sc_amount"/></td> 
                                     <t t-set="total" t-value="0"/>
                                     <tr style="display: none;">
-                                        <td /><td /><td />
                                         <td>
                                             <span t-field="doc.sc_amount" />
                                         </td>
 
                                         <t t-set="total" t-value="total+doc.sc_amount"  />
 
-                                        </tr>
                                     </tr>
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.ic_number"/></td> 
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.ic_amount"/></td> 
