@@ -60,9 +60,9 @@
 
                                     
                                 </tr>
-                                <t t-set="totalsc" t-value="total+doc.sc_amount"  />
-                                <t t-set="totalic" t-value="total+doc.ic_amount"  />
-                                <t t-set="totallabor" t-value="total+doc.labor_award"  />
+                                <t t-set="totalsc" t-value="totalsc+doc.sc_amount"  />
+                                <t t-set="totalic" t-value="totalic+doc.ic_amount"  />
+                                <t t-set="totallabor" t-value="totallabor+doc.labor_award"  />
                                 <tr style="border:1px solid black; width:100%;">
                                     <td style="border:1px solid black; width:10%;"></td> 
                                     <td style="border:1px solid black; width:20%;"><span t-esc="doc.location"/></td> 
