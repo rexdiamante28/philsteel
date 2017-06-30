@@ -7,9 +7,7 @@
                 <center><div><h3><b>Philmetal Products, Inc.</b></h3>
                 <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center><br />
                
-                <t t-foreach="docs" t-as="doc">
                     <center><h3><b>____________ Sector</b></h3></center>
-                </t>
                 <br />
                 <center><h4><b>RFAM SUMMARY FOR ____________ </b></h4></center>
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
@@ -118,12 +116,12 @@
                     </tr>    
             </table> -->
                 <table  class="table table-bordered" style="width:100%; font-size:12px;">
-                    <t t-foreach="docs" t-as="doc">
+                    
                     <tr>
                         <td><b> Accomplished By</b></td>
                         <td><b> Approved By </b></td>
                     </tr> 
-                    </t>
+                   
                 </table>
             </div>
 </template>
