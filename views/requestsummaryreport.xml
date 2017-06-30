@@ -52,15 +52,7 @@
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.client_rep.name"/></td> 
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.sc_number"/></td> 
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.sc_amount"/></td> 
-                                    <t t-set="total" t-value="0"/>
-                                    <td style="display: none;">
-                                        <td style="display: none;">
-                                            <span t-field="doc.sc_amount" />
-                                        </td>
-
-                                        <t t-set="total" t-value="total+doc.sc_amount"  />
-
-                                    </td>
+                                    
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.ic_number"/></td> 
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.ic_amount"/></td> 
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.labor_award"/></td> 
