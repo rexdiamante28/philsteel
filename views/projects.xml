@@ -23,8 +23,15 @@
                             <field name="customer_name" />
                             <field name="location" />
                             <field name="types_of_project" />
+                            <field name="proj_incharge" />
+                            <field name="area_manager" />
+                            <field name="fore_man" domain="[('positions', '=', 'Foreman')]" />
+                            <field name="client_rep" />
+                            <field name="labor_award" />
                             <group><field name="ic_no" /></group>
+                            <group><field name="ic_amount" /></group>
                             <group><field name="sc_no" /></group>
+                            <group><field name="sc_amount" /></group>
                         </group>
                     </sheet>
                 </form>
