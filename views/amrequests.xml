@@ -103,6 +103,17 @@
                                     <field name="read_datetime" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
                                 </group>
                             </page>
+                            <page string="Other Project Information">
+                                <group><field name="proj_incharge" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
+                                <group><field name="area_manager" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
+                                <group><field name="fore_man" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
+                                <group><field name="client_rep" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
+                                <group><field name="ic_amount" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
+                                <group><field name="sc_amount" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
+                                <group><field name="labor_award" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
+
+                                
+                            </page>
                         </notebook>
 
                     </sheet>

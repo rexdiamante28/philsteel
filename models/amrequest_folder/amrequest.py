@@ -71,6 +71,22 @@ class AMRequests(models.Model):
      project_sector = fields.Many2one(
          'philsteel.projectsector', 'Project Sector',  ondelete='cascade', required='True'
      )
+     proj_incharge = fields.Many2one(
+        'philsteel.projectmanpower', 'Project In-charge',  ondelete='cascade'
+     )
+     area_manager = fields.Many2one(
+        'philsteel.projectmanpower', 'Area Manager',  ondelete='cascade'
+     )
+     fore_man = fields.Many2one(
+        'philsteel.projectmanpower', 'Foreman Assigned',  ondelete='cascade'
+     )
+     client_rep = fields.Many2one(
+        'philsteel.contacts', 'Sales Representative',  ondelete='cascade'
+     )
+     ic_amount = fields.Float(string='Installation Contract Amount ')
+     sc_amount = fields.Float(string='Sales Contract Amount ')
+     labor_award = fields.Float(string='Labor Award ')
+
 
      #image = fields.Binary()
      statuss = fields.Selection([
