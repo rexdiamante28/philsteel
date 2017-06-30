@@ -28,15 +28,11 @@
                             <field name="fore_man" domain="[('positions', '=', 'Foreman')]" />
                             <field name="client_rep" />
                             <field name="labor_award" />
-                            <field name="recieved_datetime" />
-                            <field name="recievedrequest_datetime" />
-                            <field name="recieved_datetime" />
-                            <field name="sr_datetime" />
+                            
                             <group><field name="ic_no" /></group>
                             <group><field name="ic_amount" /></group>
                             <group><field name="sc_no" /></group>
                             <group><field name="sc_amount" /></group>
-                            <field name="remarks" />
                         </group>
                     </sheet>
                 </form>

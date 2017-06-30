@@ -28,8 +28,5 @@ class Projects(models.Model):
 	ic_amount = fields.Float(string='Installation Contract Amount ', required='True')
 	sc_amount = fields.Float(string='Sales Contract Amount ', required='True')
 	labor_award = fields.Float(string='Labor Award ')
-	recieved_datetime = fields.Datetime(string ='Date / Time Received')
-	recievedrequest_datetime = fields.Datetime(string ='Date / Time Request Received')
-	sr_datetime = fields.Datetime(string ='Date / Time SR Received')
-	remarks = fields.Text(string ='Remarks')
+	
 
