@@ -86,17 +86,17 @@
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                 
 
-                    <tr t-foreach="docs" t-as="doc">
+                    <tr>
                                     <td style="width:10%;"></td> 
                                     <td style="width:20%;"></td> 
                                     <td style="width:10%;"></td> 
                                     <td style="width:10%;"></td> 
                                     <td style="width:10%;"></td> 
                                     <td style="width:5%;"></td> 
-                                    <td style="width:5%;"><t t-esc="doc.totalsc"  /></td> 
+                                    <td style="width:5%;"><t t-esc="totalsc"  /></td> 
                                     <td style="width:5%;"></td> 
-                                    <td style="width:5%;"><t t-esc="doc.totalsc"  /></td>  
-                                    <td style="width:10%;"><t t-esc="doc.totallabor"  /></td> 
+                                    <td style="width:5%;"><t t-esc="totalsc"  /></td>  
+                                    <td style="width:10%;"><t t-esc="totallabor"  /></td> 
                                     <td style="width:10%;"></td> 
                     </tr>    
             </table>
