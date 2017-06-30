@@ -11,11 +11,9 @@
                     <center><h4><b><span t-esc="doc.project_sector.name"/></b></h4></center>
                 </t>
                 <br />
+                <center><h4><b><u>RFAM SUMMARY FOR ____________ </u></b></h4></center>
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="border:1px solid black; width:100%;">
-                        <th style="border:1px solid black; width:100%;"> RFAM SUMMARY FOR ____________ </th>
-                    </tr>
-                    <tr style="border:1px solid black">
                         <th style="border:1px solid black; width:10%;"> RFM No. </th>
                         <th style="border:1px solid black; width:10%;"> Client </th>
                         <th style="border:1px solid black; width:10%;"> Project </th>
@@ -27,7 +25,7 @@
                         <th style="border:1px solid black; width:10%;"> Labor Award </th>
                         <th style="border:1px solid black; width:10%;"> Project Type </th>
                     </tr>
-                    <tr style="border:1px solid black">
+                    <tr style="border:1px solid black; width:100%;">
                         <th style="border:1px solid black; width:10%;">  </th>
                         <th style="border:1px solid black; width:20%;"> Location </th>
                         <th style="border:1px solid black; width:10%;"> Scope of Work </th>
@@ -41,32 +39,33 @@
                         <th style="border:1px solid black; width:10%;">  </th>
                     </tr>
                      <t t-foreach="docs" t-as="doc">
-                    <tr style="border:1px solid black">
-                                    <td style="border:1px solid black"><span t-esc="doc.request_number"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="doc.customer"/> / <span t-esc="docs.name.name"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="doc.product_profile.name.name"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="doc.proj_incharge.name"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="doc.client_rep.name"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="doc.sc_number"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="doc.sc_amount"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="doc.ic_number"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="doc.ic_amount"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="doc.labor_award"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="doc.project_type"/></td> 
+                    <tr style="border:1px solid black; width:100%;">
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.request_number"/></td> 
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.customer"/> / <span t-esc="docs.name.name"/></td> 
+                                    <td style="border:1px solid black; width:10%;"> <span t-esc="docs.name.name"/></td>
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.product_profile.name.name"/></td> 
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.proj_incharge.name"/></td> 
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.client_rep.name"/></td> 
+                                    <td style="border:1px solid black; width:5%;"><span t-esc="doc.sc_number"/></td> 
+                                    <td style="border:1px solid black; width:5%;"><span t-esc="doc.sc_amount"/></td> 
+                                    <td style="border:1px solid black; width:5%;"><span t-esc="doc.ic_number"/></td> 
+                                    <td style="border:1px solid black; width:5%;"><span t-esc="doc.ic_amount"/></td> 
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.labor_award"/></td> 
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.project_type"/></td> 
                                     
                                 </tr>
-                                <tr style="border:1px solid black">
-                                    <td style="border:1px solid black"></td> 
-                                    <td style="border:1px solid black"><span t-esc="doc.location"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="doc.work_scope.name"/></td> 
-                                    <td style="border:1px solid black"></td> 
-                                    <td style="border:1px solid black"></td> 
-                                    <td style="border:1px solid black"></td> 
-                                    <td style="border:1px solid black"></td> 
-                                    <td style="border:1px solid black"></td> 
-                                    <td style="border:1px solid black"></td>  
-                                    <td style="border:1px solid black"><span t-esc="doc.fore_man.name"/></td> 
-                                    <td style="border:1px solid black"></td> 
+                                <tr style="border:1px solid black; width:100%;">
+                                    <td style="border:1px solid black; width:10%;"></td> 
+                                    <td style="border:1px solid black; width:20%;"><span t-esc="doc.location"/></td> 
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.work_scope.name"/></td> 
+                                    <td style="border:1px solid black; width:10%;"></td> 
+                                    <td style="border:1px solid black; width:10%;"></td> 
+                                    <td style="border:1px solid black; width:5%;"></td> 
+                                    <td style="border:1px solid black; width:5%;"></td> 
+                                    <td style="border:1px solid black; width:5%;"></td> 
+                                    <td style="border:1px solid black; width:5%;"></td>  
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.fore_man.name"/></td> 
+                                    <td style="border:1px solid black; width:10%;"></td> 
                                     
                                 </tr> 
                     </t>     
