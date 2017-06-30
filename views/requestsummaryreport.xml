@@ -39,41 +39,37 @@
                         <th style="border:1px solid black"> Foreman</th>
                         <th style="border:1px solid black">  </th>
                     </tr>
-
-                    <t t-set="i" t-value="0"/>
-                        <t t-foreach="docs" t-as="l">
-                            <t t-if="i &gt;= 0">
-                                <tr style="border:1px solid black">
-                                    <td style="border:1px solid black"><span t-esc="docs.request_number[i]"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="docs.customer[i]"/> / <span t-esc="docs.name[i].name"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="docs.product_profile[i].name"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="docs.proj_incharge[i].name"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="docs.client_rep[i].name"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="docs.sc_number[i]"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="docs.sc_amount[i]"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="docs.ic_number[i]"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="docs.ic_amount[i]"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="docs.labor_award[i]"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="docs.project_type[i]"/></td> 
+                     <t t-foreach="docs" t-as="doc">
+                    <tr style="border:1px solid black">
+                                    <td style="border:1px solid black"><span t-esc="doc.request_number"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="doc.customer"/> / <span t-esc="docs.name[i].name"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="doc.product_profile.name"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="doc.proj_incharge.name"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="doc.client_rep.name"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="doc.sc_number"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="doc.sc_amount"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="doc.ic_number"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="doc.ic_amount"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="doc.labor_award"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="doc.project_type"/></td> 
                                     
                                 </tr>
                                 <tr style="border:1px solid black">
                                     <td style="border:1px solid black"></td> 
-                                    <td style="border:1px solid black"><span t-esc="docs.location[i]"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="docs.work_scope[i].name"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="doc.location"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="doc.work_scope.name"/></td> 
                                     <td style="border:1px solid black"></td> 
                                     <td style="border:1px solid black"></td> 
                                     <td style="border:1px solid black"></td> 
                                     <td style="border:1px solid black"></td> 
                                     <td style="border:1px solid black"></td> 
                                     <td style="border:1px solid black"></td>  
-                                    <td style="border:1px solid black"><span t-esc="docs.fore_man[i]"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="doc.fore_man.name"/></td> 
                                     <td style="border:1px solid black"></td> 
                                     
-                                </tr>
-                                <t t-set="i" t-value="i+1"/>
-                            </t>
-                        </t>
+                                </tr> 
+                    </t>     
+
                 </table><br />
                 <table  class="table table-bordered" style="width:100%; font-size:12px;">
                     <t t-foreach="docs" t-as="doc">
