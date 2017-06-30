@@ -13,31 +13,35 @@
                 <br />
                 <center><h4><b><u>RFAM SUMMARY FOR ____________ </u></b></h4></center>
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
-                    <tr style="border:1px solid black; width:100%;">
-                        <th style="border:1px solid black; width:10%;"> RFM No. </th>
-                        <th style="border:1px solid black; width:10%;"> Client </th>
-                        <th style="border:1px solid black; width:10%;"> Project </th>
-                        <th style="border:1px solid black; width:10%;"> Product Profile </th>
-                        <th style="border:1px solid black; width:10%;"> PIC </th>
-                        <th style="border:1px solid black; width:10%;"> Sales Rep </th>
-                        <th style="border:1px solid black; width:10%;"> Sales Contract </th>
-                        <th style="border:1px solid black; width:10%;"> Installation Contract </th>
-                        <th style="border:1px solid black; width:10%;"> Labor Award </th>
-                        <th style="border:1px solid black; width:10%;"> Project Type </th>
+                    <tr style="width:100%;">
+                        <th style="width:10%;"> RFM No. </th>
+                        <th style="width:10%;"> Client </th>
+                        <th style="width:10%;"> Project </th>
+                        <th style="width:10%;"> Product Profile </th>
+                        <th style="width:10%;"> PIC </th>
+                        <th style="width:10%;"> Sales Rep </th>
+                        <th style="width:10%;"> Sales Contract </th>
+                        <th style="width:10%;"> Installation Contract </th>
+                        <th style="width:10%;"> Labor Award </th>
+                        <th style="width:10%;"> Project Type </th>
                     </tr>
-                    <tr style="border:1px solid black; width:100%;">
-                        <th style="border:1px solid black; width:10%;">  </th>
-                        <th style="border:1px solid black; width:20%;"> Location </th>
-                        <th style="border:1px solid black; width:10%;"> Scope of Work </th>
-                        <th style="border:1px solid black; width:10%;">  </th>
-                        <th style="border:1px solid black; width:10%;">  </th>
-                        <th style="border:1px solid black; width:5%;"> SC No. </th>
-                        <th style="border:1px solid black; width:5%;"> Amount </th>
-                        <th style="border:1px solid black; width:5%;"> IC No. </th>
-                        <th style="border:1px solid black; width:5%;"> Amount </th>
-                        <th style="border:1px solid black; width:10%;"> Foreman</th>
-                        <th style="border:1px solid black; width:10%;">  </th>
+                </table>
+                <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
+                    <tr style="width:100%;">
+                        <th style="width:10%;">  </th>
+                        <th style="width:20%;"> Location </th>
+                        <th style="width:10%;"> Scope of Work </th>
+                        <th style="width:10%;">  </th>
+                        <th style="width:10%;">  </th>
+                        <th style="width:5%;"> SC No. </th>
+                        <th style="width:5%;"> Amount </th>
+                        <th style="width:5%;"> IC No. </th>
+                        <th style="width:5%;"> Amount </th>
+                        <th style="width:10%;"> Foreman</th>
+                        <th style="width:10%;">  </th>
                     </tr>
+                    </table>
+                    <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                      <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black; width:100%;">
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.request_number"/></td> 
