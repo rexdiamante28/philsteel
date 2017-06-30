@@ -8,10 +8,10 @@
                 <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center><br />
                
                 <t t-foreach="docs" t-as="doc">
-                    <center><h4><b><span t-esc="doc.project_sector.name"/></b></h4></center>
+                    <center><h3><b><span t-esc="doc.project_sector.name"/>&#160; Sector</b></h3></center>
                 </t>
                 <br />
-                <center><h4><b><u>RFAM SUMMARY FOR ____________ </u></b></h4></center>
+                <center><h4><b>RFAM SUMMARY FOR ____________ </b></h4></center>
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
                     <tr style="width:100%;">
                         <th style="width:10%;"> RFM No. </th>
@@ -42,10 +42,18 @@
                     </tr>
                     </table>
                     <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
-                     <t t-foreach="docs" t-as="doc">
+                     
                     <tr style="border:1px solid black; width:100%;">
-                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.request_number"/></td> 
-                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.customer"/> / <span t-esc="docs.name.name"/></td> 
+                        <t t-set="i" t-value="0"/>
+                        <t t-foreach="docs.request_number" t-as="l">
+                            <t t-if="i &gt;= 0">
+                                    <td style="border:1px solid black; width:10%;">
+                                        <span t-esc="docs.request_number[i]"/>
+                                    </td> 
+                                    <t t-set="i" t-value="i+1"/>
+                            </t>
+                        </t>
+                                    <!-- <td style="border:1px solid black; width:10%;"><span t-esc="doc.customer"/> / <span t-esc="docs.name.name"/></td> 
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.product_profile.name.name"/></td> 
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.proj_incharge.name"/></td> 
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.client_rep.name"/></td> 
@@ -69,9 +77,8 @@
                                     <td style="border:1px solid black; width:5%;"></td>  
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.fore_man.name"/></td> 
                                     <td style="border:1px solid black; width:10%;"></td> 
-                                    
+                                     -->
                                 </tr> 
-                    </t>     
 
                 </table><br />
                 <table  class="table table-bordered" style="width:100%; font-size:12px;">
