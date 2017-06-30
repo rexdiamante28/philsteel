@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Custom report-->
+<odoo>
+<template id="report_rfam_summary_document">
+            
+            <div class="page">
+                <center><div><h3><b>Philmetal Products, Inc.</b></h3>
+                <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center><br />
+               
+                <t t-foreach="docs" t-as="doc">
+                    <center><h4><b><span t-esc="doc.project_sector"/></b></h4></center>
+                </t>
+                <br />
+                <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
+                    <tr style="border:1px solid black">
+                        <th style="border:1px solid black"> RFAM SUMMARY FOR ____________ </th>
+                    </tr>
+                    <tr style="border:1px solid black">
+                        <th style="border:1px solid black"> RFM No. </th>
+                        <th style="border:1px solid black"> Client / Project </th>
+                        <th style="border:1px solid black"> Product Profile </th>
+                        <th style="border:1px solid black"> PIC </th>
+                        <th style="border:1px solid black"> Sales Rep </th>
+                        <th style="border:1px solid black"> Sales Contract </th>
+                        <th style="border:1px solid black"> Installation Contract </th>
+                        <th style="border:1px solid black"> Labor Award </th>
+                        <th style="border:1px solid black"> Project Type </th>
+                    </tr>
+                    <tr style="border:1px solid black">
+                        <th style="border:1px solid black">  </th>
+                        <th style="border:1px solid black"> Location </th>
+                        <th style="border:1px solid black"> Scope of Work </th>
+                        <th style="border:1px solid black">  </th>
+                        <th style="border:1px solid black">  </th>
+                        <th style="border:1px solid black"> SC No. </th>
+                        <th style="border:1px solid black"> Amount </th>
+                        <th style="border:1px solid black"> IC No. </th>
+                        <th style="border:1px solid black"> Amount </th>
+                        <th style="border:1px solid black"> Foreman</th>
+                        <th style="border:1px solid black">  </th>
+                    </tr>
+
+                    <t t-set="i" t-value="0"/>
+                        <t t-foreach="docs.accomplisment" t-as="l">
+                            <t t-if="i &gt;= 0">
+                                <tr style="border:1px solid black">
+                                    <td style="border:1px solid black"><span t-esc="docs.request_number[i]"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.customer[i]"/> / <span t-esc="docs.name[i].name"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.product_profile[i].name"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.proj_incharge[i].name"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.client_rep[i].name"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.sc_number[i]"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.sc_amount[i]"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.ic_number[i]"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.ic_amount[i]"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.labor_award[i]"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.project_type[i]"/></td> 
+                                    
+                                </tr>
+                                <tr style="border:1px solid black">
+                                    <td style="border:1px solid black"></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.location[i]"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="docs.work_scope[i].name"/></td> 
+                                    <td style="border:1px solid black"></td> 
+                                    <td style="border:1px solid black"></td> 
+                                    <td style="border:1px solid black"></td> 
+                                    <td style="border:1px solid black"></td> 
+                                    <td style="border:1px solid black"></td> 
+                                    <td style="border:1px solid black"></td>  
+                                    <td style="border:1px solid black"><span t-esc="docs.fore_man[i]"/></td> 
+                                    <td style="border:1px solid black"></td> 
+                                    
+                                </tr>
+                                <t t-set="i" t-value="i+1"/>
+                            </t>
+                        </t>
+                </table><br />
+                <table  class="table table-bordered" style="width:100%; font-size:12px;">
+                    <t t-foreach="docs" t-as="doc">
+                    <tr>
+                        <td><b> Accomplished By</b><span t-esc="doc.accomplished_by.name"/></td>
+                        <td><b> Approved By </b><span t-esc="doc.approved_by.name"/></td>
+                    </tr> 
+                    </t>
+                </table>
+            </div>
+</template>
+</odoo>

@@ -1,0 +1,5 @@
+<odoo>
+	<data>
+		<report id="report_rfamsummary" string="RFAM Monthly Summary" model="philsteel.amrequests" report_type="qweb-pdf" file="philsteel.report_rfam_summary_document" name="philsteel.report_rfam_summary_document"/>
+	</data>
+</odoo>

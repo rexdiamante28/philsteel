@@ -64,6 +64,8 @@
         'views/accomrep.xml',
         'views/inspectionreport.xml',
         'views/inspectrep.xml',
+        'views/requestsummaryreport.xml',
+        'views/reqsumrep.xml',
         'views/requestreport.xml',
         'views/rfam_rep.xml',
         'views/android_user.xml',
