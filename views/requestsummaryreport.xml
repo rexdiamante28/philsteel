@@ -52,6 +52,17 @@
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.client_rep.name"/></td> 
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.sc_number"/></td> 
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.sc_amount"/></td> 
+                                    <t t-set="total" t-value="0"/>
+                                    <tr style="display: none;">
+                                        <td /><td /><td />
+                                        <td>
+                                            <span t-field="doc.sc_amount" />
+                                        </td>
+
+                                        <t t-set="total" t-value="total+doc.sc_amount"  />
+
+                                        </tr>
+                                    </tr>
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.ic_number"/></td> 
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.ic_amount"/></td> 
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.labor_award"/></td> 
@@ -60,12 +71,12 @@
 
                                     
                                 </tr>
-                                <t t-set="totalsc" t-value="0"/>
+                                <!-- <t t-set="totalsc" t-value="0"/>
                                 <t t-set="totalic" t-value="0"/>
                                 <t t-set="totallabor" t-value="0"/>
                                 <t t-set="totalsc" t-value="totalsc+doc.sc_amount"  />
                                 <t t-set="totalic" t-value="totalic+doc.ic_amount"  />
-                                <t t-set="totallabor" t-value="totallabor+doc.labor_award"  />
+                                <t t-set="totallabor" t-value="totallabor+doc.labor_award"  /> -->
                                 <tr style="border:1px solid black; width:100%;">
                                     <td style="border:1px solid black; width:10%;"></td> 
                                     <td style="border:1px solid black; width:20%;"><span t-esc="doc.location"/></td> 
@@ -83,10 +94,27 @@
                     </t>     
 
                 </table>
+                <!-- <h3>Total: PHP<t t-esc="totalsc"  /></h3>
+                <h3>Total: PHP<t t-esc="totalic"  /></h3>
+                <h3>Total: PHP<t t-esc="totalsc"  /></h3>
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
-                
+              <!--   <tr t-foreach="docs" t-as="doc">
+                        <td><t t-esc="doc.name.name"/></td>
+                        <td><t t-esc="doc.datetime_donate"/></td>
+                        <td><t t-esc="doc.type_donation"/></td>    
+                        <td><t t-esc="doc.donation_amount"/></td> 
+                        <tr style="display: none;">
+                            <td /><td /><td />
+                            <td>
+                                <span t-field="doc.donation_amount" />
+                            </td>
 
-                    <tr>
+                            <t t-set="total" t-value="total+doc.donation_amount"  />
+
+                        </tr>
+                    </tr>
+ -->
+                   <!--  <tr>
                                     <td style="width:10%;"></td> 
                                     <td style="width:20%;"></td> 
                                     <td style="width:10%;"></td> 
@@ -94,12 +122,22 @@
                                     <td style="width:10%;"></td> 
                                     <td style="width:5%;"></td> 
                                     <td style="width:5%;"><t t-esc="totalsc"  /></td> 
+                                    <tr style="display: none;">
+                            <td /><td /><td />
+                            <td>
+                                <span t-field="doc.donation_amount" />
+                            </td>
+
+                            <t t-set="total" t-value="total+doc.donation_amount"  />
+
+                        </tr>
                                     <td style="width:5%;"></td> 
                                     <td style="width:5%;"><t t-esc="totalsc"  /></td>  
                                     <td style="width:10%;"><t t-esc="totallabor"  /></td> 
                                     <td style="width:10%;"></td> 
                     </tr>    
-            </table>
+            </table> --> 
+            <h3>Total: PHP<t t-esc="total"  /></h3>
                 <table  class="table table-bordered" style="width:100%; font-size:12px;">
                     <t t-foreach="docs" t-as="doc">
                     <tr>
