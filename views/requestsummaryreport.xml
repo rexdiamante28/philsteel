@@ -93,10 +93,10 @@
                                     <td style="width:10%;"></td> 
                                     <td style="width:10%;"></td> 
                                     <td style="width:5%;"></td> 
-                                    <td style="width:5%;"><t t-esc="totalsc"  /></td> 
+                                    <td style="width:5%;"><t t-esc="doc.totalsc"  /></td> 
                                     <td style="width:5%;"></td> 
-                                    <td style="width:5%;"><t t-esc="totalsc"  /></td>  
-                                    <td style="width:10%;"><t t-esc="totallabor"  /></td> 
+                                    <td style="width:5%;"><t t-esc="doc.totalsc"  /></td>  
+                                    <td style="width:10%;"><t t-esc="doc.totallabor"  /></td> 
                                     <td style="width:10%;"></td> 
                     </tr>    
             </table>
