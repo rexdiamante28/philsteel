@@ -104,6 +104,13 @@ class AMRequests(models.Model):
              record.sc_number = record.name.sc_no
              record.location = record.name.location
              record.project_type = record.name.types_of_project
+             record.proj_incharge = record.name.proj_incharge
+             record.area_manager = record.name.area_manager
+             record.fore_man = record.name.fore_man
+             record.client_rep = record.name.client_rep
+             record.ic_amount = record.name.ic_amount
+             record.sc_amount = record.name.sc_amount
+             record.labor_award = record.name.labor_award
 
      @api.multi
      def action_approved(self):
