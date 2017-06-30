@@ -42,15 +42,14 @@
                     </tr>
                     </table>
                     <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
-                     
-                    <tr style="border:1px solid black; width:100%;">
+                    
                         <t t-set="i" t-value="0"/>
                         <t t-foreach="docs.request_number" t-as="l">
                             <t t-if="i &gt;= 0">
-                                    <td style="border:1px solid black; width:10%;">
-                                        <span t-esc="docs.request_number[i]"/>
-                                    </td> 
-                                    <t t-set="i" t-value="i+1"/>
+                                <tr style="border:1px solid black; width:100%;">
+                                    <td style="border:1px solid black"><span t-esc="docs.request_number[i]"/></td>
+                                </tr>
+                                <t t-set="i" t-value="i+1"/>
                             </t>
                         </t>
                                     <!-- <td style="border:1px solid black; width:10%;"><span t-esc="doc.customer"/> / <span t-esc="docs.name.name"/></td> 
