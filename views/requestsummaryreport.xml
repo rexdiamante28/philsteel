@@ -8,7 +8,7 @@
                 <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center><br />
                
                 <t t-foreach="docs" t-as="doc">
-                    <center><h3><b><span t-esc="doc.project_sector.name"/>&#160; Sector</b></h3></center>
+                    <center><h3><b>____________ Sector</b></h3></center>
                 </t>
                 <br />
                 <center><h4><b>RFAM SUMMARY FOR ____________ </b></h4></center>
@@ -56,8 +56,13 @@
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.ic_amount"/></td> 
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.labor_award"/></td> 
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.project_type"/></td> 
+
+
                                     
                                 </tr>
+                                <t t-set="totalsc" t-value="total+doc.sc_amount"  />
+                                <t t-set="totalic" t-value="total+doc.ic_amount"  />
+                                <t t-set="totallabor" t-value="total+doc.labor_award"  />
                                 <tr style="border:1px solid black; width:100%;">
                                     <td style="border:1px solid black; width:10%;"></td> 
                                     <td style="border:1px solid black; width:20%;"><span t-esc="doc.location"/></td> 
@@ -74,12 +79,29 @@
                                 </tr> 
                     </t>     
 
-                </table><br />
+                </table>
+                <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
+                
+
+                    <tr t-foreach="docs" t-as="doc">
+                                    <td style="width:10%;"></td> 
+                                    <td style="width:20%;"></td> 
+                                    <td style="width:10%;"></td> 
+                                    <td style="width:10%;"></td> 
+                                    <td style="width:10%;"></td> 
+                                    <td style="width:5%;"></td> 
+                                    <td style="width:5%;"><t t-esc="totalsc"  /></td> 
+                                    <td style="width:5%;"></td> 
+                                    <td style="width:5%;"><t t-esc="totalsc"  /></td>  
+                                    <td style="width:10%;"><t t-esc="totallabor"  /></td> 
+                                    <td style="width:10%;"></td> 
+                    </tr>    
+            </table>
                 <table  class="table table-bordered" style="width:100%; font-size:12px;">
                     <t t-foreach="docs" t-as="doc">
                     <tr>
-                        <td><b> Accomplished By</b><span t-esc="doc.accomplished_by.name"/></td>
-                        <td><b> Approved By </b><span t-esc="doc.approved_by.name"/></td>
+                        <td><b> Accomplished By</b></td>
+                        <td><b> Approved By </b></td>
                     </tr> 
                     </t>
                 </table>
