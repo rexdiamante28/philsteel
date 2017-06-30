@@ -8,42 +8,43 @@
                 <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center><br />
                
                 <t t-foreach="docs" t-as="doc">
-                    <center><h4><b><span t-esc="doc.project_sector"/></b></h4></center>
+                    <center><h4><b><span t-esc="doc.project_sector.name"/></b></h4></center>
                 </t>
                 <br />
                 <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
-                    <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> RFAM SUMMARY FOR ____________ </th>
+                    <tr style="border:1px solid black; width:100%;">
+                        <th style="border:1px solid black; width:100%;"> RFAM SUMMARY FOR ____________ </th>
                     </tr>
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black"> RFM No. </th>
-                        <th style="border:1px solid black"> Client / Project </th>
-                        <th style="border:1px solid black"> Product Profile </th>
-                        <th style="border:1px solid black"> PIC </th>
-                        <th style="border:1px solid black"> Sales Rep </th>
-                        <th style="border:1px solid black"> Sales Contract </th>
-                        <th style="border:1px solid black"> Installation Contract </th>
-                        <th style="border:1px solid black"> Labor Award </th>
-                        <th style="border:1px solid black"> Project Type </th>
+                        <th style="border:1px solid black; width:10%;"> RFM No. </th>
+                        <th style="border:1px solid black; width:10%;"> Client </th>
+                        <th style="border:1px solid black; width:10%;"> Project </th>
+                        <th style="border:1px solid black; width:10%;"> Product Profile </th>
+                        <th style="border:1px solid black; width:10%;"> PIC </th>
+                        <th style="border:1px solid black; width:10%;"> Sales Rep </th>
+                        <th style="border:1px solid black; width:10%;"> Sales Contract </th>
+                        <th style="border:1px solid black; width:10%;"> Installation Contract </th>
+                        <th style="border:1px solid black; width:10%;"> Labor Award </th>
+                        <th style="border:1px solid black; width:10%;"> Project Type </th>
                     </tr>
                     <tr style="border:1px solid black">
-                        <th style="border:1px solid black">  </th>
-                        <th style="border:1px solid black"> Location </th>
-                        <th style="border:1px solid black"> Scope of Work </th>
-                        <th style="border:1px solid black">  </th>
-                        <th style="border:1px solid black">  </th>
-                        <th style="border:1px solid black"> SC No. </th>
-                        <th style="border:1px solid black"> Amount </th>
-                        <th style="border:1px solid black"> IC No. </th>
-                        <th style="border:1px solid black"> Amount </th>
-                        <th style="border:1px solid black"> Foreman</th>
-                        <th style="border:1px solid black">  </th>
+                        <th style="border:1px solid black; width:10%;">  </th>
+                        <th style="border:1px solid black; width:20%;"> Location </th>
+                        <th style="border:1px solid black; width:10%;"> Scope of Work </th>
+                        <th style="border:1px solid black; width:10%;">  </th>
+                        <th style="border:1px solid black; width:10%;">  </th>
+                        <th style="border:1px solid black; width:5%;"> SC No. </th>
+                        <th style="border:1px solid black; width:5%;"> Amount </th>
+                        <th style="border:1px solid black; width:5%;"> IC No. </th>
+                        <th style="border:1px solid black; width:5%;"> Amount </th>
+                        <th style="border:1px solid black; width:10%;"> Foreman</th>
+                        <th style="border:1px solid black; width:10%;">  </th>
                     </tr>
                      <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black">
                                     <td style="border:1px solid black"><span t-esc="doc.request_number"/></td> 
                                     <td style="border:1px solid black"><span t-esc="doc.customer"/> / <span t-esc="docs.name.name"/></td> 
-                                    <td style="border:1px solid black"><span t-esc="doc.product_profile.name"/></td> 
+                                    <td style="border:1px solid black"><span t-esc="doc.product_profile.name.name"/></td> 
                                     <td style="border:1px solid black"><span t-esc="doc.proj_incharge.name"/></td> 
                                     <td style="border:1px solid black"><span t-esc="doc.client_rep.name"/></td> 
                                     <td style="border:1px solid black"><span t-esc="doc.sc_number"/></td> 
