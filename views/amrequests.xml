@@ -189,6 +189,8 @@
                     <field name="assignedTo" />
                     <field name="assigned_by" />
                     <field name="project_sector" />
+                    <field name="date_filed" />
+                    <field name="ready_for_measurement_date" />
                 </search>
             </field>
         </record>
