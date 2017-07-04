@@ -75,14 +75,14 @@
                                     
                                 </tr> 
                                 <t t-set="total" t-value="0"/>
-                                <tr style="display: none;">
+                                <tr>
                             
                             <td>
                                 <span t-field="doc.sc_amount" />
                             </td>
-
+                            <t t-set="total" t-value="0"/>
                             <t t-set="total" t-value="total+doc.sc_amount"  />
-
+                            <h3>Total: PHP<t t-esc="total"  /></h3>
                         </tr>
                     </t>     
 
@@ -121,7 +121,7 @@
                                     <td style="width:10%;"></td> 
                     </tr>    
             </table> -->
-            <h3>Total: PHP<t t-esc="total"  /></h3>
+            
                 <table  class="table table-bordered" style="width:100%; font-size:12px;">
                     
                     <tr>
