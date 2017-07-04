@@ -40,6 +40,7 @@
         'views/materials_installed.xml',
         'views/accomplish.xml',
         'views/nica.xml',
+        'views/ram.xml',
         'views/contact.xml',
         'views/pisreport.xml',
         'views/pisimages.xml',
