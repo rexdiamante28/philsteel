@@ -65,7 +65,7 @@
         'views/accomrep.xml',
         'views/inspectionreport.xml',
         'views/inspectrep.xml',
-        'views/ram_report.xml',
+        'views/ramreport.xml',
         'views/ramsumrep.xml',
         'views/requestsummaryreport.xml',
         'views/reqsumrep.xml',
