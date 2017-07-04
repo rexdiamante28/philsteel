@@ -85,7 +85,7 @@
                         <td></td>
                         <td></td>
                         <td></td>    
-                        <td></td>
+                        <td><t t-esc="doc.sc_amount"/></td>
                         <t t-set="total" t-value="0"/> 
                         <tr style="display: none;">
                             <td /><td /><td />
