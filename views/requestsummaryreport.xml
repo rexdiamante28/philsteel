@@ -40,7 +40,10 @@
                     </tr>
                     </table>
                     <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
-                        <t t-set="total" t-value="0"/>
+                        <t t-set="totalsc" t-value="0"/>
+                        <t t-set="totalic" t-value="0"/>
+                        <t t-set="totallabor_award" t-value="0"/>
+
                      <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black; width:100%;">
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.request_number"/></td> 
@@ -51,11 +54,13 @@
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.client_rep.name"/></td> 
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.sc_number"/></td> 
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.sc_amount"/></td> 
-                                    <t t-set="total" t-value="total + doc.sc_amount"/>
+                                    <t t-set="totalsc" t-value="totalsc + doc.sc_amount"/>
                                     
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.ic_number"/></td> 
                                     <td style="border:1px solid black; width:5%;"><span t-esc="doc.ic_amount"/></td> 
+                                    <t t-set="totalic" t-value="totalic + doc.ic_amount"/>
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.labor_award"/></td> 
+                                    <t t-set="totallabor_award" t-value="totallabor_award + doc.labor_award"/>
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.project_type"/></td> 
 
 
@@ -80,7 +85,9 @@
                     </t>     
 
                 </table>
-                <h3>Total: PHP<t t-esc="total"  /></h3>
+                <h3>Total: PHP<t t-esc="totalsc"  /></h3>
+                <h3>Total: PHP<t t-esc="totalic"  /></h3>
+                <h3>Total: PHP<t t-esc="totallabor_award"  /></h3>
             
                 <table  class="table table-bordered" style="width:100%; font-size:12px;">
                     
