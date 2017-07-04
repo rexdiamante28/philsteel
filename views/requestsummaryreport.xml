@@ -88,16 +88,16 @@
                 <table  class="table table-bordered" style="width:100%; font-size:12px;">
                     
                     <tr style="border:1px solid black; width:100%;">
-                                    <td style="border:1px solid black; width:10%;"></td> 
+                                    <td style="border:1px solid black; width:10%;">TOTAL</td> 
                                     <td style="border:1px solid black; width:20%;"></td> 
                                     <td style="border:1px solid black; width:10%;"></td> 
                                     <td style="border:1px solid black; width:10%;"></td> 
                                     <td style="border:1px solid black; width:10%;"></td> 
                                     <td style="border:1px solid black; width:5%;"></td> 
-                                    <td style="border:1px solid black; width:5%;"><h6><t t-esc="totalsc"  /></h6></td> 
+                                    <td style="border:1px solid black; width:5%;"><t t-esc="totalsc"  /></td> 
                                     <td style="border:1px solid black; width:5%;"></td> 
-                                    <td style="border:1px solid black; width:5%;"><h6><t t-esc="totalic"  /></h6></td>  
-                                    <td style="border:1px solid black; width:10%;"><h6><t t-esc="totallabor_award"  /></h6></td> 
+                                    <td style="border:1px solid black; width:5%;"><t t-esc="totalic"  /></td>  
+                                    <td style="border:1px solid black; width:10%;"><t t-esc="totallabor_award"  /></td> 
                                     <td style="border:1px solid black; width:10%;"></td> 
                                     
                                 </tr> 
