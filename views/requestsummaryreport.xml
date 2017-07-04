@@ -80,7 +80,7 @@
                     </t>     
 
                 </table>
-                <h3>Total: PHP<span t-esc="total"></span></h3>
+                <h3>Total: PHP<t t-esc="total"  /></h3>
             
                 <table  class="table table-bordered" style="width:100%; font-size:12px;">
                     
