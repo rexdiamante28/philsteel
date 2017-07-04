@@ -74,6 +74,7 @@
                                     <td style="border:1px solid black; width:10%;"></td> 
                                     
                                 </tr> 
+                                <t t-set="total" t-value="0"/>
                                 <tr style="display: none;">
                             
                             <td>
