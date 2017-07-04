@@ -74,19 +74,31 @@
                                     <td style="border:1px solid black; width:10%;"></td> 
                                     
                                 </tr> 
-                                <t t-set="total" t-value="0"/>
-                                <tr>
-                            
-                            <td>
-                                <span t-field="doc.sc_amount" />
-                            </td>
-                            <t t-set="total" t-value="0"/>
-                            <t t-set="total" t-value="total+doc.sc_amount"  />
-                            
-                        </tr>
+                               
                     </t>     
 
                 </table>
+                <table>
+                <tbody class="sale_tbody">
+
+                    <tr t-foreach="docs" t-as="doc">
+                        <td></td>
+                        <td></td>
+                        <td></td>    
+                        <td></td>
+                        <t t-set="total" t-value="0"/> 
+                        <tr style="display: none;">
+                            <td /><td /><td />
+                            <td>
+                                <span t-field="doc.sc_amount" />
+                            </td>
+
+                            <t t-set="total" t-value="total+doc.sc_amount"  />
+
+                        </tr>
+                    </tr>                    
+                </tbody>
+            </table>
                 <h3>Total: PHP<t t-esc="total"  /></h3>
                 <!-- <h3>Total: PHP<t t-esc="totalsc"  /></h3>
                 <h3>Total: PHP<t t-esc="totalic"  /></h3>
