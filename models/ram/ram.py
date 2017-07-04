@@ -6,9 +6,9 @@ from odoo import models, fields, api, _
 class RAM(models.Model):
      _name = 'philsteel.ram'
 
-     customer = fields.Char(string='Customer', required='True')
+     customer = fields.Char(string='Client', required='True')
 
-     ram_number = fields.Char(string='Request Number', required='True')
+     ram_number = fields.Char(string='RAM Number', required='True')
      location = fields.Text(string='Address', required='True')
 
      name = fields.Many2one(
@@ -25,13 +25,13 @@ class RAM(models.Model):
 
    
      received_datetime = fields.Datetime(string='Date / Time Received')
-     date_received_measurement = fields.Date(string='Date receive measurement', required='True')
-     date_sr_received = fields.Date(string='Date SR measurement', required='True')
+     date_received_measurement = fields.Date(string='Date receive measurement',)
+     date_sr_received = fields.Date(string='Date SR measurement')
      area_manager = fields.Many2one(
-        'philsteel.projectmanpower', 'Area Manager',  ondelete='cascade'
+        'philsteel.projectmanpower', 'Area Manager',  ondelete='cascade', required='True'
      )
      client_rep = fields.Many2one(
-        'philsteel.contacts', 'Sales Representative',  ondelete='cascade'
+        'philsteel.contacts', 'Sales Representative',  ondelete='cascade', required='True'
      )
      project_sector = fields.Many2one(
          'philsteel.projectsector', 'Project Sector',  ondelete='cascade', required='True'
