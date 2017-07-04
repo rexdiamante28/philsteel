@@ -40,7 +40,7 @@
                     </tr>
                     </table>
                     <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
-                        <t t-set="total" t-value="0">
+                        <t t-set="total" t-value="0"/>
                      <t t-foreach="docs" t-as="doc">
                     <tr style="border:1px solid black; width:100%;">
                                     <td style="border:1px solid black; width:10%;"><span t-esc="doc.request_number"/></td> 
