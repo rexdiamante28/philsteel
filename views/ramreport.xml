@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Custom report-->
+<odoo>
+<template id="report_ram_summary_document">
+            
+            <div class="page">
+                <center><div><h3><b>Philmetal Products, Inc.</b></h3>
+                <h5>Philsteel Tower, 140 Amorsolo St., Legaspi Village, Makati City</h5></div></center><br />
+               
+                    <center><h3><b>____________ Sector</b></h3></center>
+                <br />
+                <center><h4><b>RAM SUMMARY FOR ____________ </b></h4></center>
+                <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
+                    <tr style="width:100%;">
+                        <th style="width:5%;"> RAM No. </th>
+                        <th style="width:10%;"> Client </th>
+                        <th style="width:5%;"> Project </th>
+                        <th style="width:10%;"> Product Profile </th>
+                        <th style="width:10%;"> Date / Time Received </th>
+                        <th style="width:10%;"> Area Manager </th>
+                        <th style="width:10%;"> Sales Rep. </th>
+                        <th style="width:10%;"> Project Type </th>
+                        <th style="width:10%;"> Date Received Measurement </th>
+                        <th style="width:10%;"> Date SR Received </th>
+                        <th style="width:10%;"> Remarks </th>
+                    </tr>
+                </table>
+                <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
+                    <tr style="width:100%;">
+                        <th style="width:5%;">  </th>
+                        <th style="width:15%;"> Location </th>
+                        <th style="width:10%;"> Scope of Work </th>
+                       <th style="width:10%;"></th>
+                        <th style="width:10%;"></th>
+                        <th style="width:10%;"></th>
+                        <th style="width:10%;"></th>
+                        <th style="width:10%;"></th>
+                        <th style="width:10%;"></th>
+                        <th style="width:10%;"></th>
+                    </tr>
+                    </table>
+                    <table class="table table-condensed" style="width:100%; font-size:12px; border:1px solid black">
+                        
+
+                     <t t-foreach="docs" t-as="doc">
+                    <tr style="border:1px solid black; width:100%;">
+                                    <td style="border:1px solid black; width:5%;"><span t-esc="doc.ram_number"/></td> 
+
+                                    <td style="border:1px solid black; width:15%;"><span t-esc="doc.customer"/> / <span t-esc="doc.name.name"/></td> 
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.product_profile.name.name"/></td>
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.received_datetime"/></td>
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.area_manager.name"/></td>
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.client_rep.name"/></td>
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.project_type"/></td>
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.date_received_measurement"/></td>
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.date_sr_received"/></td>
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.remarks"/></td>
+
+
+                                    
+                                </tr>
+                                
+                                <tr style="border:1px solid black; width:100%;">
+                                    <td style="border:1px solid black; width:5%;"></td> 
+                                    <td style="border:1px solid black; width:15%;"><span t-esc="doc.location"/></td> 
+                                    <td style="border:1px solid black; width:10%;"><span t-esc="doc.work_scope.name"/></td> 
+                                    <td style="border:1px solid black; width:10%;"></td> 
+                                    <td style="border:1px solid black; width:10%;"></td> 
+                                    <td style="border:1px solid black; width:10%;"></td> 
+                                    <td style="border:1px solid black; width:10%;"></td> 
+                                    <td style="border:1px solid black; width:10%;"></td> 
+                                    <td style="border:1px solid black; width:10%;"></td>  
+                                    <td style="border:1px solid black; width:10%;"></td> 
+                                    
+                                </tr> 
+                               
+                    </t>     
+
+                </table>
+               
+            </div>
+</template>
+</odoo>

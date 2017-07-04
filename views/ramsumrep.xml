@@ -1,0 +1,5 @@
+<odoo>
+	<data>
+		<report id="report_ramsummary" string="RAM Monthly Summary" model="philsteel.ram" report_type="qweb-pdf" file="philsteel.report_ram_summary_document" name="philsteel.report_ram_summary_document"/>
+	</data>
+</odoo>
