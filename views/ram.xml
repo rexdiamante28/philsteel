@@ -58,32 +58,6 @@
                 </form>
             </field>
         </record>
-    <!--
-        <record model="ir.ui.view" id="center_tree_view">
-            <field name="name">center.tree</field>
-            <field name="model">odoo_medical.center</field>
-            <field name="arch" type="xml">
-               <tree string="Centers">
-                   <field name="name"/>
-                   <field name="contact_number"/>
-                   <field name="address"/>
-               </tree>
-            </field>
-        </record>
-
-
-        <record model="ir.ui.view" id="center_search_view">
-            <field name="name">center.search</field>
-            <field name="model">odoo_medical.center</field>
-            <field name="arch" type="xml">
-                <search>
-                    <field name="name"/>
-                    <field name="contact_number"/>
-                    <field name="address"/>
-                </search>
-            </field>
-        </record>
-    -->
 
         <record model="ir.actions.act_window" id="ram_request_action">
             <field name="name">RAM</field>
@@ -105,11 +79,8 @@
                     <field name="customer" />
                     <field name="project_type" />
                     <field name="project_sector" />
-                    <!-- <field name="assignedTo" />
-                    <field name="assigned_by" />
-                    <field name="statuss" />
-                    <field name="seen_datetime" />
-                    <field name="read_datetime" /> -->
+                    <field name="area_manager" />
+                    <field name="client_rep" />
                </tree>
             </field>
         </record>
@@ -121,14 +92,10 @@
                 <search>
                     <field name="name" />
                     <field name="customer" />
-                    <field name="project_type" />
-                    <!-- <field name="assigned_by" />
-                    <field name="statuss" />
-                    <field name="assignedTo" />
-                    <field name="assigned_by" />
                     <field name="project_sector" />
-                    <field name="date_filed" />
-                    <field name="ready_for_measurement_date" /> -->
+                    <field name="received_datetime" />
+                    <field name="date_received_measurement" />
+                    <field name="date_sr_received" />
                 </search>
             </field>
         </record>
