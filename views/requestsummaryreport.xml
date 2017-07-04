@@ -80,7 +80,7 @@
                                 <span t-field="doc.sc_amount" />
                             </td>
 
-                            <t t-set="total" t-value="total+doc.donation_amount"  />
+                            <t t-set="total" t-value="total+doc.sc_amount"  />
 
                         </tr>
                     </t>     
