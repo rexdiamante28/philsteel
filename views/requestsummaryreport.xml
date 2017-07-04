@@ -82,11 +82,12 @@
                             </td>
                             <t t-set="total" t-value="0"/>
                             <t t-set="total" t-value="total+doc.sc_amount"  />
-                            <h3>Total: PHP<t t-esc="total"  /></h3>
+                            
                         </tr>
                     </t>     
 
                 </table>
+                <h3>Total: PHP<t t-esc="total"  /></h3>
                 <!-- <h3>Total: PHP<t t-esc="totalsc"  /></h3>
                 <h3>Total: PHP<t t-esc="totalic"  /></h3>
                 <h3>Total: PHP<t t-esc="totalsc"  /></h3>
