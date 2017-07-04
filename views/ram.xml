@@ -91,7 +91,6 @@
             <field name="arch" type="xml">
                 <search>
                     <field name="name" />
-                    <field name="customer" />
                     <field name="project_sector" />
                     <field name="received_datetime" />
                     <field name="date_received_measurement" />
