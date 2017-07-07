@@ -1,7 +1,7 @@
 <odoo>
 	<data>
 		
-		<record model="ir.ui.view" id="center_form_view">
+		<record model="ir.ui.view" id="rfam_form_view">
             <field name="name">RFM</field>
             <field name="model">philsteel.amrequests</field>
             <field name="arch" type="xml">
