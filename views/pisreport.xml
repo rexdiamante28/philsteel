@@ -133,7 +133,7 @@
                                 <group><field name="pisimages" attrs="{'readonly': ['|','|',('statuss','=','approved')]}"/></group>
                             </page>
                             <page string="Assign Information">
-                                <group><field name="assignedTo" groups="philsteel.group_supervisor" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
+                                <group><field name="assignedTo" groups="philsteel.group_supervisor,philsteel.group_manager" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                                 <group><field name="assigned_by" attrs="{'readonly': ['|','|',('statuss','=','approved')]}" /></group>
                             </page>
                             <page string="Signatory">
