@@ -12,17 +12,15 @@
                     <t t-foreach="docs" t-as="doc">
                     <tr class="table table-borderless">
                         <td><b> Customer Name : </b><span t-esc="doc.customer_name"/></td>
-                        <td><b> Duration : </b><span t-esc="doc.duration"/> Working Days</td>      
+                        <td><b> Duration : </b><span t-esc="doc.duration"/> Working Days</td>
                     </tr> 
                     <tr class="table table-borderless">
                         <td><b> Location : </b><span t-esc="doc.location"/></td>
-
                         <td><b> Date Started : </b><span t-esc="doc.date_start"/></td>  
                     </tr>   
                     <tr class="table table-borderless">
                         <td><b> IC No : </b><span t-esc="doc.ic_no"/></td>
                         <td><b> Date of Completion: </b><span t-esc="doc.date_complete"/></td>
-                            
                     </tr> 
                      <tr class="table table-borderless">
                         <td><b> SC No : </b><span t-esc="doc.sc_no"/></td>
@@ -52,7 +50,6 @@
                         <t t-foreach="docs.accomplisment" t-as="l">
                             <t t-if="i &gt;= 0">
                                 <tr style="border:1px solid black">
-                        
                                     <td style="border:1px solid black"><span t-esc="docs.accomplisment[i].name"/></td> 
                                     <td style="border:1px solid black"><span t-esc="docs.accomplisment[i].unit"/></td> 
                                     <td style="border:1px solid black"><span t-esc="docs.accomplisment[i].qty"/></td> 

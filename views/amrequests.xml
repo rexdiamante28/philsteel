@@ -25,7 +25,6 @@
                                 <field name="request_number" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
                             </group>
                             <group><field name="location" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/></group>
-                            
                             <group>
                                 <field name="project_type" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
                             </group>
@@ -33,7 +32,6 @@
                             <field name="project_sector" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
 
                             <field name="general_contractor" attrs="{'readonly': ['|','|',('statuss','=','done')]}" />
-
                         </group>
                         <notebook>
                             <page string="Contact Details">
@@ -47,19 +45,14 @@
                                     <field name="sq_number" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
                                     <field name="iq_number" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
                                 </group>
-
                             </page>
                             <page string="Pre Installation">
-                                
                                 <group>
-                                   
-                                 
                                 <field name="floors_available_for_measurement" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
                                 <field name="frames_trusses_installed" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
                                 <field name="beam_installed" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
                                 <field name="purlins_installed" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
                                 <field name="sogrod_installed" attrs="{'readonly': ['|','|',('statuss','=','done')]}"/>
-                                 
                                 </group>
                             </page>
                             <page string="Request for Measurement">
@@ -90,7 +83,6 @@
                                 <group><field name="assignedTo" groups="philsteel.group_supervisor,philsteel.group_manager" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
                                 <group><field name="assigned_by" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
                             </page>
-
                             <page string="Signatory">
                                 <group>
                                     <!-- <field name="ready_for_measurement_date" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /> -->
@@ -111,11 +103,8 @@
                                 <group><field name="ic_amount" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
                                 <group><field name="sc_amount" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
                                 <group><field name="labor_award" attrs="{'readonly': ['|','|',('statuss','=','done')]}" /></group>
-
-                                
                             </page>
                         </notebook>
-
                     </sheet>
                 </form>
             </field>

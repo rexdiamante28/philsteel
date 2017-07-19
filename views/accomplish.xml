@@ -48,7 +48,6 @@
 
         <record model="ir.ui.view" id="accomplishment_tree_view">
             <field name="name">accomplishment.tree</field>
-            
             <field name="model">philsteel.accomplishment</field>
             <field name="arch" type="xml">
                <tree string="Accomplishments">

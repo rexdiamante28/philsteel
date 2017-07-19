@@ -11,7 +11,6 @@
             </field>
         </record>
 
-
      	<record model="ir.ui.view" id="accomplishmentimages_form_view">
             <field name="name">accomplishmentimages.form</field>
             <field name="model">philsteel.accomplishmentimages</field>
@@ -19,7 +18,6 @@
                 <form string="Inspection and Safety Illustration Form">
                     <sheet>
                         <group>
-                            
                             <field name="name" widget="image"/>
                             <field name="accomplishment" />
                             <field name="description" />
