@@ -145,16 +145,7 @@
                                 </group>
                         
                             </page>
-                            <page string="Signatory">
-                                <group >
-                                    <group>
-                                        <field name="prepared_by" />
-                                    </group>
-                                    <group>
-                                    <field name="approved_by" />
-                                    </group>
-                                </group>
-                            </page>
+                           
                         </notebook> -->
                         
                     </sheet>
